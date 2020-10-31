@@ -1,0 +1,12 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.ServiceStatus"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+			<Page title="new">
+				<content>
+					
+				</content>
+	
+			</Page>
+	
+
+</mvc:View>

@@ -4,5 +4,7 @@
 				<content>
 					<Label text="sarath"></Label>
 				</content>
+				<Button text="Service Status" press="serviceStatus"></Button>
+				<Button text="Products" press="Products"></Button>
 			</Page>
 </mvc:View>

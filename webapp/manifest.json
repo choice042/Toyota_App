@@ -59,9 +59,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -73,31 +75,54 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteApp",
-				"pattern": "",
-				"target": [
-					"Home"
-				]
-			}, {
-				"name": "Home",
-				"pattern": "Homeview",
-
-				"target": ["Home"]
-			}],
+			"routes": [
+				{
+					"name": "RouteApp",
+					"pattern": "",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "ServiceStatus",
+					"pattern": "hello",
+					"target": [
+						"ServiceStatus"
+					]
+				},
+				{
+					"name": "Home",
+					"pattern": "Homeview",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "Products",
+					"pattern": "Productsview",
+					"target": [
+						"Products"
+					]
+				}
+			],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-
 					"viewName": "App"
-
 				},
 				"Home": {
 					"viewType": "XML",
 					"viewName": "Home"
-
+				},
+				"ServiceStatus": {
+					"viewType": "XML",
+					"viewName": "ServiceStatus"
+				},
+				"Products": {
+					"viewType": "XML",
+					"viewName": "Products"
 				}
 			}
 		}
