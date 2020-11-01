@@ -17,8 +17,13 @@ sap.ui.define([
 		},
 		onCall: function(){
 			sap.m.URLHelper.triggerTel("+91 8218975934");
-		}
-	
+		},
+	onMapOpen:function(){
+		
+	},
+		onMapClose:function(){
+		
+	}
 
 	});
 
