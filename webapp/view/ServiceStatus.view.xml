@@ -1,12 +1,132 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.ServiceStatus"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-
-			<Page title="new">
-				<content>
+	<Page title="SERVICE STATUS">
+		<content>
+			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">
+				<Image src="./images/icons8-maintenance-64-4.png"></Image>
+				<HBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd aljBorderRed">
+					<Text text="Service order number : 9876543235" class="aljHeadingText"></Text>
+					<!--<Text class="aljBoldText" text="9876543235"></Text>-->
+				</HBox>
+				<Image src="images/icons8-tow-truck-64-6.png"></Image>
+			</HBox>
+			<List class="aljList">
+				<CustomListItem class="aljListLi">
+					<HBox 	alignItems="Center">
+						<Image src="images/carUs.png"></Image>
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
+							<Text text="Fortuner 2018" class="aljHeadingText"></Text>
+						</VBox>
+						
+						<Text text="IN" class="aljBoldText sapUiTinyMarginEnd"></Text>
+						<Switch class="aljSwitch" state="false" customTextOn=" " customTextOff=" ">
+							<!--<layoutData>-->
+							<!--	<FlexItemData growFactor="1"/>-->
+							<!--</layoutData>-->
+						</Switch>
+						<Text text="OUT" class="aljBoldText sapUiTinyMarginBegin"></Text>
 					
-				</content>
-	
-			</Page>
-	
-
+					</HBox>
+				</CustomListItem>
+				<CustomListItem class="aljListLi">
+					<HBox>
+						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
+							<Text text="30 May 2020,09:00 AM-10:00 AM" class="aljHeadingText"></Text>
+						</VBox>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem class="aljListLi">
+					<HBox>
+						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
+							<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
+						</VBox>
+							<Image src="images/mapIcon.png" width="1.3rem"></Image>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem class="aljListLi">
+					<HBox>
+						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
+							<Text text="Mohammad Ahmed,(Security Advisor)" class="aljHeadingText"></Text>
+						</VBox>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem class="aljListLi">
+					<HBox>
+						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
+							<Text text="987-65432-8735" class="aljHeadingText"></Text>
+						</VBox>
+						<core:Icon src="sap-icon://call" press="onCall" ></core:Icon>
+					</HBox>
+				</CustomListItem>
+			</List>
+			<HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" justifyContent="Center" alignContent="Center">
+				<VBox justifyContent="Center" alignContent="Center">
+					<Button class="aljRedButton" text="Copy to mobile calendar"></Button>
+					<Button class="aljRedButton" text="Reschedule"></Button>
+					<Button class="aljRedButton" text="Cancel Appointment"></Button>
+				</VBox>
+			</HBox>
+		</content>
+		<HBox class="aljGrayHbox sapUiSmallMarginTop" justifyContent="Center" alignContent="Center">
+			<VBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" width="85%">
+				<HBox>
+					<Label required="true" class="sapUiTinyMarginBottom sapUiSmallMarginTop aljBlackStar aljRedUnderline" text="Price Breakup"></Label>
+				</HBox>
+				<VBox class="aljWhiteSmokeVbox sapUiTinyMarginTop">
+					<Panel expandable="true" width="auto" class="sapUiResponsiveMargin ">
+						<headerToolbar>
+							<OverflowToolbar style="Clear">
+								<Title text="80,000 KM Service"/>
+								<ToolbarSpacer/>
+								<Text class="sapUiSmallMarginEnd" text="SAR 100"></Text>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Text text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"></Text>
+						</content>
+					</Panel>
+					<Panel expandable="true" width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar style="Clear">
+								<Title text="Brake Service"/>
+								<ToolbarSpacer/>
+								<Text class="sapUiSmallMarginEnd" text="SAR 100"></Text>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Text text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"></Text>
+						</content>
+					</Panel>
+					<Panel expandable="true" width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar style="Clear">
+								<Label required="true" text="AC Service"/>
+								<ToolbarSpacer/>
+								<Text class="sapUiSmallMarginEnd" text="SAR 100"></Text>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Text
+								text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"></Text>
+						</content>
+					</Panel>
+					<HBox class="aljText sapUiMediumMarginTop">
+						<Text class="aljBoldText" text="Total Price"></Text>
+						<Text class="aljBoldText" text="SAR 300"></Text>
+					</HBox>
+					<HBox class="aljText">
+						<Text class="aljBoldText" text="Payment Status"></Text>
+						<Text class="aljBoldText" text="Pending"></Text>
+					</HBox>
+					<HBox justifyContent="End">
+						<Label required="true" class="sapUiSmallMarginEnd sapUiTinyMarginBottom aljRedLabel sapUiSmallMarginTop aljRedText" text="Additional Job"></Label>
+					</HBox>
+				</VBox>
+			</VBox>
+		</HBox>
+	</Page>
 </mvc:View>

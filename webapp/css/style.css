@@ -1,1 +1,130 @@
-/* Enter your custom styles here */
+
+/*  STANDARD CLASSES   */
+
+.sapMBarTitleStart .sapMBarPH {
+    justify-content: center !important;
+}
+
+.sapMBarTitleStart .sapMBarPH {
+    background-color: red;
+    justify-content: flex-start;
+}
+.sapMIBar-CTX .sapMTitle {
+    color: #ffffff;
+    text-shadow: none;
+}
+.sapMTB-Transparent-CTX>.sapMTitleTB.sapMTitleStyleAuto {
+    font-size: 0.875rem !important;
+}
+.sapMPanel>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb {
+    border-bottom: .0625rem solid #d9d9d900 !important;
+}
+.sapMPanelContent:not(.sapMPanelBGTransparent) {
+    border-bottom: .0625rem solid #d9d9d900 !important;
+}
+:not(.sapMBtnDisabled) .sapMBtnBack>.sapMBtnIcon, :not(.sapMBtnDisabled) .sapMBtnTransparent>.sapMBtnIcon, :not(.sapMBtnDisabled) .sapMBtnGhost>.sapMBtnIcon {
+    color: #ff3939 !important;
+}
+.sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed), .sapMIBar-CTX .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed) {
+    background-color: #ebf5fe00 !important;
+    border-color: #0854a000 !important;
+    color: #0854a000;
+}
+html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: .0625rem dotted #0000 !important;
+    outline-offset: -0.1875rem;
+}
+/* Media */
+
+.aljSplitCont.sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin, .sapMSplitContainerPortrait>.sapMSplitContainerDetail .sapUiResponsiveMargin, .sapUiResponsiveMargin {
+    margin: 0 0 -1rem 0 !important;
+}
+
+ /*  CUSTOM CLASSES   */
+ 
+ /*ServiceStatus*/
+.aljSwitch.sapMSwtCont {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    width: inherit !important;
+}
+.aljSwitch .sapMSwt.sapMSwtOn:not(.sapMSwtAcceptReject) {
+    background: #f9eff1;
+    border-color: #ca0404;
+}
+ .aljSwitch .sapMSwt.sapMSwtOn:not(.sapMSwtAcceptReject) .sapMSwtHandle {
+    background: #ff0000;
+    border-color: #c10000;
+}
+.aljSwitch .sapMSwtOn .sapMSwtHandle, .sapMSwtOff .sapMSwtHandle {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+.aljSwitch.sapMSwtOn .sapMSwtHandle, .sapMSwtOff .sapMSwtHandle {
+    height: 0.9rem;
+    width: 0.9rem;
+ }
+.aljSwitch .sapMSwt.sapMSwtNoLabel {
+    width: 2.3rem;
+    height: 0.9rem;
+}
+ .aljBoldText.sapMText {
+  font-weight: bold;
+}
+.aljRedUnderline.sapMLabel .sapMLabelTextWrapper {
+    border-bottom: 1px solid red;
+}
+ .aljRedLabel.sapMLabel {
+    color: #ff0000;
+ }
+.aljBlackStar.sapMLabel.sapMLabelRequired .sapMLabelColonAndRequired:after {
+    content: "*";
+    color: #000000ad !important;
+}
+.aljText.sapMFlexBoxWrapNoWrap {
+    padding: 0rem 1.1rem !important;
+   
+}
+ 
+ .aljHeadingText.sapMFlexItem {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.aljBorderRed.sapMHBox {
+    border-bottom: 1px solid red;
+}
+.aljBoldText .sapMText {
+	font-weight: bold;
+}
+.aljList{
+	padding-left: 11%;
+    padding-right: 11%;
+}
+.aljListLi.sapMLIB {
+    background: #fff0;
+    border-bottom: 1px solid #e5e5e500;
+   
+}
+.aljRedButton.sapMBtn .sapMBtnInner {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    border-radius: 1rem;
+        border-color: red;
+}
+.aljRedButton .sapMBtnInner {
+    background-color: red !important;
+    color: white !important;
+}
+.aljGrayHbox.sapMHBox {
+    background-color: rgb(213 213 214 / 60%);
+}
+.aljWhiteSmokeVbox.sapMVBox {
+	border-radius: 1rem;
+    background-color: whitesmoke;
+}
+.aljRedText.sapMText {
+    font-size: .7rem !important;
+    color: #fb0000 !important;
+}

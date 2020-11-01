@@ -14,6 +14,9 @@ sap.ui.define([
 		},
 			getRouter: function () {
 			return UIComponent.getRouterFor(this);
+		},
+		onCall: function(){
+			sap.m.URLHelper.triggerTel("+91 8218975934");
 		}
 	
 
