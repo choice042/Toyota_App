@@ -37,7 +37,7 @@ sap.ui.define([
 				"lat": 25.5941,
 				"lgn": 85.1376,
 				"maptype": "ROADMAP",
-				"zoom": "zoom + 8"
+				"zoom": "8"
 			};
 			var latlng = new google.maps.LatLng(options.lat, options.lgn);
 			var that=this;
