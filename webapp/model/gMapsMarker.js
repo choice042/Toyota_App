@@ -1,46 +1,64 @@
-sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-		"sap/ui/core/UIComponent"
-], function (Controller,UIComponent) {
-	"use strict";
+var _gmaps = (function () {
+	var map;
+	var markers = [];
+	var directionsService;
+	var directionsRenderer;
+	var directionsDisplay;
+	return {
+		/*	
+			Important:
+			1) must call 'loadApi()' function in onInit() function so api file will load before map Initilize 
+			2) must call 'init()' function in onAfterRendering() function 
+			3) must use setTimeout for 'init()' method so it will load properlly
+				Example:
+					var that = this;
+					setTimeout(function () {
+						var oOptions = {
+							"lat": -6.121435,
+							"lgn": 106.774124,
+							"maptype": "ROADMAP",
+							"zoom": 8
+						}
+						_gmaps.init(that, "map_canvas", oOptions);
+					}, 1000);
+		*/
 
-	return Controller.extend("inc.demo.Toyota.controller.ServiceStatus", {
-
-	
-		onInit: function () {
-				var oRouter = this.getRouter();
-			oRouter.getRoute("ServiceStatus");
-
-		},
-			getRouter: function () {
-			return UIComponent.getRouterFor(this);
-		},
-		onCall: function(){
-			sap.m.URLHelper.triggerTel("+91 8218975934");
-		},
-	onMapOpen:function(){
-		if (!this.mapBox) {
-				this.mapBox = sap.ui.xmlfragment("inc.demo.Toyota.fragment.MapDialog", this);
-				this.getView().addDependent(this.mapBox);
+		/** 
+		 * Function for initilize google API
+		 * Please read my guide to know how to fix error ‘For development purposes only’ on google map visit given link:
+		 * @see {@link http://plugins.g5plus.net/ere/knowledge-base/google-maps-shows-error-for-development-purposes-only/} - Google Maps is no longer free
+		 * @param googleApi {String} - google Api URL
+		 */
+		loadApi: function (googleApi) {
+			if (googleApi) {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = googleApi;
+				document.body.appendChild(script);
 			}
-		this.mapBox.open();
-			setTimeout(function () {
-			
-				this.loadMap(this, "googleMap", {});
+		},
 
-			}.bind(this), 3000);
-		
-		
-	},
+		/** 
+		 * Function for initilize google map on view
+		 * @param that {pointer} - this refrence of the controller
+		 * @param domId {domElementID} - Document Element Id Where Map Will Load
+		 * @param options {Object} - 
+		 * Example:
+		 *		oOptions = {
+					"lat": -6.121435,
+					"lgn": 106.774124,
+					"maptype": "ROADMAP",
+					"zoom": 8
+				}
+		 */
 		loadMap: function (that, domId, options) {
 			options = {
-				"lat": 25.5941,
-				"lgn": 85.1376,
+				"lat": 23.8338341,
+				"lgn": 36.039571,
 				"maptype": "ROADMAP",
-				"zoom": "zoom + 8"
+				"zoom": 5
 			};
 			var latlng = new google.maps.LatLng(options.lat, options.lgn);
-			var that=this;
 			var mapType;
 			switch (options.maptype) {
 			case "ROADMAP":
@@ -66,42 +84,29 @@ sap.ui.define([
 				fullscreenControl: true
 			};
 			var domRef;
-			if (this.getView().byId(domId)) {
-				domRef = this.getView().byId(domId).getDomRef();
+			if (that.getView().byId(domId)) {
+				domRef = that.getView().byId(domId).getDomRef();
 			} else {
 				domRef = sap.ui.getCore().byId(domId).getDomRef();
 			}
-			var map = new google.maps.Map(domRef,
+			map = new google.maps.Map(domRef,
 				mapOptions);
-				this.addMarker(map);
 			return map;
-			
-			
 		},
-		addMarker: function(map){
-				var locations = [{
-					"lat": 25.5941,
-				"lng": 85.1376,
-				"id":67
-				},{
-					"lat": 25.4182,
-				"lng": 86.1272,
-				"id":66
-				},{
-					"lat": 24.6961,
-				"lng": 84.9870,
-				"id":67
-				},{
-					"lat": 25.0173,
-				"lng": 85.4162,
-				"id":67
-				}];
-				var location;
-				for(location in locations){
-				this.addMarkers(this,locations[location],"",map);
-				}
-		},
-			addMarkers: function (that, oOptions, info,map) {
+		/** 
+		 * Function to add a marker on map
+		 * @param that {pointer} - This refrence of the controller
+		 * @param oOptions {Object} - 
+		 * Example : 
+		 *		oOptions = {
+						"lat": -6.121435,
+						"lgn": 106.774124,
+						"id": 123,
+						"title": "Mumbai"
+					};
+		 * @returns {Array} - Gives array of marker objects ploted on the map 
+		 */
+		addMarker: function (that, oOptions, info) {
 			if (oOptions.lat && oOptions.lng) {
 				var location = {
 					lat: oOptions.lat,
@@ -109,7 +114,7 @@ sap.ui.define([
 				};
 				// Icon 
 				var icon = {
-					url: "./images/GMarker.png", // url
+					url: "./image/GMarker.png", // url
 					scaledSize: new google.maps.Size(25, 40), // scaled size
 					origin: new google.maps.Point(0, 0), // origin
 					anchor: new google.maps.Point(11, 37) // anchor
@@ -123,7 +128,7 @@ sap.ui.define([
 					// title: 'You are here.',
 					icon: icon,
 					// zIndex	 : 10,
-					map:map
+					map: map
 				});
 				// if (info) {
 				// var sTrackDiv;
@@ -195,7 +200,7 @@ sap.ui.define([
 						// }
 				});
 				// }
-				var markers=[];
+
 				markers.push(oPosMarker);
 
 				// Set Bounds To Show All Marker Visible 
@@ -216,11 +221,43 @@ sap.ui.define([
 				return markers;
 			}
 		},
-		onMapClose:function(){
-			// this.getView().byId("redCloseButton").addStyleClass("aljCloseRedButton");
-			this.mapBox.close();
-	}
 
-	});
+		/** 
+		 * Function for remove marker from map
+		 * @param that {pointer} - This refrence of the controller.
+		 * @param oMarker {object} - Marker Object which return by 'addMarker' function.
+		 * @see {@link addMarker} - object return by 'addMarker' function.
+		 */
+		removeMarker: function (that, oMarker) {
 
-});
+			if (oMarker instanceof google.maps.Marker) {
+				oMarker.setMap(null);
+			}
+			markers = markers.filter(function (obj) {
+				return obj.id !== oMarker.id;
+			})
+
+			if (!that._oCrtTripLatLngBounds) {
+				that._oCrtTripLatLngBounds = new google.maps.LatLngBounds();
+				map.fitBounds(that._oCrtTripLatLngBounds);
+			}
+			if (!that._oCrtTripLatLngBounds.isEmpty()) {
+				map.setCenter(that._oCrtTripLatLngBounds.getCenter());
+				map.fitBounds(that._oCrtTripLatLngBounds);
+			}
+			google.maps.event.addListenerOnce(map, 'bounds_changed', function (event) {
+				if (map.getZoom() > 15) {
+					map.setZoom(14);
+				}
+				if (map.getZoom() < 2) {
+					map.setZoom(4);
+				}
+			});
+
+		},
+		getMap: function () {
+			return map;
+		}
+
+	};
+})();

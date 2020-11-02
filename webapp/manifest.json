@@ -59,11 +59,16 @@
 			}
 		},
 		"resources": {
-			"css": [
+			"css": [{
+				"uri": "css/style.css"
+			}],
+			"js": [
+
 				{
-					"uri": "css/style.css"
+					"uri": "model/gMapsMarker.js"
 				}
 			]
+
 		},
 		"routing": {
 			"config": {
@@ -75,36 +80,31 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "RouteApp",
-					"pattern": "",
-					"target": [
-						"Home"
-					]
-				},
-				{
-					"name": "ServiceStatus",
-					"pattern": "hello",
-					"target": [
-						"ServiceStatus"
-					]
-				},
-				{
-					"name": "Home",
-					"pattern": "Homeview",
-					"target": [
-						"Home"
-					]
-				},
-				{
-					"name": "Products",
-					"pattern": "Productsview",
-					"target": [
-						"Products"
-					]
-				}
-			],
+			"routes": [{
+				"name": "RouteApp",
+				"pattern": "",
+				"target": [
+					"Home"
+				]
+			}, {
+				"name": "ServiceStatus",
+				"pattern": "hello",
+				"target": [
+					"ServiceStatus"
+				]
+			}, {
+				"name": "Home",
+				"pattern": "Homeview",
+				"target": [
+					"Home"
+				]
+			}, {
+				"name": "Products",
+				"pattern": "Productsview",
+				"target": [
+					"Products"
+				]
+			}],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",

@@ -12,12 +12,11 @@
 			</HBox>
 			<List class="aljList">
 				<CustomListItem class="aljListLi">
-					<HBox 	alignItems="Center">
+					<HBox alignItems="Center">
 						<Image src="images/carUs.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Fortuner 2018" class="aljHeadingText"></Text>
 						</VBox>
-						
 						<Text text="IN" class="aljBoldText sapUiTinyMarginEnd"></Text>
 						<Switch class="aljSwitch" state="false" customTextOn=" " customTextOff=" ">
 							<!--<layoutData>-->
@@ -25,7 +24,6 @@
 							<!--</layoutData>-->
 						</Switch>
 						<Text text="OUT" class="aljBoldText sapUiTinyMarginBegin"></Text>
-					
 					</HBox>
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
@@ -42,7 +40,7 @@
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
 						</VBox>
-							<Image src="images/mapIcon.png" width="1.3rem"></Image>
+						<Image src="images/mapIcon.png" press="onMapOpen" width="1.3rem"></Image>
 					</HBox>
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
@@ -59,7 +57,7 @@
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="987-65432-8735" class="aljHeadingText"></Text>
 						</VBox>
-						<core:Icon src="sap-icon://call" press="onCall" ></core:Icon>
+						<core:Icon src="sap-icon://call" press="onCall"></core:Icon>
 					</HBox>
 				</CustomListItem>
 			</List>
@@ -114,14 +112,23 @@
 								text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"></Text>
 						</content>
 					</Panel>
-					<HBox class="aljText sapUiMediumMarginTop">
-						<Text class="aljBoldText" text="Total Price"></Text>
-						<Text class="aljBoldText" text="SAR 300"></Text>
-					</HBox>
-					<HBox class="aljText">
-						<Text class="aljBoldText" text="Payment Status"></Text>
-						<Text class="aljBoldText" text="Pending"></Text>
-					</HBox>
+					<Bar  class="aljPadding">
+						<contentLeft class="aljPadding">
+							<Text class="aljBoldText" text="Total Price"></Text>
+						</contentLeft>
+						<contentRight class="aljPadding">
+					
+							<Text class="aljBoldText" text="SAR 300"></Text>
+						</contentRight>
+					</Bar>
+					<Bar class="aljPadding">
+						<contentLeft class="aljPadding">
+							<Text class="aljBoldText" text="Payment Status"></Text>
+						</contentLeft>
+						<contentRight class="aljPadding">
+							<Text class="aljBoldText" text="Pending"></Text>
+						</contentRight>
+					</Bar>
 					<HBox justifyContent="End">
 						<Label required="true" class="sapUiSmallMarginEnd sapUiTinyMarginBottom aljRedLabel sapUiSmallMarginTop aljRedText" text="Additional Job"></Label>
 					</HBox>
