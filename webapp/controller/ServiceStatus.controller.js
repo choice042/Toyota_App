@@ -37,7 +37,7 @@ sap.ui.define([
 				"lat": 25.5941,
 				"lgn": 85.1376,
 				"maptype": "ROADMAP",
-				"zoom": "8"
+				"zoom": "4"
 			};
 			var latlng = new google.maps.LatLng(options.lat, options.lgn);
 			var that=this;
@@ -109,7 +109,7 @@ sap.ui.define([
 				};
 				// Icon 
 				var icon = {
-					url: "./images/GMarker.png", // url
+					url: "./Images/GMarker.png", // url
 					scaledSize: new google.maps.Size(25, 40), // scaled size
 					origin: new google.maps.Point(0, 0), // origin
 					anchor: new google.maps.Point(11, 37) // anchor
@@ -219,6 +219,10 @@ sap.ui.define([
 		onMapClose:function(){
 			// this.getView().byId("redCloseButton").addStyleClass("aljCloseRedButton");
 			this.mapBox.close();
+	},
+	onClose: function(){
+			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+		this.oRouter.navTo("Home");
 	}
 
 	});

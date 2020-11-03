@@ -233,3 +233,148 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: .7rem !important;
     color: #fb0000 !important;
 }
+/*Home*/
+.sapMIBar.sapMIBar-CTX.stylebar {
+    background-color: #e62f2d;
+}
+
+.logo.sapMLabel {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn .sapMBtnIcon {
+    color: white;
+}
+
+.btn .sapUiIcon {
+    font-size: 1.5rem;
+}
+
+.heading {
+    border-bottom: 2px solid #e62f2d;
+    color: black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.tilesClass {
+    overflow: overlay;
+}
+
+.text2 {
+    margin-top: -20%;
+}
+
+.text1 {
+    margin-top: -6%;
+}
+
+.text3 {
+    margin-top: 5%;
+}
+
+.footerbtn .sapMBtnInner .sapMBtnIcon.sapMImg {
+    max-height: 1.5rem;
+    margin-top: 14%;
+}
+
+.productsfooterbtn .sapMBtnInner .sapMBtnIcon.sapMImg {
+    max-height: 2rem;
+    margin-top: 4%;
+    margin-left: 15%;
+}
+
+.productsClass {
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 6%;
+    padding: 20px;
+    width: 10rem;
+}
+
+.homePage.sapMPageBgStandard {
+    background-color: #ffffff;
+}
+
+html.sap-desktop ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+.productsbuttonclass span.sapMBtnInner {
+    /*margin-left:15rem;*/
+    background-color: #e62f2d;
+    border-color: #e62f2d;
+    color: white;
+    height: 70%;
+}
+
+.productsbuttonclass .sapMBtnInner {
+    border-radius: 10px;
+    width: 5rem;
+    height: 2rem;
+}
+
+.productsbuttonclass .sapMBtnContent {
+    line-height: 1.4rem;
+}
+
+.centralbutton {
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 1px -1px 6px 0px #6a6d70;
+    padding: 13%;
+    margin-top: -11px;
+    background-color: #ffffff;
+}
+
+.labelclass {
+    color: black;
+    font-family: revert;
+}
+
+.labelclass2 {
+    color: black;
+    font-family: cursive;
+}
+
+.textclass {
+    font: menu;
+}
+
+.serviceStatusClass {
+    background: #f2f2f2;
+}
+
+.serviceStatusLabel {
+    color: #343538;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.sapMIBar.sapMIBar-CTX.servicesBarClass {
+    background-color: #f2f2f2;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.barLabel.sapMLabel {
+    color: black;
+    font-size: 1rem;
+}
+
+.servicesBarClass .sapMBarRight {
+    background: #89919a;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.stylefooter {
+    overflow: visible;
+    height: 4rem;
+}
+
+.redFooter {
+    color: #e62f2d;
+}
+.servicesVbox{
+	padding-bottom:3rem;
+}

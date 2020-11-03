@@ -1,6 +1,17 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.BookingAppointmentConfirmation"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="CONFIRMATION" class="aljBoldHeading">
+	<Page>
+			<customHeader>
+			<Bar class="stylebar">
+			
+				<contentMiddle>
+					<Label text="CONFIRMATION" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
 		<content>
 				<Bar class="aljWhiteBar">
 						<contentMiddle>
@@ -12,12 +23,12 @@
 				<core:Icon class="aljBigIcon" width="1.5rem" src="sap-icon://thumb-up"/>
 				</HBox>
 			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">
-				<Image src="./images/icons8-maintenance-64-4.png"></Image>
+				<Image src="./Images/icons8-maintenance-64-4.png"></Image>
 				<HBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd">
 					<Text text="Appointment Receipt" class="aljHeadingText aljBoldText"></Text>
 					<!--<Text class="aljBoldText" text="9876543235"></Text>-->
 				</HBox>
-				<Image src="images/drive.png"></Image>
+				<Image src="./Images/drive.png"></Image>
 			</HBox>
 				<!--<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">-->
 				<!--<Image src="./images/icons8-maintenance-64-4.png"></Image>-->
@@ -31,7 +42,7 @@
 			<List class="aljList">
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image width="1.4rem" src="images/carUs.png"></Image>
+						<Image width="1.4rem" src="Images/carUs.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Fortuner 2018"  class="aljHeadingText"></Text>
 						</VBox>
@@ -40,7 +51,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image  width="1.4rem" src="images/drive.png"></Image>
+						<Image  width="1.4rem" src="Images/drive.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="30 May 2020,09:00 AM-10:00 AM" class="aljHeadingText"></Text>
 						</VBox>
@@ -48,7 +59,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image width="1.4rem"  src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image width="1.4rem"  src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
 						</VBox>
@@ -57,7 +68,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image width="1.4rem"  src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image width="1.4rem"  src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Mohammad Ahmed,(Security Advisor)" class="aljHeadingText"></Text>
 						</VBox>
@@ -65,7 +76,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image  width="1.4rem" src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image  width="1.4rem" src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="987-65432-8735"  class="aljHeadingText"></Text>
 						</VBox>

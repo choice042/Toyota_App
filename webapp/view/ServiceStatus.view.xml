@@ -1,20 +1,31 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.ServiceStatus"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="SERVICE STATUS" class="aljBoldHeading">
+	<Page>
+	<customHeader>
+			<Bar class="stylebar">
+			
+				<contentMiddle>
+					<Label text="SERVICE STATUS" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
 		<content>
 			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">
-				<Image src="./images/icons8-maintenance-64-4.png"></Image>
+				<Image src="./Images/icons8-maintenance-64-4.png"></Image>
 				<HBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd aljBorderRed">
 					<Text text="Service order number : " class="aljHeadingText"></Text>
 					<Text class="aljHeadingText aljBoldText" text="9876543235"></Text>
 				</HBox>
-				<Image src="images/icons8-tow-truck-64-6.png"></Image>
+				<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 			</HBox>
 			<HBox justifyContent="Center" alignContent="Center">
 			<List>
 				<CustomListItem class="aljListLi">
 					<HBox alignItems="Center">
-						<Image src="images/carUs.png"></Image>
+						<Image src="Images/carUs.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Fortuner 2018" class="aljHeadingText"></Text>
 						</VBox>
@@ -29,7 +40,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="30 May 2020,09:00 AM-10:00 AM" class="aljHeadingText"></Text>
 						</VBox>
@@ -37,16 +48,16 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
 						</VBox>
-						<Image src="images/mapIcon.png" press="onMapOpen" width="1.3rem"></Image>
+						<Image src="Images/mapIcon.png" press="onMapOpen" width="1.3rem"></Image>
 					</HBox>
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Mohammad Ahmed,(Security Advisor)" class="aljHeadingText"></Text>
 						</VBox>
@@ -54,7 +65,7 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="987-65432-8735" class="aljHeadingText"></Text>
 						</VBox>
