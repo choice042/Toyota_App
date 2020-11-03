@@ -136,13 +136,13 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .aljSwitch .sapMSwt.sapMSwtOn:not(.sapMSwtAcceptReject) {
-    background: #f9eff1;
-    border-color: #ca0404;
+    background: #f9eff1 !important;
+    border-color: #ca0404 !important;
 }
 
 .aljSwitch .sapMSwt.sapMSwtOn:not(.sapMSwtAcceptReject) .sapMSwtHandle {
-    background: #ff0000;
-    border-color: #c10000;
+    background: #ff0000 !important;
+    border-color: #c10000 !important;
 }
 
 .aljSwitch .sapMSwtOn .sapMSwtHandle,
