@@ -1,35 +1,46 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.ServiceStatus"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.BookingAppointmentConfirmation"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="SERVICE STATUS" class="aljBoldHeading">
+	<Page title="CONFIRMATION" class="aljBoldHeading">
 		<content>
+				<Bar class="aljWhiteBar">
+						<contentMiddle>
+							<Text class="aljSkyBlueText aljBoldText" text="APPOINTMENT SUCCESSFULLY BOOKED"></Text>
+						</contentMiddle>
+					
+					</Bar>
+				<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">
+				<core:Icon class="aljBigIcon" width="1.5rem" src="sap-icon://thumb-up"/>
+				</HBox>
 			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">
 				<Image src="./images/icons8-maintenance-64-4.png"></Image>
-				<HBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd aljBorderRed">
-					<Text text="Service order number : " class="aljHeadingText"></Text>
-					<Text class="aljHeadingText aljBoldText" text="9876543235"></Text>
+				<HBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd">
+					<Text text="Appointment Receipt" class="aljHeadingText aljBoldText"></Text>
+					<!--<Text class="aljBoldText" text="9876543235"></Text>-->
 				</HBox>
-				<Image src="images/icons8-tow-truck-64-6.png"></Image>
+				<Image src="images/drive.png"></Image>
 			</HBox>
-			<HBox justifyContent="Center" alignContent="Center">
-			<List>
+				<!--<HBox class="sapUiSmallMarginTop sapUiSmallMarginBottom" justifyContent="Center" alignContent="Center">-->
+				<!--<Image src="./images/icons8-maintenance-64-4.png"></Image>-->
+				<HBox class="sapUiMediumMarginBegin sapUiSmallMarginTop sapUiSmallMarginBottom sapUiMediumMarginEnd"  justifyContent="Center" alignContent="Center">
+					<Text text="Service order number : " class="aljHeadingText aljRedBorderText"></Text>
+					<Text class="aljBoldText aljRedBorderText" text=" 9876543235"></Text>
+				</HBox>
+				<!--<Image src="images/icons8-tow-truck-64-6.png"></Image>-->
+			<!--</HBox>-->
+			<HBox  justifyContent="Center" alignContent="Center">
+			<List class="aljList">
 				<CustomListItem class="aljListLi">
-					<HBox alignItems="Center">
-						<Image src="images/carUs.png"></Image>
+					<HBox>
+						<Image width="1.4rem" src="images/carUs.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
-							<Text text="Fortuner 2018" class="aljHeadingText"></Text>
+							<Text text="Fortuner 2018"  class="aljHeadingText"></Text>
 						</VBox>
-						<Text text="IN" class="aljBoldText sapUiTinyMarginEnd"></Text>
-						<Switch class="aljSwitch" state="false" customTextOn=" " customTextOff=" ">
-							<!--<layoutData>-->
-							<!--	<FlexItemData growFactor="1"/>-->
-							<!--</layoutData>-->
-						</Switch>
-						<Text text="OUT" class="aljBoldText sapUiTinyMarginBegin"></Text>
+					
 					</HBox>
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image  width="1.4rem" src="images/drive.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="30 May 2020,09:00 AM-10:00 AM" class="aljHeadingText"></Text>
 						</VBox>
@@ -37,16 +48,16 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image width="1.4rem"  src="images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
 						</VBox>
-						<Image src="images/mapIcon.png" press="onMapOpen" width="1.3rem"></Image>
+					
 					</HBox>
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image width="1.4rem"  src="images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 							<Text text="Mohammad Ahmed,(Security Advisor)" class="aljHeadingText"></Text>
 						</VBox>
@@ -54,11 +65,11 @@
 				</CustomListItem>
 				<CustomListItem class="aljListLi">
 					<HBox>
-						<Image src="images/icons8-tow-truck-64-6.png"></Image>
+						<Image  width="1.4rem" src="images/icons8-tow-truck-64-6.png"></Image>
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
-							<Text text="987-65432-8735" class="aljHeadingText"></Text>
+							<Text text="987-65432-8735"  class="aljHeadingText"></Text>
 						</VBox>
-						<core:Icon src="sap-icon://call" press="onCall"></core:Icon>
+					
 					</HBox>
 				</CustomListItem>
 			</List>

@@ -6,5 +6,6 @@
 				</content>
 				<Button text="Service Status" press="serviceStatus"></Button>
 				<Button text="Products" press="Products"></Button>
+					<Button text="Confirmation Booking" press="onPressConfirm"></Button>
 			</Page>
 </mvc:View>

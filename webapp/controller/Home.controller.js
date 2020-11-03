@@ -14,6 +14,9 @@ serviceStatus: function(){
 },
 Products: function(){
 	this.oRouter.navTo("Products");
+},
+onPressConfirm: function(){
+	this.oRouter.navTo("confirmAppointment");
 }
 
 	});

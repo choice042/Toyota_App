@@ -58,6 +58,29 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*  CUSTOM CLASSES   */
 
+/*BOOKING CONFIRMATION*/
+.aljBoldHeading .sapMIBar-CTX .sapMTitle {
+    color: #ffffff;
+    font-weight: BOLD;
+}
+.aljRedBorderText.sapMText {
+    BORDER-BOTTOM: 1PX SOLID RED;
+}
+.aljSkyBlueText.sapMText {
+    color: #00D1CE;
+}
+.aljBigIcon.sapUiIcon {
+    font-size: xxx-large !important;
+}
+
+.aljWhiteBar.sapMBar {
+    BACKGROUND-COLOR: WHITE;
+    height: 2.75rem;
+    line-height: 2.75rem;
+}
+
+/*ServiceStatus*/
+
 .aljMapDialog.sapMDialog {
     box-sizing: content-box;
     min-height: 30.75rem;
@@ -84,25 +107,6 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     line-height: 2.125rem;
     color: #ff0000;
 }
-/*ServiceStatus*/
-
-
-/*.aljPadding.sapMBarLeft, .sapMBarRight, .sapMBarPH {*/
-
-
-/*    padding-left: 1.5rem;*/
-
-
-/*    height: 1.5rem;*/
-
-
-/*    padding-right: 1.5rem;*/
-
-
-/*    line-height: 2.75rem;*/
-
-
-/*}*/
 
 .aljPadding.sapMBar {
     box-shadow: inset 0 -0.0625rem #d9d9d900;
@@ -194,8 +198,8 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .aljList {
-    padding-left: 11%;
-    padding-right: 11%;
+    padding-left: 7%;
+    /*padding-right: 11%;*/
 }
 
 .aljListLi.sapMLIB {

@@ -59,16 +59,16 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}],
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			],
 			"js": [
-
 				{
 					"uri": "model/gMapsMarker.js"
 				}
 			]
-
 		},
 		"routing": {
 			"config": {
@@ -80,31 +80,41 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteApp",
-				"pattern": "",
-				"target": [
-					"Home"
-				]
-			}, {
-				"name": "ServiceStatus",
-				"pattern": "hello",
-				"target": [
-					"ServiceStatus"
-				]
-			}, {
-				"name": "Home",
-				"pattern": "Homeview",
-				"target": [
-					"Home"
-				]
-			}, {
-				"name": "Products",
-				"pattern": "Productsview",
-				"target": [
-					"Products"
-				]
-			}],
+			"routes": [
+				{
+					"name": "RouteApp",
+					"pattern": "",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "ServiceStatus",
+					"pattern": "hello",
+					"target": [
+						"ServiceStatus"
+					]
+				},
+				{
+					"name": "Home",
+					"pattern": "Homeview",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "Products",
+					"pattern": "Productsview",
+					"target": [
+						"Products"
+					]
+				},
+				{
+					"name":"confirmAppointment",
+					"pattern":"confirmAppointment",
+					"target":["BookingAppointmentConfirmation"]
+				}
+			],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
@@ -123,6 +133,10 @@
 				"Products": {
 					"viewType": "XML",
 					"viewName": "Products"
+				},
+				"BookingAppointmentConfirmation": {
+					"viewType": "XML",
+					"viewName": "BookingAppointmentConfirmation"
 				}
 			}
 		}
