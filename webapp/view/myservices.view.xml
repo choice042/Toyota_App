@@ -23,7 +23,7 @@
 				<VBox class="sapUiMediumMarginBegin sapUiSmallMarginTop myServicesHbox">
 					<HBox>
 						<VBox>
-							<Image src="./Images/Artboard2.png"></Image>
+							<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
 							<Text text="VIN:LS81234" class="myservicesText1"></Text>
 							<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
 						</VBox>
@@ -37,7 +37,7 @@
 				<VBox class="sapUiMediumMarginBegin sapUiSmallMarginTop myServicesHbox">
 					<HBox>
 						<VBox>
-							<Image src="./Images/Artboard2.png"></Image>
+							<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
 							<Text text="VIN:RSS81234" class="myservicesText1"></Text>
 							<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
 						</VBox>

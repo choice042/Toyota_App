@@ -413,8 +413,10 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
     background: #ffffff;
     border-top-left-radius: 1rem;
     border-radius: 1rem;
-    padding: 0.9rem;
+    padding: 0.6rem;
+    height: 115px;
 }
+
 
 .myservicesBtnClick .sapMBtnInner {
     border: 0.1rem solid #f3979f !important;
@@ -436,10 +438,14 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
 }
 
 .myserviceKnowmoreBtn {
-    margin-left: 4.5rem;
+    margin-left: 5.2rem;
 }
 .myservicesText1 {
 	color: black;
     font-weight: bold;
     font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+.myservicesimg{
+	height: 12px;
+    width: 77.5px;
 }
