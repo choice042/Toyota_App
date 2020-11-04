@@ -1,8 +1,17 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.Products"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 
-			<Page title="New">
-				<content></content>
+			<Page title="PRODUCTS" class="aljBoldHeading">
+				<content>
+					<VBox>
+						<Bar>
+							<contentLeft><Text class="aljRedBorderText" text="Select Vehicle"></Text>  </contentLeft>	
+								<contentRight><Button text="+Add Vehicle"></Button></contentRight>	
+						</Bar>
+						
+					
+					</VBox>
+				</content>
 			</Page>
 	
 </mvc:View>
