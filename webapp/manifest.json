@@ -122,6 +122,13 @@
 					"target": [
 						"Notifications"
 					]
+				},
+				{
+					"name": "myservices",
+					"pattern": "myservices",
+					"target": [
+						"myservices"
+					]
 				}
 			],
 			"targets": {
@@ -150,6 +157,10 @@
 				"Notifications": {
 					"viewType": "XML",
 					"viewName": "Notifications"
+				},
+				"myservices": {
+					"viewType": "XML",
+					"viewName": "myservices"
 				}
 			}
 		}

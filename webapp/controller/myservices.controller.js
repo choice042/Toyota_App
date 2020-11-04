@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.Notifications", {
+	return Controller.extend("inc.demo.Toyota.controller.myservices", {
 
 		onInit: function () {
 

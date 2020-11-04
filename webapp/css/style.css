@@ -308,7 +308,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #ffffff;
 }
 
-html.sap-desktop::-webkit-scrollbar-thumb {
+html.sap-desktop ::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 

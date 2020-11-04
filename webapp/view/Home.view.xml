@@ -133,13 +133,13 @@
 				</Bar>
 				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass">
 					<contentLeft>
-						<Image src="./Images/myservices1.png"></Image>
+						<Image src="./Images/myservices1.png" press="onMyServicesPress"></Image>
 					</contentLeft>
 					<contentMiddle>
 						<Label text="MY SERVICES" class="barLabel"></Label>
 					</contentMiddle>
 					<contentRight >
-						<Image src="./Images/Path1.png"></Image>
+						<Image src="./Images/Path1.png" press="onMyServicesPress"></Image>
 					</contentRight>
 				</Bar>
 			</VBox>

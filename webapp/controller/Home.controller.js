@@ -55,6 +55,9 @@ sap.ui.define([
 		},
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
+		},
+		onMyServicesPress: function () {
+			this.oRouter.navTo("myservices");
 		}
 
 	});
