@@ -14,6 +14,7 @@ sap.ui.define([
 		},
 		onClose: function () {
 			this.getRouter().navTo("Home");
+			console.log("sample");
 		}
 
 	});
