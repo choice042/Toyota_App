@@ -110,9 +110,18 @@
 					]
 				},
 				{
-					"name":"confirmAppointment",
-					"pattern":"confirmAppointment",
-					"target":["BookingAppointmentConfirmation"]
+					"name": "confirmAppointment",
+					"pattern": "confirmAppointment",
+					"target": [
+						"BookingAppointmentConfirmation"
+					]
+				},
+				{
+					"name": "Notifications",
+					"pattern": "Notifications",
+					"target": [
+						"Notifications"
+					]
 				}
 			],
 			"targets": {
@@ -137,6 +146,10 @@
 				"BookingAppointmentConfirmation": {
 					"viewType": "XML",
 					"viewName": "BookingAppointmentConfirmation"
+				},
+				"Notifications": {
+					"viewType": "XML",
+					"viewName": "Notifications"
 				}
 			}
 		}

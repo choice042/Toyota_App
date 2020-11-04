@@ -10,7 +10,7 @@
 					<Label text="TOYOTA SERVICE" class="logo"></Label>
 				</contentMiddle>
 				<contentRight>
-					<Button icon="sap-icon://bell" class="btn"></Button>
+					<Button icon="sap-icon://bell" class="btn" press="onNotificationPress"></Button>
 				</contentRight>
 			</Bar>
 		</customHeader>

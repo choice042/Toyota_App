@@ -44,6 +44,9 @@ sap.ui.define([
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 		},
+		onNotificationPress: function () {
+			this.oRouter.navTo("Notifications");
+		},
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
@@ -53,7 +56,6 @@ sap.ui.define([
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		}
-		
 
 	});
 

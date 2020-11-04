@@ -58,17 +58,22 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*  CUSTOM CLASSES   */
 
+
 /*BOOKING CONFIRMATION*/
+
 .aljBoldHeading .sapMIBar-CTX .sapMTitle {
     color: #ffffff;
     font-weight: BOLD;
 }
+
 .aljRedBorderText.sapMText {
     BORDER-BOTTOM: 1PX SOLID RED;
 }
+
 .aljSkyBlueText.sapMText {
     color: #00D1CE;
 }
+
 .aljBigIcon.sapUiIcon {
     font-size: xxx-large !important;
 }
@@ -78,6 +83,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     height: 2.75rem;
     line-height: 2.75rem;
 }
+
 
 /*ServiceStatus*/
 
@@ -93,14 +99,17 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     height: 100%;
     min-height: 30.75rem;
 }
+
 .aljMapVbox.sapMVBox {
     position: inherit !important;
 }
+
 .aljCloseRedButton .sapMBtnInner {
     background-color: #fff0;
     border: .0625rem solid #0854a000;
     border-radius: 0.2rem;
 }
+
 .aljCloseRedButton .sapMBtnIcon {
     width: .125rem;
     font-size: 1.4rem;
@@ -233,7 +242,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: .7rem !important;
     color: #fb0000 !important;
 }
+
+
 /*Home*/
+
 .sapMIBar.sapMIBar-CTX.stylebar {
     background-color: #e62f2d;
 }
@@ -296,7 +308,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #ffffff;
 }
 
-html.sap-desktop ::-webkit-scrollbar-thumb {
+html.sap-desktop::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 
@@ -373,8 +385,16 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
 }
 
 .redFooter {
-    color: #e62f2d;
+    color: #e62f2d !important;
 }
-.servicesVbox{
-	padding-bottom:3rem;
+
+.servicesVbox {
+    padding-bottom: 3rem;
+}
+
+
+/*NOTIFICATIONS*/
+
+.sapMNLITitleText {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
