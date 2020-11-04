@@ -398,3 +398,48 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
 .sapMNLITitleText {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
+
+/*MY SERVICES*/
+
+.myServicesVbox {
+    background: #dadada;
+    border-top-left-radius: 2rem;
+    padding: 1rem;
+    padding-bottom: 6rem;
+}
+
+.myServicesHbox {
+    background: #ffffff;
+    border-top-left-radius: 1rem;
+    border-radius: 1rem;
+    padding: 0.9rem;
+}
+
+.myservicesBtnClick .sapMBtnInner {
+    border: 0.1rem solid #f3979f !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.myservicesBtnnotClick .sapMBtnInner {
+    border: .0625rem solid #d2d2d2 !important;
+    color: #d2d2d2 !important;
+    font-weight: bold;
+}
+
+.myserviceKnowmoreBtn .sapMBtnInner {
+    background-color: #68696c;
+    border: .0625rem solid #68696c;
+    border-radius: 1rem;
+    color: white;
+}
+
+.myserviceKnowmoreBtn {
+    margin-left: 4.5rem;
+}
+.myservicesText1 {
+	color: black;
+    font-weight: bold;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
