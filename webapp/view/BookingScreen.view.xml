@@ -1,10 +1,144 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.BookingScreen"
-	xmlns:html="http://www.w3.org/1999/xhtml">
-	<App>
-		<pages>
-			<Page title="Title">
-				<content></content>
-			</Page>
-		</pages>
-	</App>
+<mvc:View controllerName="inc.demo.Toyota.controller.BookingScreen" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="BOOK A SERVICE" titleAlignment="Center" class="bookHeader">
+					<content>
+						<VBox class="userInfo">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop basicInfo">
+								<Image src="Images/business_cardLogo.png" class="iconStyle"/>
+								<Label text="Basic Information" class="labelStyle"/>
+							</HBox>
+							<VBox alignItems="Start" class="sapUiSmallMarginBeginEnd sapUiSmallMarginBottom">
+								<Text text="Name: Abhishek Jain" class="basicInformationLabel"/>
+								<Text text="Mobile Number: 8235698592" class="basicInformationLabel"/>
+								<Text text="Email ID: abhishek@gmail.com" class="basicInformationLabel"/>
+								<Text text="National ID: 2345987601" class="basicInformationLabel"/>
+							</VBox>
+						</VBox>
+						<VBox class="selectVehicle">
+							<HBox justifyContent="SpaceBetween">
+								<VBox renderType="Bare">
+									<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
+										<Image src="Images/vehicleIcon.png" class="iconStyle"/>
+										<Label text="Select Vehicle" class="labelStyle"/>
+									</HBox>
+								</VBox>
+								<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
+									<Button class="selectVehicleBtn" text="+ Add Vehicle" width="100%"/>
+								</VBox>
+							</HBox>
+							<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
+								class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
+								<HBox items="{oDataGlobalModel>/carCategory}" renderType="Bare">
+									<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList" type="XML"/>
+								</HBox>
+							</ScrollContainer>
+							<HBox justifyContent="End" class=" sapUiSmallMarginBeginEnd sapUiSmallMarginBottom">
+								<Button text="Book without vehicle" class="withoutVehicleBtn"/>
+							</HBox>
+						</VBox>
+						<VBox class="userInfo sapUiSmallMarginBottom">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop kmInfo">
+								<Image src="Images/business_cardLogo.png" class="iconStyle"/>
+								<Label text="Kilometer Reading" class="labelStyle"/>
+							</HBox>
+							<VBox class="sapUiSmallMarginTop">
+								<HBox justifyContent="Center">
+									<Button text="79000" class="kmBtn sapUiTinyMarginTop"/>
+								</HBox>
+								<HBox justifyContent="End">
+									<Label text=" Update KM reading for better suggestions*" class="sapUiSmallMarginTop"/>
+								</HBox>
+							</VBox>
+						</VBox>
+						<VBox class="selectProduct">
+							<HBox justifyContent="SpaceBetween">
+								<VBox renderType="Bare">
+									<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
+										<Image src="Images/productIcon.png" class="iconStyle"/>
+										<Label text="Product" class="labelStyle"/>
+									</HBox>
+								</VBox>
+								<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
+									<Button class="selectVehicleBtn" text="+ Add Product" width="100%"/>
+								</VBox>
+							</HBox>
+							<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
+								class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
+								<HBox items="{oDataGlobalModel>/productCategory}" renderType="Bare">
+									<core:Fragment fragmentName="inc.demo.Toyota.fragment.ProductList" type="XML"/>
+								</HBox>
+							</ScrollContainer>
+							<HBox justifyContent="End" class=" sapUiSmallMarginBeginEnd ">
+								<Button text="Book without product" class="withoutVehicleBtn"/>
+							</HBox>
+							<VBox>
+								<HBox class="sapUiSmallMarginBeginEnd">
+									<Label text="Description" class="labelStyle"/>
+								</HBox>
+								<Input placeholder="Add Service Description" class="sapUiSmallMarginBegin desInput" width="80%"></Input>
+							</VBox>
+						</VBox>
+						<VBox class="locationInfo">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop kmInfo">
+								<Image src="Images/locationIcon.png" class="iconStyle"/>
+								<Label text="Service Center" class="labelStyle"/>
+							</HBox>
+							<Label text="Region" class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/>
+							<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+							<Label text="Service Center" class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/>
+							<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+							<HBox items="{oDataGlobalModel>/locationCategory}" renderType="Bare" class="sapUiSmallMarginTop locationScroller">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.LocationList" type="XML"/>
+							</HBox>
+						</VBox>
+						<VBox class="dateAndTime">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop dateHeader">
+								<Image src="Images/dateIcon.png" class="iconStyle"/>
+								<Label text="Date and Time" class="labelStyle"/>
+							</HBox>
+							<HBox class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" alignItems="Center">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.Calender" type="XML"/>
+							</HBox>
+							<HBox class="timeslotCss">
+								<Label text="Timeslot" class="timeHeaderStyle"/>
+							</HBox>
+							<HBox items="{oDataGlobalModel>/timeSlot}" renderType="Bare" class="sapUiTinyMarginTop timeScroller">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.Timelist" type="XML"/>
+							</HBox>
+						</VBox>
+						<VBox class="selfDrive">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop selfDriveHeader">
+								<Image src="Images/business_cardLogo.png" class="iconStyle"/>
+								<Label text="Self Drive and Pick-Up" class="labelStyle"/>
+							</HBox>
+							<HBox items="{oDataGlobalModel>/pickCategory}" renderType="Bare" class="sapUiTinyMarginTop pickUpTile">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.PickUpList" type="XML"/>
+		
+							</HBox>
+							
+						</VBox>
+							<VBox class="dateAndTime">
+							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop pickupHeader">
+								<Image src="Images/dateIcon.png" class="iconStyle"/>
+								<Label text="Pick up Date and Time" class="labelStyle"/>
+							</HBox>
+							<HBox class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" alignItems="Center">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.Calender" type="XML"/>
+							</HBox>
+							<HBox class="timeslotCss">
+								<Label text="Time" class="timeHeaderStyle"/>
+							</HBox>
+							<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+						</VBox>
+					</content>
+					<!--<footer >-->
+					<!--	<core:Fragment fragmentName="inc.demo.Toyota.fragment.BookServiceFooter" type="XML"></core:Fragment>-->
+					<!--</footer>-->
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>

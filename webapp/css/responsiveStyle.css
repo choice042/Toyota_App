@@ -1,0 +1,20 @@
+@media screen and (max-width: 375px) {
+    .basicInfo {
+        border-bottom: 2px solid #CE0E2D;
+        width: calc(100% / 2.1);
+    }
+    .userInfo {
+        background-color: white;
+    }
+    .vehicleInfo {
+        border-bottom: 2px solid #CE0E2D;
+        width: calc(100% / 1.15);
+    }
+    .kmInfo {
+        border-bottom: 2px solid #CE0E2D;
+        width: calc(100% / 2);
+    }
+    .locCombo .sapMInputBaseContentWrapper {
+        width: 340px !important;
+    }
+}

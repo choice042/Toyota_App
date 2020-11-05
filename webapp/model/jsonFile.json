@@ -1,0 +1,84 @@
+{
+	"carCategory": [{
+		"carName": "Supra 2020",
+		"src": "images/supraCar.png",
+		"VIN": "LS5812S2176176",
+		"isSelected": true
+		
+	}, {
+		"carName": "Camry 2019",
+		"src": "images/camryCar.png",
+		"VIN": "LS5812S2176176",
+		"isSelected": true
+		
+	}, {
+		"carName": "Supra 2020",
+		"src": "images/supraCar.png",
+		"VIN": "LS5812S2176176",
+		"isSelected": true
+		
+	}, {
+		"carName": "Camry 2019",
+		"src": "images/camryCar.png",
+		"VIN": "LS5812S2176176",
+		"isSelected": true
+		
+	}],
+	"productCategory": [{
+		"productName": "Brake Service",
+		"src": "images/brakeService.png",
+		"isSelected": true,
+		"productPrice": "SAR 100"
+	}, {
+		"productName": "Battery",
+		"src": "images/battery.png",
+		"isSelected": true,
+		"productPrice": "SAR 150"
+	}, {
+		"productName": "AC Service",
+		"src": "images/acService.png",
+		"isSelected": true,
+		"productPrice": "SAR 200"
+	}, {
+		"productName": "Brake Service",
+		"src": "images/brakeService.png",
+		"isSelected": true,
+		"productPrice": "SAR 100"
+	}],
+	"locationCategory": [{
+		"locationName": "Madina Road"
+
+	}, {
+		"locationName": "Madina Road"
+
+	}, {
+		"locationName": "Madina Road"
+
+	}, {
+		"locationName": "Madina Road"
+
+	}],
+	"timeSlot": [{
+		"time": "10:00-10:30am"
+
+	}, {
+		"time": "10:30-11:00am"
+
+	}, {
+		"time": "11:00-11:30am"
+
+	}, {
+		"time": "11:30-12:00am"
+
+	}],
+	"pickCategory": [{
+		"src": "images/selfPickUp.png",
+		"pickUpFacility": "Self Drive"
+		
+
+	}, {
+		"src": "images/deliver.png",
+    	"pickUpFacility": "Pick Up and Deliver",
+    	"pickUpTerms": "online payments only*"
+	}]
+}

@@ -476,3 +476,343 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
  }
 
 
+
+/*bijay's css*/
+
+/*standard class*/
+
+.sapMIBar-CTX .sapMTitle {
+    color: white;
+    text-shadow: none;
+}
+
+:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive {
+    color: #ffffff !important;
+    background-color: #CE0E2D;
+    text-shadow: none;
+    border-color: #CE0E2D;
+}
+
+
+/*standard class ends*/
+
+.bookHeader {
+    background-color: white;
+}
+
+.bookHeader.sapMBarLeft,
+.sapMBarRight,
+.sapMBarPH {
+    background-color: #CE0E2D;
+    color: white;
+}
+
+.basicInformationLabel {
+    font-size: 0.9375rem !important;
+    margin-top: 0.5rem !important;
+}
+
+.basicInfo {
+    border-bottom: 2px solid #CE0E2D;
+    width: calc(100% / 7);
+}
+
+.kmInfo {
+    border-bottom: 2px solid #CE0E2D;
+    width: calc(100% / 7);
+}
+
+.dateHeader {
+    border-bottom: 2px solid #CE0E2D;
+    width: calc(100% / 2.5);
+}
+.selfDriveHeader{
+	 border-bottom: 2px solid #CE0E2D;
+    width: calc(100% / 1.8);
+}
+.pickupHeader{
+	width: calc(100% / 1.6);
+	border-bottom: 2px solid #CE0E2D;
+}
+
+.iconStyle {}
+
+.labelStyle {
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    font-weight: 550 !important;
+    font-size: 16px;
+    color: black;
+}
+
+.timeHeaderStyle {
+    margin-top: 0.25rem;
+    font-weight: 550 !important;
+    font-size: 16px;
+    color: black;
+}
+.labelFacilityStyle{
+	font-size: 14px;
+    color: black;
+    font-weight: 550 !important;
+    margin-top:1.5rem;
+}
+.termStyle{
+
+	margin-top:0.5rem;
+	font-size: 13px;
+}
+
+.userInfo {
+    background-color: white;
+}
+
+.locationInfo {
+    background-color: white;
+    border-top-left-radius: 27px;
+    padding-bottom: 1rem;
+}
+
+.addVehicleAlignCSS {
+    text-align: left;
+    margin: 0.5rem 0 0 1rem !important;
+}
+
+.vehicleInfo {
+    border-bottom: 2px solid #CE0E2D;
+    width: 100%;
+}
+
+.carBox {
+    min-width: 154px;
+    min-height: 150px;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: white;
+}
+
+.productBox {
+    min-width: 150px;
+    min-height: 160px;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: white;
+}
+
+.locationBox {
+    max-width: 150px;
+    min-height: 75px;
+    border: 1px solid #979797;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin: 0.5rem;
+    background: white;
+}
+
+.calenderBox {
+    min-width: 329px;
+    min-height: 82px;
+    border: 1px solid #979797;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: white;
+}
+
+.timeBox {
+    min-width: 110px;
+    min-height: 60px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: #D9D9D9;
+}
+.pickupBox{
+	width:152px;
+	min-width: 152px;
+    min-height: 150px;
+    border: 1px solid #979797;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: #ffffff;
+}
+.pickUpTile{
+	margin-left:1.2rem;
+}
+
+.locationList {
+    margin-top: 10px;
+    background: #ffffff;
+}
+
+.timeList {
+    margin-top: 10px;
+    background: #D9D9D9;
+}
+
+.locationList.sapMLIB.sapMLIBActive,
+.aljVehicleListHorStyle.sapMLIB.sapMLIBActive,
+.aljMoreTilesStyle .sapMLIB.sapMLIBActive {
+    background: none;
+}
+
+
+/*.selectedCarCss {*/
+
+
+/*    border: solid #CE0E2D 1px !important;*/
+
+
+/*}*/
+
+.carList {
+    margin-top: 10px;
+    background: #D9D9D9;
+}
+
+.carList.sapMLIB.sapMLIBActive,
+.aljVehicleListHorStyle.sapMLIB.sapMLIBActive,
+.aljMoreTilesStyle .sapMLIB.sapMLIBActive {
+    background: none;
+}
+
+.timeList.sapMLIB.sapMLIBActive,
+.aljVehicleListHorStyle.sapMLIB.sapMLIBActive,
+.aljMoreTilesStyle .sapMLIB.sapMLIBActive {
+    background: none;
+}
+
+.withoutVehicleBtn .sapMBtnInner {
+    border-radius: 14px;
+    background: #E5E5E5;
+    width: 205px;
+    height: 36px;
+    color: black;
+    border: none;
+}
+
+.selectVehicleBtn .sapMBtnInner {
+    border-radius: 14px;
+    background: #E5E5E5;
+    width: 125px;
+    height: 36px;
+    color: black;
+    border: 1px solid #EB0A1E;
+}
+
+.selectVehicle {
+    background-color: #D9D9D9;
+    border-top-left-radius: 27px;
+}
+
+.selectProduct {
+    background-color: #D9D9D9;
+    border-top-left-radius: 27px;
+    padding-bottom: 1rem;
+}
+
+.dateAndTime {
+    background-color: #D9D9D9;
+    border-top-left-radius: 27px;
+    padding-bottom: 2rem;
+}
+
+.selfDrive {
+    background-color: #ffffff;
+    border-top-left-radius: 27px;
+    padding-bottom: 2rem;
+}
+
+.kmBtn .sapMBtnInner {
+    border-radius: 14px;
+    background: #ffffff;
+    width: 253px;
+    height: 45px;
+    color: black;
+    border: 1px solid #0799B2;
+}
+
+.kmBtn .sapMBtnContent {
+    line-height: 2.7rem !important;
+    position: absolute;
+    left: 6.5rem;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.desInput .sapMInputBaseContentWrapper {
+    width: 340px !important;
+    height: 36px !important;
+    border-radius: 14px;
+    border: 1px solid #0C9BA5;
+}
+
+.carImgBox {
+    min-height: 30px;
+}
+
+.locationScroller {
+    overflow: scroll;
+    margin-left: 0.5rem;
+}
+.locationList .html.sap-desktop ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+.timeScroller {
+    overflow: scroll;
+    margin-left: 0.5rem;
+}
+
+
+.locCombo .sapMInputBaseContentWrapper {
+    width: 640px !important;
+}
+
+.timeslotCss {
+    margin-left: 1.2rem;
+    border-bottom: 2px solid #CE0E2D;
+    width: calc(100% / 5);
+}
+
+
+/*.aljDescTextArea .sapMInputBaseContentWrapper {*/
+
+
+/*    border-radius: 0.5rem;*/
+
+
+/*    border: .0625rem solid #bababa;*/
+
+
+/*}*/
+
+
+/*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/
+
+
+/*    position: absolute;*/
+
+
+/*    right: 0.3rem;*/
+
+
+/*    color: black;*/
+
+
+/*    font-size: 0.6rem;*/
+
+
+/*}*/
+
+
+/*bijay's css*/
+
+

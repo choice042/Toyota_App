@@ -56,19 +56,23 @@
 				"settings": {
 					"bundleName": "inc.demo.Toyota.i18n.i18n"
 				}
+			},
+			"oDataGlobalModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+					"defaultBindingMode": "TwoWay"
+				}
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			],
-			"js": [
-				{
-					"uri": "model/gMapsMarker.js"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}, {
+				"uri": "css/responsiveStyle.css"
+			}],
+			"js": [{
+				"uri": "model/gMapsMarker.js"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -80,57 +84,49 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "RouteApp",
-					"pattern": "",
-					"target": [
-						"Home"
-					]
-				},
-				{
-					"name": "ServiceStatus",
-					"pattern": "hello",
-					"target": [
-						"ServiceStatus"
-					]
-				},
-				{
-					"name": "Home",
-					"pattern": "Homeview",
-					"target": [
-						"Home"
-					]
-				},
-				{
-					"name": "Products",
-					"pattern": "Productsview",
-					"target": [
-						"Products"
-					]
-				},
-				{
-					"name": "confirmAppointment",
-					"pattern": "confirmAppointment",
-					"target": [
-						"BookingAppointmentConfirmation"
-					]
-				},
-				{
-					"name": "Notifications",
-					"pattern": "Notifications",
-					"target": [
-						"Notifications"
-					]
-				},
-				{
-					"name": "myservices",
-					"pattern": "myservices",
-					"target": [
-						"myservices"
-					]
-				}
-			],
+			"routes": [{
+				"name": "RouteApp",
+				"pattern": "",
+				"target": [
+					"Home"
+				]
+			}, {
+				"name": "ServiceStatus",
+				"pattern": "hello",
+				"target": [
+					"ServiceStatus"
+				]
+			}, {
+				"name": "Home",
+				"pattern": "Homeview",
+				"target": [
+					"Home"
+				]
+			}, {
+				"name": "Products",
+				"pattern": "Productsview",
+				"target": [
+					"Products"
+				]
+			}, {
+				"name": "confirmAppointment",
+				"pattern": "confirmAppointment",
+				"target": [
+					"BookingAppointmentConfirmation"
+				]
+			}, {
+				"name": "Notifications",
+				"pattern": "Notifications",
+				"target": [
+					"Notifications"
+				]
+			}, {
+				"name": "myservices",
+				"pattern": "myservices",
+				"target": [
+					"myservices"
+				]
+			}],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
