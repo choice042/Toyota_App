@@ -308,7 +308,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #ffffff;
 }
 
-html.sap-desktop ::-webkit-scrollbar-thumb {
+.tilesClass html.sap-desktop ::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 
@@ -398,6 +398,13 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
 .sapMNLITitleText {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+.notificationsDotClass{
+	border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    top: 1.5rem;
+}
 
 
 /*MY SERVICES*/
@@ -415,6 +422,7 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     padding: 0.6rem;
     height: 115px;
+    width: 350px;
 }
 
 
@@ -449,3 +457,22 @@ html.sap-desktop ::-webkit-scrollbar-thumb {
 	height: 12px;
     width: 77.5px;
 }
+
+.wbCustomTaskLineDone {
+    border-left: 1px solid #979797;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 88%;
+    top: 34px;
+}
+
+ .wbCustomTaskIcon {
+    top: 0.625rem;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+ }
+
+

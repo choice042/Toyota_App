@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.Notifications"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page>
+	<Page class="homePage">
 		<customHeader>
 			<Bar class="stylebar">
 				<contentMiddle>
@@ -12,7 +12,10 @@
 			</Bar>
 		</customHeader>
 		<content>
+			<HBox class="sapUiSmallMarginBegin" width="100%">
+				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
 			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
+			</HBox>
 			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
 			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="Yesterday"></NotificationListItem>
 		</content>
