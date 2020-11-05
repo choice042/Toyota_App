@@ -37,7 +37,7 @@ sap.ui.define([
 				"lat": 25.5941,
 				"lgn": 85.1376,
 				"maptype": "ROADMAP",
-				"zoom": "4"
+				"zoom": "10"
 			};
 			var latlng = new google.maps.LatLng(options.lat, options.lgn);
 			var that=this;
@@ -80,20 +80,8 @@ sap.ui.define([
 		},
 		addMarker: function(map){
 				var locations = [{
-					"lat": 25.5941,
-				"lng": 85.1376,
-				"id":67
-				},{
-					"lat": 25.4182,
-				"lng": 86.1272,
-				"id":66
-				},{
-					"lat": 24.6961,
-				"lng": 84.9870,
-				"id":67
-				},{
-					"lat": 25.0173,
-				"lng": 85.4162,
+					"lat": 24.5544,
+				"lng": 39.7146,
 				"id":67
 				}];
 				var location;
@@ -125,51 +113,7 @@ sap.ui.define([
 					// zIndex	 : 10,
 					map:map
 				});
-				// if (info) {
-				// var sTrackDiv;
-				// // if (info.track) {
-				// // 	sTrackDiv = '<div class="iw-title" width="100%"> <div with="50%">' + info.id + '</div>' +
-				// // 		'<div with="50%"> <button id="TrackShip"> Track </button> </div> </div>';
-				// // } else {
-				// sTrackDiv = '<div class="iw-title">' + info.id + '</div>';
-				// var shipIdiv;
-				// if (info.shipId) {
-				// 	shipIdiv = '<div class="iw-subTitle">Shipment Id - ' + info.shipId + '</div>';
-				// } else {
-				// 	shipIdiv = "";
-				// }
-
-				// if (!info.phone) {
-				// 	info.phone = "NA";
-				// }
-
-				// if (!info.email) {
-				// 	info.email = "NA";
-				// }
-
-				// // }
-				// var contentString = '<div id="iw-container">' +
-				// 	sTrackDiv +
-				// 	// '<div class="iw-title">' + info.id + '</div>' +
-				// 	'<div class="iw-content">' +
-				// 	shipIdiv +
-				// 	'<div class="iw-subTitle">Driver Details</div>' +
-				// 	'<img src="./css/media/truck.png" alt="Image" height="115" width="115">' +
-				// 	'<p class="podMapMarkerText"> Driver Name: ' + info.name + ' </p>' +
-				// 	'<p class="podMapMarkerText"> Location: ' + info.location + '</p>' +
-				// 	'<div class="iw-subTitle">Contacts</div>' +
-				// 	'<p class="podMapMarkerText">' +
-				// 	'Phone. ' + info.phone + '<br>e-mail: ' + info.email + '<br></p>' +
-				// 	'</div>' +
-				// 	'<div class="iw-bottom-gradient"></div>' +
-				// 	'</div>';
-
-				// var infowindow = new google.maps.InfoWindow({
-				// 	content: contentString
-				// });
-				// oPosMarker.addListener('mouseover', function () {
-				// 	// infowindow.open(map, oPosMarker);
-				// });
+			
 				oPosMarker.addListener('click', function (oDate) {
 
 					for (var i = 0; i < that.CenterMarkers.length; i++) {
@@ -217,7 +161,7 @@ sap.ui.define([
 			}
 		},
 		onMapClose:function(){
-			// this.getView().byId("redCloseButton").addStyleClass("aljCloseRedButton");
+		
 			this.mapBox.close();
 	},
 	onClose: function(){
