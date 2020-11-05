@@ -12,7 +12,7 @@ sap.ui.define([
              oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			 this.oDataGlobalModel = oDataGlobalModel;
 			 
-             
+             console.log("ALJ");
             
 		},
 		onCarPress: function(oEvent){
