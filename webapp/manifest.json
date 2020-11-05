@@ -162,9 +162,9 @@
 					"viewType": "XML",
 					"viewName": "myservices"
 				},
-				"BookAService": {
+				"BookingScreen": {
 					"viewType": "XML",
-					"viewName": "BookAService"
+					"viewName": "BookingScreen"
 				}
 			}
 		}
