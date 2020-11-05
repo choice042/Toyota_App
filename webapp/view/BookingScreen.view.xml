@@ -4,6 +4,16 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="BOOK A SERVICE" titleAlignment="Center" class="bookHeader">
+					<customHeader>
+						<Bar class="stylebar">
+							<contentLeft>
+								<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
+							</contentLeft>
+							<contentMiddle>
+								<Label text="BOOK A SERVICE" class="logo"></Label>
+							</contentMiddle>
+						</Bar>
+					</customHeader>
 					<content>
 						<VBox class="userInfo">
 							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop basicInfo">
@@ -116,11 +126,9 @@
 							</HBox>
 							<HBox items="{oDataGlobalModel>/pickCategory}" renderType="Bare" class="sapUiTinyMarginTop pickUpTile">
 								<core:Fragment fragmentName="inc.demo.Toyota.fragment.PickUpList" type="XML"/>
-		
 							</HBox>
-							
 						</VBox>
-							<VBox class="dateAndTime">
+						<VBox class="dateAndTime">
 							<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop pickupHeader">
 								<Image src="Images/dateIcon.png" class="iconStyle"/>
 								<Label text="Pick up Date and Time" class="labelStyle"/>

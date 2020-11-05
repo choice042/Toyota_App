@@ -122,13 +122,13 @@
 			<VBox class="servicesVbox">
 				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiTinyMarginTop servicesBarClass">
 					<contentLeft>
-						<Image src="./Images/calendar.png"></Image>
+						<Image src="./Images/calendar.png" press="onBookservicePress"></Image>
 					</contentLeft>
 					<contentMiddle>
 						<Label text="BOOK A SERVICE" class="barLabel"></Label>
 					</contentMiddle>
 					<contentRight>
-						<Image src="./Images/Path1.png"></Image>
+						<Image src="./Images/Path1.png" press="onBookservicePress"></Image>
 					</contentRight>
 				</Bar>
 				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass">

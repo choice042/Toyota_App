@@ -500,16 +500,16 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*standard class ends*/
 
-.bookHeader {
-    background-color: white;
-}
+/*.bookHeader {*/
+/*    background-color: white;*/
+/*}*/
 
-.bookHeader.sapMBarLeft,
-.sapMBarRight,
-.sapMBarPH {
-    background-color: #CE0E2D;
-    color: white;
-}
+/*.bookHeader .sapMBarLeft,*/
+/*.sapMBarRight,*/
+/*.sapMBarPH {*/
+/*    background-color: #CE0E2D;*/
+/*    color: white;*/
+/*}*/
 
 .basicInformationLabel {
     font-size: 0.9375rem !important;
@@ -784,6 +784,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     margin-left: 1.2rem;
     border-bottom: 2px solid #CE0E2D;
     width: calc(100% / 5);
+}
+.backBtnBooking .sapMBtnInner .sapMBtnIcon.sapMImg {
+    max-height: 1.5rem;
+    margin-top: 0.3rem;
 }
 
 

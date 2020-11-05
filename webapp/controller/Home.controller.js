@@ -58,6 +58,9 @@ sap.ui.define([
 		},
 		onMyServicesPress: function () {
 			this.oRouter.navTo("myservices");
+		},
+		onBookservicePress: function () {
+			this.oRouter.navTo("BookingScreen");
 		}
 
 	});

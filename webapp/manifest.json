@@ -126,6 +126,12 @@
 				"target": [
 					"myservices"
 				]
+			}, {
+				"name": "BookingScreen",
+				"pattern": "BookingScreen",
+				"target": [
+					"BookingScreen"
+				]
 			}],
 			"targets": {
 				"TargetApp": {

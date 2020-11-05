@@ -12,7 +12,7 @@ sap.ui.define([
              oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			 this.oDataGlobalModel = oDataGlobalModel;
 			 
-             console.log("ALJ");
+            this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             
 		},
 		onCarPress: function(oEvent){
@@ -32,6 +32,9 @@ sap.ui.define([
 			
 			oDataGlobalModel.setProperty(sPath + "isSelected" , true);
 			
+		},
+		onNavBack: function(){
+			this.oRouter.navTo("Home");
 		}
 	});
 });

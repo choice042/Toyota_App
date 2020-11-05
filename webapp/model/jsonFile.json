@@ -1,47 +1,47 @@
 {
 	"carCategory": [{
 		"carName": "Supra 2020",
-		"src": "images/supraCar.png",
+		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
 		
 	}, {
 		"carName": "Camry 2019",
-		"src": "images/camryCar.png",
+		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
 		
 	}, {
 		"carName": "Supra 2020",
-		"src": "images/supraCar.png",
+		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
 		
 	}, {
 		"carName": "Camry 2019",
-		"src": "images/camryCar.png",
+		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
 		
 	}],
 	"productCategory": [{
 		"productName": "Brake Service",
-		"src": "images/brakeService.png",
+		"src": "Images/brakeService.png",
 		"isSelected": true,
 		"productPrice": "SAR 100"
 	}, {
 		"productName": "Battery",
-		"src": "images/battery.png",
+		"src": "Images/battery.png",
 		"isSelected": true,
 		"productPrice": "SAR 150"
 	}, {
 		"productName": "AC Service",
-		"src": "images/acService.png",
+		"src": "Images/acService.png",
 		"isSelected": true,
 		"productPrice": "SAR 200"
 	}, {
 		"productName": "Brake Service",
-		"src": "images/brakeService.png",
+		"src": "Images/brakeService.png",
 		"isSelected": true,
 		"productPrice": "SAR 100"
 	}],
@@ -72,12 +72,12 @@
 
 	}],
 	"pickCategory": [{
-		"src": "images/selfPickUp.png",
+		"src": "Images/selfPickUp.png",
 		"pickUpFacility": "Self Drive"
 		
 
 	}, {
-		"src": "images/deliver.png",
+		"src": "Images/deliver.png",
     	"pickUpFacility": "Pick Up and Deliver",
     	"pickUpTerms": "online payments only*"
 	}]
