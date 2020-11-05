@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<CustomListItem class="locationList" type="Active" >
+	
+	<VBox alignItems="Center" visible="{path: 'oDataGlobalModel>isSelected', formatter:'com.demo.co.ALJ_DEV.util.formatter.fnCarSelected'}"
+		class="pickupBox sapUiTinyMarginBottom" renderType="Bare">
+		<Image src="{oDataGlobalModel>src}" class="sapUiSmallMarginTop"/>
+		<Label text="{oDataGlobalModel>pickUpFacility}" class="labelFacilityStyle"/>
+		<Label text="{oDataGlobalModel>pickUpTerms}" class="termStyle"/>
+		
+		
+	</VBox>
+	
+	</CustomListItem>
+
+</core:FragmentDefinition>

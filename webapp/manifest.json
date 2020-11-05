@@ -161,6 +161,10 @@
 				"myservices": {
 					"viewType": "XML",
 					"viewName": "myservices"
+				},
+				"BookAService": {
+					"viewType": "XML",
+					"viewName": "BookAService"
 				}
 			}
 		}

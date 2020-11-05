@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<CustomListItem class="timeList" type="Active" >
+	
+	<VBox alignItems="Center" visible="{path: 'oDataGlobalModel>isSelected', formatter:'com.demo.co.ALJ_DEV.util.formatter.fnCarSelected'}"
+		class="timeBox sapUiTinyMarginBottom" renderType="Bare">
+		<Label text="{oDataGlobalModel>time}" class="labelStyle"/>
+		
+		
+	</VBox>
+	
+	</CustomListItem>
+
+</core:FragmentDefinition>
