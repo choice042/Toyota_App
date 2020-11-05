@@ -5,7 +5,7 @@
 }
 
 .sapMBarTitleStart .sapMBarPH {
-    background-color: red;
+    background-color: #E20021;
     justify-content: flex-start;
 }
 
@@ -33,6 +33,10 @@
 :not(.sapMBtnDisabled) .sapMBtnGhost>.sapMBtnIcon {
     color: #ff3939 !important;
 }
+.aljGrayButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
+	background-color: #D9D9D9 !important;
+}
+
 
 .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed),
 .sapMIBar-CTX .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed) {
@@ -67,7 +71,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .aljRedBorderText.sapMText {
-    BORDER-BOTTOM: 1PX SOLID RED;
+    BORDER-BOTTOM: 1PX SOLID #E20021;
 }
 
 .aljSkyBlueText.sapMText {
@@ -221,16 +225,16 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     justify-content: center;
     width: 15rem;
     border-radius: 1rem;
-    border-color: red;
+    border-color: #E20021;
 }
 
 .aljRedButton .sapMBtnInner {
-    background-color: red !important;
-    color: white !important;
+    background-color: WHITE !important;
+    color: BLACK !important;
 }
 
 .aljGrayHbox.sapMHBox {
-    background-color: rgb(213 213 214 / 60%);
+    background-color: #D9D9D9;
 }
 
 .aljWhiteSmokeVbox.sapMVBox {
