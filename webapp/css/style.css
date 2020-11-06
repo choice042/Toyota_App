@@ -778,6 +778,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 .locCombo .sapMInputBaseContentWrapper {
     width: 640px !important;
+    margin-bottom :3rem !important;
 }
 
 .timeslotCss {
@@ -791,16 +792,40 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 
-/*.aljDescTextArea .sapMInputBaseContentWrapper {*/
+.footerToolbar {
+    margin-top: 14px;
+    height: max-content;
+    padding-top: 0rem !important;
+}
 
+.footerLabelStyle {
+    margin-left: 0.8rem;
+}
 
-/*    border-radius: 0.5rem;*/
+.LfooterLabelStyle {
+    margin-left: 1.2rem;
+}
 
+.PfooterLabelStyle {
+    margin-left: 1.05rem;
+}
 
-/*    border: .0625rem solid #bababa;*/
+.confirmBtn .sapMBtnInner {
+    border-radius: 14px;
+    background: #EB0A1E;
+    width: 111px;
+    height: 36px;
+    color: #fff;
+    border: none;
+}
+.brakeFooterLabel {
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+    font-weight: 550 !important;
+    font-size: 20px;
+    color: black;
+}
 
-
-/*}*/
 
 
 /*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/

@@ -1,6 +1,30 @@
 <core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
-<HBox>
-	
-</HBox>
-
+	<OverflowToolbar class="footerToolbar" >
+		<VBox class="footerBox">
+			<HBox class="sapUiTinyMarginTop">
+				<Image src="Images/vehicleIconFooter.png" class="iconStyle"/>
+				<Label text="Camry 2018, 79000 kms" class="footerLabelStyle"/>
+			</HBox>
+			<HBox>
+				<Image src="Images/locationIconFooter.png" class="iconStyle"/>
+				<Label text="Madina Road" class="LfooterLabelStyle"/>
+			</HBox>
+			<HBox>
+				<Image src="Images/pickupFooter.png" class="iconStyle"/>
+				<Label text="25th May, 10:00-10:30" class="footerLabelStyle"/>
+			</HBox>
+			<HBox>
+				<Image src="Images/productIconFooter.png" class="iconStyle"/>
+				<Label text="80k Kms Service" class="PfooterLabelStyle"/>
+			</HBox>
+			<HBox>
+				<Image src="Images/selfPickUpFooter.png" class="iconStyle"/>
+				<Label text="Brake Service" class="PfooterLabelStyle"/>
+			</HBox>
+		</VBox>
+		<VBox alignItems="Center" class="sapUiLargeMarginBegin">
+			<Label text="SAR 200" class="brakeFooterLabel"/>
+			<Button class="confirmBtn sapUiTinyMarginTop" text="Confirm" width="100%"/>
+		</VBox>
+	</OverflowToolbar>
 </core:FragmentDefinition>

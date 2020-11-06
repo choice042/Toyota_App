@@ -140,11 +140,12 @@
 								<Label text="Time" class="timeHeaderStyle"/>
 							</HBox>
 							<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+								<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" width="20.2rem" ></ComboBox>
 						</VBox>
 					</content>
-					<!--<footer >-->
-					<!--	<core:Fragment fragmentName="inc.demo.Toyota.fragment.BookServiceFooter" type="XML"></core:Fragment>-->
-					<!--</footer>-->
+					<footer >
+						<core:Fragment fragmentName="inc.demo.Toyota.fragment.BookServiceFooter" type="XML"></core:Fragment>
+					</footer>
 				</Page>
 			</pages>
 		</App>
