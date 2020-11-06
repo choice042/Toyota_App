@@ -8,7 +8,7 @@
 					<Label text="CONFIRMATION" class="logo"></Label>
 				</contentMiddle>
 				<contentRight>
-					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
+					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onClose"></Button>
 				</contentRight>
 			</Bar>
 		</customHeader>
@@ -87,9 +87,9 @@
 			</HBox>
 			<HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" justifyContent="Center" alignContent="Center">
 				<VBox justifyContent="Center" alignContent="Center">
-					<Button class="aljRedButton" text="Copy to mobile calendar"></Button>
-					<Button class="aljRedButton" text="Reschedule"></Button>
-					<Button class="aljRedButton" text="Cancel Appointment"></Button>
+					<Button class="aljRedButton aljGrayButtons" text="Copy to mobile calendar"></Button>
+					<Button class="aljRedButton aljGrayButtons" text="Reschedule"></Button>
+					<Button class="aljRedButton aljGrayButtons" text="Cancel Appointment"></Button>
 				</VBox>
 			</HBox>
 		</content>

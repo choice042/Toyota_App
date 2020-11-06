@@ -33,9 +33,6 @@
 :not(.sapMBtnDisabled) .sapMBtnGhost>.sapMBtnIcon {
     color: #ff3939 !important;
 }
-.aljGrayButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
-	background-color: #D9D9D9 !important;
-}
 
 
 .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed),
@@ -90,7 +87,23 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*ServiceStatus*/
-
+.aljGrayHbox.sapMHBox {
+    background-color: #D9D9D9;
+       border-top-left-radius: 27px;
+}
+.aljGrayButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
+	background-color: #D9D9D9 !important;
+	color:black !important;
+}
+.aljRedDisabledButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
+	background-color: #EB0A1E !important;
+	color:White !important;
+}
+.aljGrayButtons.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: .0625rem dotted #0000 !important;
+    outline-offset: -0.1875rem;
+    background-color: #D9D9D9 !important;
+}
 .aljMapDialog.sapMDialog {
     box-sizing: content-box;
     min-height: 30.75rem;
