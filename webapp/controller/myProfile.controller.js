@@ -21,6 +21,15 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
 			
 		},
+		onLogoutPress:function(){
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			this.getView().byId("idMyProfile").setVisible(false);
+			this.getView().byId("idLogin").setVisible(true);
+			this.getRouter().navTo("Home");
+			var logoutVisible = false;
+			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
+			this.getRouter().navTo("Home");
+		},
 		onClose: function () {
 			this.getRouter().navTo("Home");
 		}
