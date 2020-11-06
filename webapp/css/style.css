@@ -776,6 +776,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #D9D9D9;
     border-top-left-radius: 27px;
 }
+.selectVehicleCar {
+    background-color: #fff;
+    
+}
 
 .selectProduct {
     background-color: #D9D9D9;

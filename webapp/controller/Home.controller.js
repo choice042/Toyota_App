@@ -1,11 +1,12 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/util/formatter",
 	"sap/ui/core/Fragment"
-], function (Controller, Fragment) {
+], function (Controller,formatter, Fragment) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Home", {
-
+        formatter:formatter,
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.onHomePress();
@@ -62,6 +63,9 @@ sap.ui.define([
 		},
 		onBookservicePress: function () {
 			this.oRouter.navTo("BookingScreen");
+		},
+		onMyCarPress: function () {
+			this.oRouter.navTo("MyCars");
 		},
 		onClose: function () {
 			this.oRouter.navTo("Home");

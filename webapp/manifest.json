@@ -152,6 +152,13 @@
 					"target": [
 						"myProfile"
 					]
+				},
+				{
+					"name": "MyCars",
+					"pattern": "MyCars",
+					"target": [
+						"MyCars"
+					]
 				}
 			],
 			"targets": {
@@ -192,6 +199,10 @@
 				"myProfile": {
 					"viewType": "XML",
 					"viewName": "myProfile"
+				},
+				"MyCars": {
+					"viewType": "XML",
+					"viewName": "MyCars"
 				}
 			}
 		}
