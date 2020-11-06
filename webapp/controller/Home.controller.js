@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/Fragment"
+], function (Controller, Fragment) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Home", {
@@ -61,6 +62,19 @@ sap.ui.define([
 		},
 		onBookservicePress: function () {
 			this.oRouter.navTo("BookingScreen");
+		},
+		onClose: function () {
+			this.oRouter.navTo("Home");
+		},
+		onUserPress: function () {
+		/*	var that = this;
+			if (!this.userDetails) {
+				this.userDetails = sap.ui.xmlfragment("ggg","inc.demo.Toyota.fragment.User", this);
+			}
+			this.getView().addDependent(this.userDetails);
+			this.userDetails.open();*/
+			// console.log("sarath");
+			this.oRouter.navTo("myProfile");
 		}
 
 	});

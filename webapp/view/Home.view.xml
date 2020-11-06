@@ -4,7 +4,7 @@
 		<customHeader>
 			<Bar class="stylebar">
 				<contentLeft>
-					<Button icon="sap-icon://customer" class="btn"></Button>
+					<Button icon="sap-icon://customer" class="btn" press="onUserPress"></Button>
 				</contentLeft>
 				<contentMiddle>
 					<Label text="TOYOTA SERVICE" class="logo"></Label>

@@ -40,20 +40,26 @@
 						</HBox>
 					</VBox>
 				</HBox>
-				<VBox class="sapUiMediumMarginBegin sapUiSmallMarginTop myServicesHbox">
-					<HBox>
-						<VBox>
-							<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
-							<Text text="VIN:RSS81234" class="myservicesText1"></Text>
-							<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
-						</VBox>
-						<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
-					</HBox>
-					<HBox class="sapUiTinyMarginTop">
-						<Image src="./Images/group3.png"></Image>
-						<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
-					</HBox>
-				</VBox>
+				<HBox>
+					<VBox>
+						<core:Icon class="wbCustomTaskIcon" color="white" backgroundColor="#979797" height="24px" width="24px"></core:Icon>
+						<HBox class="wbCustomTaskLineDone"></HBox>
+					</VBox>
+					<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTop myServicesHbox">
+						<HBox>
+							<VBox>
+								<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
+								<Text text="VIN:RSS81234" class="myservicesText1"></Text>
+								<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
+							</VBox>
+							<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
+						</HBox>
+						<HBox class="sapUiTinyMarginTop">
+							<Image src="./Images/group3.png"></Image>
+							<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
+						</HBox>
+					</VBox>
+				</HBox>
 			</VBox>
 		</content>
 	</Page>

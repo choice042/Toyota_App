@@ -33,9 +33,6 @@
 :not(.sapMBtnDisabled) .sapMBtnGhost>.sapMBtnIcon {
     color: #ff3939 !important;
 }
-.aljGrayButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
-	background-color: #D9D9D9 !important;
-}
 
 
 .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed),
@@ -90,7 +87,23 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*ServiceStatus*/
-
+.aljGrayHbox.sapMHBox {
+    background-color: #D9D9D9;
+       border-top-left-radius: 27px;
+}
+.aljGrayButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
+	background-color: #D9D9D9 !important;
+	color:black !important;
+}
+.aljRedDisabledButtons:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive{
+	background-color: #EB0A1E !important;
+	color:White !important;
+}
+.aljGrayButtons.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: .0625rem dotted #0000 !important;
+    outline-offset: -0.1875rem;
+    background-color: #D9D9D9 !important;
+}
 .aljMapDialog.sapMDialog {
     box-sizing: content-box;
     min-height: 30.75rem;
@@ -478,8 +491,57 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     align-items: center;
     border-radius: 50%;
  }
-
-
+ /*MY PROFILE*/
+.myProfileClass{
+	padding: 0.8rem;
+}
+.myProfileEditBtn {
+	margin-left: 11rem;
+    width: 103px;
+    height: 36px;
+    border-radius: 14px;
+}
+.myProfileEditBtn .sapMBtnInner {
+    /*opacity: 31%;*/
+    font-weight: bold;
+    color: #000000;
+    background-color: #f3f3f3;
+    border: #f3f3f3;
+    border-radius: 14px;
+}
+.myProfileLanguageClass{
+	height: 7.625rem;
+    width: 20.5rem;
+    border: 1px solid #D5D2D2;
+    border-radius: 8px;
+    padding: 16;
+    padding-left: 24px;
+    margin-left: 16px;
+}
+.myProfileLanguageHboxClass{
+	padding: 0.5rem;
+    border-bottom: 1px solid #D5D2D2;
+}
+.myProfileRadioBtn.sapMRbSel .sapMRbBInn {
+    fill: #ec0318;
+    /* width: 28px; */
+    /* height: 28px; */
+}
+.myProfileLogoutClass{
+	padding-top: 9rem;
+}
+.myProfileLogoutBtn{
+	width: 19.75rem;
+    margin-left: 20px;
+}
+.myProfileLogoutBtn .sapMBtnInner {
+    /*opacity: 31%;*/
+    font-weight: bold;
+    color: #ec0318;
+    background-color: #ffffff;
+    border: .0625rem solid #D5D2D2;
+    border-radius: 7px;
+}
 
 /*bijay's css*/
 
