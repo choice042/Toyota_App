@@ -21,8 +21,8 @@
 				<Image src="./Images/car2.jpg"></Image>
 				<Image src="./Images/car3.jpg"></Image>
 			</Carousel>
-			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-			<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop">
+			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading" visible="{oDataGlobalModel>/logoutVisible}"></Label>
+			<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard2.png"></Image>
 					<Label text="Brake Service" design="Bold" class="labelclass"></Label>
@@ -95,7 +95,7 @@
 				<GenericTile header="General Service" class="sapUiSmallMarginEnd"></GenericTile>
 				<GenericTile header="Others"></GenericTile>-->
 			</HBox>
-			<VBox class="sapUiSmallMarginTop serviceStatusClass">
+			<VBox class="sapUiSmallMarginTop serviceStatusClass" visible="{oDataGlobalModel>/logoutVisible}">
 				<Label text="Service Status" design="Bold" class="sapUiSmallMarginBegin sapUiTinyMarginTop heading"></Label>
 				<HBox>
 					<VBox>
@@ -131,7 +131,7 @@
 						<Image src="./Images/Path1.png" press="onBookservicePress"></Image>
 					</contentRight>
 				</Bar>
-				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass">
+				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass" visible="{oDataGlobalModel>/logoutVisible}">
 					<contentLeft>
 						<Image src="./Images/myservices1.png" press="onMyServicesPress"></Image>
 					</contentLeft>

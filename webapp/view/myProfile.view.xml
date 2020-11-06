@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.myProfile"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page class="homePage">
+	<Page id="idMyProfile" class="homePage" visible="false">
 		<customHeader>
 			<Bar class="stylebar">
 				<contentMiddle>
@@ -48,8 +48,13 @@
 				</HBox>
 			</VBox>
 			<HBox class="myProfileLogoutClass">
-				<Button text="Logout" class="myProfileLogoutBtn"></Button>
+				<Button text="Logout" class="myProfileLogoutBtn" press="onLogoutPress"></Button>
 			</HBox>
+		</content>
+	</Page>
+	<Page id="idLogin" showHeader="false" class="homePage">
+		<content>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.Login" type="XML"/>
 		</content>
 	</Page>
 </mvc:View>
