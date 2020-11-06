@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Page class="homePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="MY PROFILE" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<HBox>
+				<Avatar></Avatar>
+				<Button text="Edit"></Button>
+			</HBox>
+			<Label text="Basic Information"></Label>
+			<VBox>
+				<HBox>
+					<Label text="Name:"></Label>
+					<Text text="Abhishek Jain - Verified BP"></Text>
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</core:FragmentDefinition>

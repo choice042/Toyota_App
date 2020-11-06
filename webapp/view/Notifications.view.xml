@@ -16,8 +16,16 @@
 				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
 			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
 			</HBox>
-			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
-			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="Yesterday"></NotificationListItem>
+			<HBox class="sapUiSmallMarginBegin" width="100%">
+				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
+			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the second notification" datetime="1:38 PM"></NotificationListItem>
+			</HBox>
+			<HBox class="sapUiSmallMarginBegin" width="100%">
+				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
+			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the third notification" datetime="Yesterday"></NotificationListItem>
+			</HBox>
+			<!--<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
+			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="Yesterday"></NotificationListItem>-->
 		</content>
 	</Page>
 </mvc:View>

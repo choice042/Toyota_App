@@ -1,0 +1,55 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.myProfile"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page class="homePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="MY PROFILE" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin">
+				<!--<Button icon="sap-icon://customer" class="myProfileImg"></Button>-->
+				<Avatar></Avatar>
+				<Button text="Edit" class="myProfileEditBtn"></Button>
+			</HBox>
+			<Label text="Basic Information" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
+			<VBox class="sapUiSmallMarginBegin myProfileClass">
+				<HBox>
+					<Text text="Name:"></Text>
+					<Text text="Abhishek Jain - Verified BP"></Text>
+				</HBox>
+				<HBox>
+					<Text text="Mobile No:"></Text>
+					<Text text="8529568450"></Text>
+				</HBox>
+				<HBox>
+					<Text text="Email:"></Text>
+					<Text text=""></Text>
+				</HBox>
+				<HBox>
+					<Text text="National ID:"></Text>
+					<Text text="12345678"></Text>
+				</HBox>
+			</VBox>
+			<Label text="Select Language" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
+			<VBox class="myProfileLanguageClass sapUiSmallMarginTop">
+				<HBox class="myProfileLanguageHboxClass">
+					<Label text="{i18n>Arabic}" class="sapUiTinyMarginTop"></Label>
+					<RadioButton class="myProfileRadioBtn"></RadioButton>
+				</HBox>
+				<HBox class="sapUiTinyMarginTop">
+					<Label text="English" class="sapUiTinyMarginTop"></Label>
+					<RadioButton selected="true" class="myProfileRadioBtn"></RadioButton>
+				</HBox>
+			</VBox>
+			<HBox class="myProfileLogoutClass">
+				<Button text="Logout" class="myProfileLogoutBtn"></Button>
+			</HBox>
+		</content>
+	</Page>
+</mvc:View>
