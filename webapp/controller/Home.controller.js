@@ -73,6 +73,7 @@ sap.ui.define([
 			}
 			this.getView().addDependent(this.userDetails);
 			this.userDetails.open();*/
+			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
 		}
 
