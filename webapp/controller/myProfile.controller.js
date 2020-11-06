@@ -12,6 +12,15 @@ sap.ui.define([
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
 		},
+		onLoginPress: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			this.getView().byId("idMyProfile").setVisible(true);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getRouter().navTo("Home");
+			var logoutVisible = true;
+			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
+			
+		},
 		onClose: function () {
 			this.getRouter().navTo("Home");
 		}

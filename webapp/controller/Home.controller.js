@@ -9,6 +9,9 @@ sap.ui.define([
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.onHomePress();
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var logoutVisible = false;
+			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
 		},
 		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
@@ -67,12 +70,12 @@ sap.ui.define([
 			this.oRouter.navTo("Home");
 		},
 		onUserPress: function () {
-		/*	var that = this;
+			/*var that = this;
 			if (!this.userDetails) {
 				this.userDetails = sap.ui.xmlfragment("ggg","inc.demo.Toyota.fragment.User", this);
 			}
-			this.getView().addDependent(this.userDetails);
-			this.userDetails.open();*/
+			this.getView().addDependent(this.userDetails);*/
+			// this.userDetails.open();
 			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
 		}
