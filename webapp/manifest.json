@@ -159,6 +159,13 @@
 					"target": [
 						"MyCars"
 					]
+				},
+				{
+					"name": "More",
+					"pattern": "More",
+					"target": [
+						"More"
+					]
 				}
 			],
 			"targets": {
@@ -203,6 +210,10 @@
 				"MyCars": {
 					"viewType": "XML",
 					"viewName": "MyCars"
+				},
+				"More": {
+					"viewType": "XML",
+					"viewName": "More"
 				}
 			}
 		}
