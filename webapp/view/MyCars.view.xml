@@ -1,24 +1,39 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.myservices"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.MyCars"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page class="homePage">
-		<customHeader>
-			<Bar class="stylebar">
-				<contentMiddle>
-					<Label text="MY SERVICES" class="logo"></Label>
-				</contentMiddle>
-				<contentRight>
-					<Button icon="sap-icon://decline" class="btn" press="onClose"></Button>
-				</contentRight>
-			</Bar>
-		</customHeader>
-		<content>
-			<Label design="Bold" text="Service Type" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-			<HBox class="sapUiMediumMarginTop">
-				<Button id="ongoing" text="Ongoing" class="sapUiMediumMarginBegin sapUiTinyMarginEnd" press="onOngoingPress"></Button>
-				<Button id="past" text="Past" class="sapUiTinyMarginEnd" press="onPastPress"></Button>
-				<Button id="upcoming" text="Upcoming" press="onUpcomingPress"></Button>
-			</HBox>
-			<VBox class="sapUiSmallMarginTop myServicesVbox">
+	<App>
+		<pages>
+			<Page title="Title">
+				<customHeader>
+					<Bar class="stylebar">
+						<contentLeft>
+							<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
+						</contentLeft>
+						<contentMiddle>
+							<Label text="MY CARS" class="logo"></Label>
+						</contentMiddle>
+					</Bar>
+				</customHeader>
+				<content>
+					<VBox class="selectVehicleCar">
+						<HBox justifyContent="SpaceBetween">
+							<VBox renderType="Bare">
+								<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
+									<Image src="Images/vehicleIcon.png" class="iconStyle"/>
+									<Label text="Select Vehicle" class="labelStyle"/>
+								</HBox>
+							</VBox>
+							<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
+								<Button class="selectVehicleBtn" text="+ Add Vehicle" width="100%"/>
+							</VBox>
+						</HBox>
+						<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
+							class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
+							<HBox items="{oDataGlobalModel>/carCategory}" renderType="Bare">
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList" type="XML"/>
+							</HBox>
+						</ScrollContainer>
+					</VBox>
+					<VBox class="sapUiSmallMarginTop myServicesVbox">
 				<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 				<HBox>
 					<VBox>
@@ -61,6 +76,8 @@
 					</VBox>
 				</HBox>
 			</VBox>
-		</content>
-	</Page>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>

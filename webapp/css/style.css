@@ -637,8 +637,345 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
+ }
+ /*MY PROFILE*/
+.myProfileClass{
+	padding: 0.8rem;
+}
+.myProfileEditBtn {
+	margin-left: 11rem;
+    width: 103px;
+    height: 36px;
+    border-radius: 14px;
+}
+.myProfileEditBtn .sapMBtnInner {
+    /*opacity: 31%;*/
+    font-weight: bold;
+    color: #000000;
+    background-color: #f3f3f3;
+    border: #f3f3f3;
+    border-radius: 14px;
+}
+.myProfileLanguageClass{
+	height: 7.625rem;
+    width: 20.5rem;
+    border: 1px solid #D5D2D2;
+    border-radius: 8px;
+    padding: 16;
+    padding-left: 24px;
+    margin-left: 16px;
+}
+.myProfileLanguageHboxClass{
+	padding: 0.5rem;
+    border-bottom: 1px solid #D5D2D2;
+}
+.myProfileRadioBtn.sapMRbSel .sapMRbBInn {
+    fill: #ec0318;
+    /* width: 28px; */
+    /* height: 28px; */
+}
+.myProfileLogoutClass{
+	padding-top: 9rem;
+}
+.myProfileLogoutBtn{
+	width: 19.75rem;
+    margin-left: 20px;
+}
+.myProfileLogoutBtn .sapMBtnInner {
+    /*opacity: 31%;*/
+    font-weight: bold;
+    color: #ec0318;
+    background-color: #ffffff;
+    border: .0625rem solid #D5D2D2;
+    border-radius: 7px;
+}
+/*LOG IN*/
+.Logo.sapMFlexBoxAlignContentStretch {
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    text-align: center;
+}
+.Logo .sapMLabel {
+    color: #FF0000;
+    font-size: 1.5rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+    overflow: hidden;
+}
+.loginLabels .sapMLabel {
+    color: #6a6d70;
+    font-size: 1.2rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+    overflow: hidden;
+}
+.Logo{
+	    margin-top: 30%;
+    margin-bottom: 18%;
+
+}
+.loginInputs.sapMInputBaseHeightMargin {
+    /* margin: 0.25rem 0; */
+    margin-bottom: 1.5rem;
+}
+.loginInputs .sapMInputBaseContentWrapper {
+   border-top: 0rem;
+    border-left: 0rem;
+    background: #fff;
+    border-radius: .125rem;
+    border-right: 0rem;
+    background: #fff;
+    border-radius: .125rem;
+}
+.loginInputs .sapMInputBaseInner {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
 }
 
+.siginButton.sapMBtn {
+    height: 3rem;
+    margin: 0;
+    padding: 0.250rem 0;
+    vertical-align: top;
+    border: none;
+    width: 60%;
+}
+.siginButton .sapMBtnInner {
+   
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-size: 1.1rem;
+    height: 2.500rem;
+    min-width: 2.500rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background-color: #ff0000;
+    border: .0625rem solid #ff0000;
+    border-radius: 0.2rem;
+    color: #f1fdf6;
+    text-shadow: none;
+}
+.loginTextField.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 14px;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #000000;
+    /*font-weight: 600;*/
+}
+.LoginLink{
+	 font-size: 1rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #32363a;
+    font-weight: 600;
+   
+}
+.LoginLink.sapMLnk:visited {
+    color: #32363a;
+}
+.LoginLink {
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+.LoginLink1{
+	 font-size: 1rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #32363a;
+    font-weight: 600;
+   
+}
+.LoginLink1.sapMLnk:visited {
+    color: #000000;
+}
+.SignInbox{
+	margin-bottom:1rem;
+	    margin-top: 1rem;
+}
+.SignInbox.sapMFlexBoxAlignContentStretch {
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    text-align: center;
+}
+.SignInhbox.sapMFlexBoxJustifyStart {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: center;
+}
+.sapUiFormEdit .sapMLnk {
+    margin-top: 0.7rem;
+    margin-bottom: 0.625rem;
+    margin-left: 0.5rem;
+}
+.inputs.sapMFocus .sapMInputBaseContentWrapper {
+    outline: none;
+    border: 1px solid rgba(var(--primary-color), 1) !important;
+}
+.SignInhbox1{
+ margin-top:36%;
+	
+}
+.SignInhbox1.sapMFlexBoxJustifyStart {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: center;
+}
+.loginInputs.sapMFocus .sapMInputBaseContentWrapper {
+    outline: none;
+    border: 1px solid rgba(var(--primary-color), 1) !important;
+}
+
+/*SIGN UP*/
+.signupLogo.sapMFlexBoxAlignContentStretch {
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    text-align: center;
+}
+.signupLogo .sapMLabel {
+    color: #FF0000;
+    font-size: 1.5rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+    overflow: hidden;
+}
+.signupLabels .sapMLabel {
+    color: #6a6d70;
+    font-size: 1.2rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+    overflow: hidden;
+}
+.signupLogo{
+	    margin-top: 7%;
+    margin-bottom: 6%;
+
+}
+.signupInputs.sapMInputBaseHeightMargin {
+    /* margin: 0.25rem 0; */
+    margin-bottom: 1.5rem;
+}
+.signupInputs .sapMInputBaseContentWrapper {
+   border-top: 0rem;
+    border-left: 0rem;
+    background: #fff;
+    border-radius: .125rem;
+    border-right: 0rem;
+    background: #fff;
+    border-radius: .125rem;
+}
+.signupInputs .sapMInputBaseInner {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+/*.Page{
+	background:white;
+}*/
+.signupButton.sapMBtn {
+    height: 3rem;
+    margin: 0;
+    padding: 0.250rem 0;
+    vertical-align: top;
+    border: none;
+    width: 60%;
+}
+.signupButton .sapMBtnInner {
+   
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-size: 1.1rem;
+    height: 2.500rem;
+    min-width: 2.500rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background-color: #ff0000;
+    border: .0625rem solid #ff0000;
+    border-radius: 0.2rem;
+    color: #f1fdf6;
+    text-shadow: none;
+}
+.signupTextField.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 14px;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #000000;
+    /*font-weight: 600;*/
+}
+.SignupLink{
+	 font-size: 1rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #32363a;
+    font-weight: 600;
+   
+}
+.SignupLink.sapMLnk:visited {
+    color: #000000;
+}
+
+.Signupbox{
+	margin-bottom:1rem;
+}
+.Signupbox.sapMFlexBoxAlignContentStretch {
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    text-align: center;
+}
+.Signuphbox.sapMFlexBoxJustifyStart {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: center;
+}
+.sapUiFormEdit .sapMLnk {
+    margin-top: 0.7rem;
+    margin-bottom: 0.625rem;
+    margin-left: 0.5rem;
+}
+.signupInputs.sapMFocus .sapMInputBaseContentWrapper {
+    outline: none;
+    border: 1px solid rgba(var(--primary-color), 1) !important;
+}
+/*EDIT PROFILE*/
+.editProfileClass{
+	padding-top: 6rem;
+}
+.editProfileConfirmBtn{
+	width: 19.75rem;
+    margin-left: 20px;
+}
+.editProfileConfirmBtn .sapMBtnInner {
+    /*opacity: 31%;*/
+    font-weight: bold;
+    color: #37383B;
+    background-color: #ffffff;
+    border: .0625rem solid #EB0A1E;
+    border-radius: 7px;
+}
 
 /*bijay's css*/
 
@@ -895,6 +1232,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #D9D9D9;
     border-top-left-radius: 27px;
 }
+.selectVehicleCar {
+    background-color: #fff;
+    
+}
 
 .selectProduct {
     background-color: #D9D9D9;
@@ -959,6 +1300,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 .locCombo .sapMInputBaseContentWrapper {
     width: 640px !important;
+    margin-bottom :3rem !important;
 }
 
 .timeslotCss {
@@ -973,16 +1315,40 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 
-/*.aljDescTextArea .sapMInputBaseContentWrapper {*/
+.footerToolbar {
+    margin-top: 14px;
+    height: max-content;
+    padding-top: 0rem !important;
+}
 
+.footerLabelStyle {
+    margin-left: 0.8rem;
+}
 
-/*    border-radius: 0.5rem;*/
+.LfooterLabelStyle {
+    margin-left: 1.2rem;
+}
 
+.PfooterLabelStyle {
+    margin-left: 1.05rem;
+}
 
-/*    border: .0625rem solid #bababa;*/
+.confirmBtn .sapMBtnInner {
+    border-radius: 14px;
+    background: #EB0A1E;
+    width: 111px;
+    height: 36px;
+    color: #fff;
+    border: none;
+}
+.brakeFooterLabel {
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+    font-weight: 550 !important;
+    font-size: 20px;
+    color: black;
+}
 
-
-/*}*/
 
 
 /*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/

@@ -1,14 +1,19 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/util/formatter",
+	"sap/ui/core/Fragment"
+], function (Controller,formatter, Fragment) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Home", {
-
+        formatter:formatter,
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.getRoute("Home");
 			this.onHomePress();
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var logoutVisible = false;
+			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
 		},
 		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
@@ -62,6 +67,22 @@ sap.ui.define([
 		},
 		onBookservicePress: function () {
 			this.oRouter.navTo("BookingScreen");
+		},
+		onMyCarPress: function () {
+			this.oRouter.navTo("MyCars");
+		},
+		onClose: function () {
+			this.oRouter.navTo("Home");
+		},
+		onUserPress: function () {
+			/*var that = this;
+			if (!this.userDetails) {
+				this.userDetails = sap.ui.xmlfragment("ggg","inc.demo.Toyota.fragment.User", this);
+			}
+			this.getView().addDependent(this.userDetails);*/
+			// this.userDetails.open();
+			// console.log("sarath");
+			this.oRouter.navTo("myProfile");
 		}
 
 	});

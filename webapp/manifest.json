@@ -65,14 +65,19 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}, {
-				"uri": "css/responsiveStyle.css"
-			}],
-			"js": [{
-				"uri": "model/gMapsMarker.js"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				},
+				{
+					"uri": "css/responsiveStyle.css"
+				}
+			],
+			"js": [
+				{
+					"uri": "model/gMapsMarker.js"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -84,55 +89,78 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteApp",
-				"pattern": "",
-				"target": [
-					"Home"
-				]
-			}, {
-				"name": "ServiceStatus",
-				"pattern": "hello",
-				"target": [
-					"ServiceStatus"
-				]
-			}, {
-				"name": "Home",
-				"pattern": "Homeview",
-				"target": [
-					"Home"
-				]
-			}, {
-				"name": "Products",
-				"pattern": "Productsview",
-				"target": [
-					"Products"
-				]
-			}, {
-				"name": "confirmAppointment",
-				"pattern": "confirmAppointment",
-				"target": [
-					"BookingAppointmentConfirmation"
-				]
-			}, {
-				"name": "Notifications",
-				"pattern": "Notifications",
-				"target": [
-					"Notifications"
-				]
-			}, {
-				"name": "myservices",
-				"pattern": "myservices",
-				"target": [
-					"myservices"
-				]
-			}, {
-				"name": "BookingScreen",
-				"pattern": "BookingScreen",
-				"target": [
-					"BookingScreen"
-				]
-			}],
+			"routes": [
+				{
+					"name": "RouteApp",
+					"pattern": "",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "ServiceStatus",
+					"pattern": "hello",
+					"target": [
+						"ServiceStatus"
+					]
+				},
+				{
+					"name": "Home",
+					"pattern": "Homeview",
+					"target": [
+						"Home"
+					]
+				},
+				{
+					"name": "Products",
+					"pattern": "Productsview",
+					"target": [
+						"Products"
+					]
+				},
+				{
+					"name": "confirmAppointment",
+					"pattern": "confirmAppointment",
+					"target": [
+						"BookingAppointmentConfirmation"
+					]
+				},
+				{
+					"name": "Notifications",
+					"pattern": "Notifications",
+					"target": [
+						"Notifications"
+					]
+				},
+				{
+					"name": "myservices",
+					"pattern": "myservices",
+					"target": [
+						"myservices"
+					]
+				},
+				{
+					"name": "BookingScreen",
+					"pattern": "BookingScreen",
+					"target": [
+						"BookingScreen"
+					]
+				},
+				{
+					"name": "myProfile",
+					"pattern": "myProfile",
+					"target": [
+						"myProfile"
+					]
+				},
+				{
+					"name": "MyCars",
+					"pattern": "MyCars",
+					"target": [
+						"MyCars"
+					]
+				}
+			],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
@@ -167,6 +195,14 @@
 				"BookingScreen": {
 					"viewType": "XML",
 					"viewName": "BookingScreen"
+				},
+				"myProfile": {
+					"viewType": "XML",
+					"viewName": "myProfile"
+				},
+				"MyCars": {
+					"viewType": "XML",
+					"viewName": "MyCars"
 				}
 			}
 		}

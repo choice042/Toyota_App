@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form">
+	<VBox class="signupLogo">
+		<Label text="TOYOTA SERVICE"></Label>
+	</VBox>
+	<f:SimpleForm editable="true" id="idSimpleFormSignup">
+		<f:content>
+			<VBox>
+				<VBox>
+					<Label class="signupLabels" text="First Name"></Label>
+					<Input class="signupInputs" value="Abhishek" type="Text"></Input>
+				</VBox>
+				<VBox>
+					<Label class="signupLabels" text="Last Name"></Label>
+					<Input class="signupInputs" value="Jain" type="Text"></Input>
+				</VBox>
+				<VBox>
+					<Label class="signupLabels" text="Password"></Label>
+					<Input class="signupInputs" value="hgfghjk" type="Password"></Input>
+				</VBox>
+				<VBox>
+					<Label class="signupLabels" text="Mobile Number"></Label>
+					<Input class="signupInputs" value="998765432" type="Number"></Input>
+				</VBox>
+				<VBox>
+					<Label class="signupLabels" text="Email"></Label>
+					<Input class="signupInputs" value="abhij001@gmail.com" type="Email"></Input>
+				</VBox>
+				<VBox>
+					<Label class="signupLabels" text="National ID"></Label>
+					<Input class="signupInputs" value="66778899" type="Number"></Input>
+				</VBox>
+				<VBox class="Signupbox">
+					<Button class="signupButton" text="Sign In" press="onConfirmSignup"></Button>
+				</VBox>
+				<HBox class="Signuphbox">
+					<Text class="signupTextField" text="I Am Existing User , "></Text>
+					<Link class="SignupLink" text=" Login" press="OnanotherLoginPress"/>
+				</HBox>
+			</VBox>
+		</f:content>
+	</f:SimpleForm >
+</core:FragmentDefinition>
