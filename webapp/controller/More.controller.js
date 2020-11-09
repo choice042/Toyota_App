@@ -1,24 +1,19 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-		"sap/ui/core/UIComponent"
-], function (Controller,UIComponent) {
+	"inc/demo/Toyota/util/formatter",
+	"sap/m/MessageToast"
+], function (Controller,formatter,MessageToast) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.Products", {
-
-
+	return Controller.extend("inc.demo.Toyota.controller.More", {
+		formatter:formatter,
 		onInit: function () {
-				this.oRouter = this.getRouter();
-			this.oRouter.getRoute("Products");
-			 var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+             var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
              oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			 this.oDataGlobalModel = oDataGlobalModel;
 			 
-          
-
-		},
-			getRouter: function () {
-			return UIComponent.getRouterFor(this);
+            this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            this.oRouter.getRoute("More");
 		},
 			onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
@@ -55,7 +50,10 @@ sap.ui.define([
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 		},
-		onNotificationPress: function () {
+		onNavBack: function(){
+			this.oRouter.navTo("Home");
+		},
+			onNotificationPress: function () {
 			this.oRouter.navTo("Notifications");
 		},
 		onServiceStatusPress: function () {
@@ -76,22 +74,10 @@ sap.ui.define([
 		onMyCarPress: function () {
 			this.oRouter.navTo("MyCars");
 		},
-		onPressHome: function () {
+		onClose: function () {
 			this.oRouter.navTo("Home");
 		},
-		onUserPress: function () {
-			/*var that = this;
-			if (!this.userDetails) {
-				this.userDetails = sap.ui.xmlfragment("ggg","inc.demo.Toyota.fragment.User", this);
-			}
-			this.getView().addDependent(this.userDetails);*/
-			// this.userDetails.open();
-			// console.log("sarath");
-			this.oRouter.navTo("myProfile");
-		}
-
 	
-
+		
 	});
-
 });

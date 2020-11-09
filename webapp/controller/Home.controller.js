@@ -77,6 +77,9 @@ sap.ui.define([
 		onClose: function () {
 			this.oRouter.navTo("Home");
 		},
+			onMorePress2: function () {
+			this.oRouter.navTo("More");
+		},
 		onUserPress: function () {
 			/*var that = this;
 			if (!this.userDetails) {

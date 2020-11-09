@@ -176,7 +176,7 @@
 				<ToolbarSpacer/>
 				<VBox>
 					<VBox class="text1">
-						<Button icon="./Images/calendar.png" press="onBookingsPress" class="footerbtn"></Button>
+						<Button icon="./Images/calendar.png" press="onBookservicePress" class="footerbtn"></Button>
 					</VBox>
 					<VBox class="text2">
 						<Label id="bookings" text="Bookings" design="Bold"></Label>
@@ -185,7 +185,7 @@
 				<ToolbarSpacer/>
 				<VBox>
 					<VBox class="text1">
-						<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
+						<Button icon="./Images/More-4.png" press="onMorePress2" class="footerbtn"></Button>
 					</VBox>
 					<VBox class="text2">
 						<Label id="more" text="More" design="Bold"></Label>
