@@ -116,6 +116,7 @@
 						<Button text="Service Status" press="onServiceStatusPress"></Button>
 						<Button text="confirmation" press="onPressConfirm"></Button>
 					</VBox>
+					<!--<Image src="./Images/Servicedone-1.svg" width="110px" height="110px"></Image>-->
 				</HBox>
 			</VBox>
 			<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
@@ -157,7 +158,7 @@
 				<ToolbarSpacer/>
 				<VBox>
 					<VBox class="text1">
-						<Button icon="./Images/Group2.png" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
+						<Button icon="./Images/MyCar.svg" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
 					</VBox>
 					<VBox class="text2">
 						<Label id="mycar" text="My Car" design="Bold"></Label>
