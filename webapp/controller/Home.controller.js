@@ -70,6 +70,7 @@ sap.ui.define([
 		},
 		onBookingsPress: function () {
 			this.oRouter.navTo("BookingScreen");
+			// console.log("sample");
 		},
 		onMyCarPress: function () {
 			this.oRouter.navTo("MyCars");
