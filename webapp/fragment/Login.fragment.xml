@@ -2,7 +2,7 @@
 	<VBox class="Logo">
 		<Label text="TOYOTA SERVICE"></Label>
 	</VBox>
-	<f:SimpleForm editable="true" id="idSimpleFormPreReg">
+	<f:SimpleForm editable="true" id="idSimpleFormLogin">
 		<f:content>
 			<VBox>
 				<VBox>

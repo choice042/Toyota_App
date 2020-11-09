@@ -18,16 +18,62 @@ sap.ui.define([
 			this.getView().byId("idLogin").setVisible(false);
 			this.getRouter().navTo("Home");
 			var logoutVisible = true;
-			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
-			
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
+
 		},
-		onLogoutPress:function(){
+		onLogoutPress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			this.getView().byId("idMyProfile").setVisible(false);
 			this.getView().byId("idLogin").setVisible(true);
 			this.getRouter().navTo("Home");
 			var logoutVisible = false;
-			oDataGlobalModel.setProperty("/logoutVisible",logoutVisible);
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
+			this.getRouter().navTo("Home");
+		},
+		OnSignUpPress: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			this.getView().byId("idMyProfile").setVisible(false);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getView().byId("idSignup").setVisible(true);
+			/*this.getRouter().navTo("Home");
+			var logoutVisible = true;
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);*/
+		},
+		OnanotherLoginPress: function () {
+			this.getView().byId("idMyProfile").setVisible(false);
+			this.getView().byId("idLogin").setVisible(true);
+			this.getView().byId("idSignup").setVisible(false);
+		},
+		onConfirmSignup: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			this.getView().byId("idMyProfile").setVisible(true);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getView().byId("idSignup").setVisible(false);
+			this.getRouter().navTo("Home");
+			var logoutVisible = true;
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
+		},
+		EditProfilePress: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			this.getView().byId("idEditProfile").setVisible(true);
+			this.getView().byId("idMyProfile").setVisible(false);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getView().byId("idSignup").setVisible(false);
+			/*this.getRouter().navTo("Home");
+			var logoutVisible = true;
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);*/
+		},
+		onConfirmEditPress: function () {
+			this.getView().byId("idEditProfile").setVisible(false);
+			this.getView().byId("idMyProfile").setVisible(true);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getView().byId("idSignup").setVisible(false);
+		},
+		onCloseEditProfile: function () {
+			this.getView().byId("idEditProfile").setVisible(false);
+			this.getView().byId("idMyProfile").setVisible(true);
+			this.getView().byId("idLogin").setVisible(false);
+			this.getView().byId("idSignup").setVisible(false);
 			this.getRouter().navTo("Home");
 		},
 		onClose: function () {

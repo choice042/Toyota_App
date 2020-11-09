@@ -15,7 +15,7 @@
 			<HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin">
 				<!--<Button icon="sap-icon://customer" class="myProfileImg"></Button>-->
 				<Avatar></Avatar>
-				<Button text="Edit" class="myProfileEditBtn"></Button>
+				<Button text="Edit" class="myProfileEditBtn" press="EditProfilePress"></Button>
 			</HBox>
 			<Label text="Basic Information" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
 			<VBox class="sapUiSmallMarginBegin myProfileClass">
@@ -55,6 +55,26 @@
 	<Page id="idLogin" showHeader="false" class="homePage">
 		<content>
 			<core:Fragment fragmentName="inc.demo.Toyota.fragment.Login" type="XML"/>
+		</content>
+	</Page>
+	<Page id="idSignup" showHeader="false" class="homePage" visible="false">
+		<content>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.Signup" type="XML"/>
+		</content>
+	</Page>
+	<Page id="idEditProfile" class="homePage" visible="false">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="BASIC INFORMATION" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onCloseEditProfile"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.Editprofile" type="XML"/>
 		</content>
 	</Page>
 </mvc:View>

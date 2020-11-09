@@ -1,7 +1,7 @@
 <mvc:View controllerName="inc.demo.Toyota.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App id="app">
 		<pages>
-			<Page id="page" title="{i18n>title}">
+			<Page id="page" showHeader="false">
 				<content></content>
 			</Page>
 		</pages>
