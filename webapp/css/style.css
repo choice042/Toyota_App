@@ -686,6 +686,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     -webkit-justify-content: flex-start;
     justify-content: center;
 }
+.loginInputs.sapMFocus .sapMInputBaseContentWrapper {
+    outline: none;
+    border: 1px solid rgba(var(--primary-color), 1) !important;
+}
 
 /*SIGN UP*/
 .signupLogo.sapMFlexBoxAlignContentStretch {
