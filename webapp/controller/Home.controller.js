@@ -7,6 +7,7 @@ sap.ui.define([
 
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			this.oRouter.getRoute("Home");
 			this.onHomePress();
 		},
 		onHomePress: function () {
@@ -50,7 +51,7 @@ sap.ui.define([
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
-		Products: function () {
+		onProductPress: function () {
 			this.oRouter.navTo("Products");
 		},
 		onPressConfirm: function () {

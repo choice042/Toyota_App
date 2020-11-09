@@ -8,12 +8,35 @@ sap.ui.define([
 
 
 		onInit: function () {
-				var oRouter = this.getRouter();
-			oRouter.getRoute("Products");
+				this.oRouter = this.getRouter();
+			this.oRouter.getRoute("Products");
+			 var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+             oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			 this.oDataGlobalModel = oDataGlobalModel;
+			 
+          
 
 		},
 			getRouter: function () {
 			return UIComponent.getRouterFor(this);
+		},
+			onServiceStatusPress: function () {
+			this.oRouter.navTo("ServiceStatus");
+		},
+		onProductPress: function () {
+			this.oRouter.navTo("Products");
+		},
+		onPressConfirm: function () {
+			this.oRouter.navTo("confirmAppointment");
+		},
+		onMyServicesPress: function () {
+			this.oRouter.navTo("myservices");
+		},
+		onBookservicePress: function () {
+			this.oRouter.navTo("BookingScreen");
+		},
+		onPressHome: function(){
+				this.oRouter.navTo("Home");
 		}
 
 	

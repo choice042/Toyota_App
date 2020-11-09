@@ -4,25 +4,25 @@
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
-		
+
 	}, {
 		"carName": "Camry 2019",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
-		
+
 	}, {
 		"carName": "Supra 2020",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
-		
+
 	}, {
 		"carName": "Camry 2019",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
 		"isSelected": true
-		
+
 	}],
 	"productCategory": [{
 		"productName": "Brake Service",
@@ -74,11 +74,20 @@
 	"pickCategory": [{
 		"src": "Images/selfPickUp.png",
 		"pickUpFacility": "Self Drive"
-		
 
 	}, {
 		"src": "Images/deliver.png",
-    	"pickUpFacility": "Pick Up and Deliver",
-    	"pickUpTerms": "online payments only*"
+		"pickUpFacility": "Pick Up and Deliver",
+		"pickUpTerms": "online payments only*"
+	}],
+	"productCatalog": [{
+		"src": "Images/group3.png",
+		"catalog": "Campaign"
+	}, {
+		"src": "Images/dateIcon.png",
+		"catalog": "General Job"
+	},{
+		"src": "Images/deliver.png",
+		"catalog": "Body & Paint"
 	}]
 }
