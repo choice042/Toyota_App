@@ -538,18 +538,18 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .sapMIBar.sapMIBar-CTX.servicesBarClass {
     background-color: #f2f2f2;
     width: 90%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .barLabel.sapMLabel {
-    color: black;
-    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
 }
 
 .servicesBarClass .sapMBarRight {
     background: #89919a;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .stylefooter {
@@ -563,6 +563,21 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 .servicesVbox {
     padding-bottom: 3rem;
+}
+.carouselClass .sapMCrslBulleted>span.sapMCrslActive {
+	width: 0.6rem;
+    height: 0.6rem;
+    color: #6a6d70;
+    background-color: #ED1D23;
+    border: 1px solid #ED1D23;
+    /*margin: 0 0.1rem;*/
+}
+.carouselClass .sapMCrslBulleted>span {
+	width: 0.6rem;
+    height: 0.6rem;
+    /*margin: 0 0.1rem;*/
+    background-color: #D8D8D8;
+    border: 1px solid #ED1D23;
 }
 
 

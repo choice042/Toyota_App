@@ -202,7 +202,8 @@
 					</VBox>
 				</content>
 				<footer>
-					<Toolbar class="stylefooter">
+					<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
+					<!--<Toolbar class="stylefooter">
 						<VBox>
 							<VBox class="text1">
 								<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
@@ -247,7 +248,7 @@
 								<Label id="more" text="More" design="Bold"></Label>
 							</VBox>
 						</VBox>
-					</Toolbar>
+					</Toolbar>-->
 				</footer>
 			</Page>
 		</pages>

@@ -14,6 +14,7 @@ sap.ui.define([
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var logoutVisible = false;
 			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
+			this.carouselScroll();
 		},
 		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
@@ -60,9 +61,9 @@ sap.ui.define([
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
-	/*	onProductPress: function () {
-			this.oRouter.navTo("Products");
-		},*/
+		/*	onProductPress: function () {
+				this.oRouter.navTo("Products");
+			},*/
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		},
@@ -82,18 +83,17 @@ sap.ui.define([
 		onClose: function () {
 			this.oRouter.navTo("Home");
 		},
-	/*	onMorePress2: function () {
-			this.oRouter.navTo("More");
-		},*/
+		/*	onMorePress2: function () {
+				this.oRouter.navTo("More");
+			},*/
 		onUserPress: function () {
-			/*var that = this;
-			if (!this.userDetails) {
-				this.userDetails = sap.ui.xmlfragment("ggg","inc.demo.Toyota.fragment.User", this);
-			}
-			this.getView().addDependent(this.userDetails);*/
-			// this.userDetails.open();
-			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
+		},
+		carouselScroll: function () {
+			var carousel = this.getView().byId("idcarousel");
+			setTimeout(function () {
+				carousel.next();
+			}, 1500);
 		}
 
 	});

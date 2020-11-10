@@ -39,27 +39,27 @@
 					<VBox class="moreContent">
 						<HBox class="sapUiSmallMarginTop">
 							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-							<Label text="Safety and " class="moreLabelSafety" wrapping="true"/>	
-							<Label text="Maintenance Tips" class="labelStyle" wrapping="true"/>	
+								<Label text="Safety and " class="moreLabelSafety" wrapping="true"/>
+								<Label text="Maintenance Tips" class="labelStyle" wrapping="true"/>
 							</VBox>
 							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-							<Label text="Default Service Center" class="sapUiTinyMarginTop"/>	
-							<Label text="Madina Road" class="moreLabelCenter" wrapping="false"/>	
+								<Label text="Default Service Center" class="sapUiTinyMarginTop"/>
+								<Label text="Madina Road" class="moreLabelCenter" wrapping="false"/>
 							</VBox>
 						</HBox>
 						<HBox class="sapUiSmallMarginTop">
 							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-							<Label text="Default Vehicle" class="sapUiTinyMarginTop"/>	
-							<Label text="Supra 2020" class="labelStyle"/>
-							<Image src="Images/supraCar.png" class=" sapUiSmallMarginTop"/>
-							<Label text="VIN: LS5812S2176176" class="sapUiTinyMarginTop"/>
-							
+								<Label text="Default Vehicle" class="sapUiTinyMarginTop"/>
+								<Label text="Supra 2020" class="labelStyle"/>
+								<Image src="Images/supraCar.png" class=" sapUiSmallMarginTop"/>
+								<Label text="VIN: LS5812S2176176" class="sapUiTinyMarginTop"/>
 							</VBox>
 						</HBox>
 					</VBox>
 				</content>
 				<footer>
-					<Toolbar class="stylefooter">
+					<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
+					<!--<Toolbar class="stylefooter">
 						<VBox>
 							<VBox class="text1">
 								<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
@@ -104,7 +104,7 @@
 								<Label id="more" text="More" design="Bold"></Label>
 							</VBox>
 						</VBox>
-					</Toolbar>
+					</Toolbar>-->
 				</footer>
 			</Page>
 		</pages>
