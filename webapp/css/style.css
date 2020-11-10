@@ -1,5 +1,11 @@
 /*  STANDARD CLASSES   */
-
+html.sap-desktop ::-webkit-scrollbar-thumb {
+    background-color: #16528800;
+}
+html.sap-desktop ::-webkit-scrollbar {
+    background-color: #fff0;
+    height: 1rem;
+}
 .sapMBarTitleStart .sapMBarPH {
     justify-content: center !important;
 }
