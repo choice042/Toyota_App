@@ -205,7 +205,7 @@
 					<Toolbar class="stylefooter">
 						<VBox>
 							<VBox class="text1">
-								<Button icon="./Images/icons8-home-16-2.png" press="onPressHome" tooltip="Home" class="footerbtn"></Button>
+								<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
 							</VBox>
 							<VBox class="text2">
 								<Label id="home" text="Home" design="Bold"></Label>
