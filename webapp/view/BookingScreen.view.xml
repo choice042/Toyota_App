@@ -36,7 +36,7 @@
 									</HBox>
 								</VBox>
 								<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
-									<Button class="selectVehicleBtn" text="+ Add Vehicle" width="100%"/>
+									<Button class="selectVehicleBtn" press="onPressScan" text="+ Add Vehicle" width="100%"/>
 								</VBox>
 							</HBox>
 							<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"

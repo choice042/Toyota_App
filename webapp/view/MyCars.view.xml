@@ -9,7 +9,7 @@
 							<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
 						</contentLeft>
 						<contentMiddle>
-							<Label text="MY CARS" class="logo"></Label>
+							<Label text="MY CARS"  class="logo"></Label>
 						</contentMiddle>
 					</Bar>
 				</customHeader>
@@ -23,7 +23,7 @@
 								</HBox>
 							</VBox>
 							<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
-								<Button class="selectVehicleBtn" text="+ Add Vehicle" width="100%"/>
+								<Button class="selectVehicleBtn" press="onPressScan" text="+ Add Vehicle" width="100%"/>
 							</VBox>
 						</HBox>
 						<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"

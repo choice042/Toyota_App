@@ -64,6 +64,9 @@ sap.ui.define([
 		/*onProductPress: function () {
 			this.oRouter.navTo("Products");
 		},*/
+		onPressScan: function(){
+				this.oRouter.navTo("Scan");
+		},
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		},

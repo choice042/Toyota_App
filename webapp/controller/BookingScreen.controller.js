@@ -68,6 +68,9 @@ sap.ui.define([
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 		},
+			onPressScan: function(){
+				this.oRouter.navTo("Scan");
+		},
 		onNavBack: function(){
 			this.oRouter.navTo("Home");
 		}

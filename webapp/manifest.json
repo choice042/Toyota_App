@@ -166,6 +166,13 @@
 					"target": [
 						"More"
 					]
+				},
+					{
+					"name": "Scan",
+					"pattern": "Scan",
+					"target": [
+						"AddVehicle"
+					]
 				}
 			],
 			"targets": {
@@ -214,6 +221,10 @@
 				"More": {
 					"viewType": "XML",
 					"viewName": "More"
+				},
+				"AddVehicle": {
+					"viewType": "XML",
+					"viewName": "AddVehicle"
 				}
 			}
 		}

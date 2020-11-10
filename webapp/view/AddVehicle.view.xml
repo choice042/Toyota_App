@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.AddVehicle"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" class="whitePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="ADD VEHICLE" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<VBox alignItems="Center" justifyContent="Center" class="sapUiMediumMarginTop">
+			<!--<VBox alignItems="Center" justifyContent="Center">-->
+			<HBox alignItems="Center" class="aljHboxImage" justifyContent="Center"><Image class="imgScan" src="Images/scan.png"  press="onAddVehicle"></Image></HBox>	
+			
+			<!--</VBox>-->
+			<VBox  alignItems="Center" justifyContent="Center" class="sapUiSmallMarginTop">
+				<Text text="Scan Isthimara"></Text>
+				<Text text="OR"></Text>
+				<Text text="Enter Manually"></Text>
+				</VBox>
+			<VBox class="sapUiSmallMarginTop">
+				<Label text="VIN no."></Label><Input></Input>
+				
+			</VBox>
+			</VBox>
+		</content>
+		<footer class="scanFooter">
+			<Toolbar class="scanFooter">
+				<ToolbarSpacer></ToolbarSpacer>
+	<VBox alignItems="Center" justifyContent="Center"  >
+		<Button class="aljRedButton aljGrayButtons" press="onAddVehicle" text="ADD"></Button>
+	</VBox>
+	<ToolbarSpacer></ToolbarSpacer>
+	</Toolbar>
+	</footer>
+	</Page>
+</mvc:View>

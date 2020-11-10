@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified" 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:vk="sap.ui.vk" xmlns:vbm="sap.ui.vbm">
+	<Dialog showHeader="false">
+		<VBox alignItems="Center" justifyContent="Center">
+		<HBox class="sapUiTinyMarginTop sapUiTinyMarginEnd sapUiTinyMarginBegin " alignItems="Center" justifyContent="Center" >	
+				<core:HTML  visible="{oAppModel>/oVisibleCameraVideo}" 
+			content='&lt;div class=&quot;camera&quot;&gt;
+			&lt;video id=&quot;video&quot; style=&quot; width: 17rem; &quot; &gt;
+			&lt;/video &gt;
+			&lt;/div&gt;'></core:HTML>	
+			 <Image id="photoFragment" width="100%" press="onCameraOpen"/>
+		</HBox>
+			
+			 <!--visible="{oAppModel>/oVisibleCameraPhoto}" -->
+		<HBox><Button text="Capture" press="takepicture"></Button><Button text="Cancel" press="onCancelCamera"></Button></HBox>
+		</VBox>
+	</Dialog>
+</core:FragmentDefinition>

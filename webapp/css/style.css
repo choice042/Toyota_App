@@ -64,6 +64,26 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*  CUSTOM CLASSES   */
 
+/*AddVehicles*/
+.aljHboxImage.sapMHBox {
+    width: 35% !important;
+}
+.imgScan.sapMImg {
+    width: 100%;
+}
+.scanFooter.sapMIBar-CTX.sapMFooter-CTX {
+    background-color: #fff0 !important;
+    margin-bottom: 3rem;
+    border-top: 1px solid #d9d9d900 !important;
+}
+.whitePage.sapMPageBgStandard {
+    background-color: #ffffff;
+}
+
+
+
+
+
 
 /*Products Screen*/
 
