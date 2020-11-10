@@ -1,0 +1,50 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form">
+	<Toolbar class="stylefooter">
+		<VBox>
+			<VBox class="text1">
+				<Button id="homebtn1" icon="./Images/Home.svg" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
+				<Button id="homebtn2" icon="./Images/HomeRed.svg" press="onHomePress" tooltip="Home" class="footerbtn" visible="false"></Button>
+			</VBox>
+			<VBox class="text2">
+				<Label id="home" text="Home" design="Bold"></Label>
+			</VBox>
+		</VBox>
+		<ToolbarSpacer/>
+		<VBox>
+			<VBox class="text1">
+				<Button id="mycarbtn1" icon="./Images/MyCar.svg" press="onMyCarPress" class="footerbtn"></Button>
+				<Button id="mycarbtn2" icon="./Images/Group2.png" press="onMyCarPress" class="footerbtn" visible="false"></Button>
+			</VBox>
+			<VBox class="text2">
+				<Label id="mycar" text="My Car" design="Bold"></Label>
+			</VBox>
+		</VBox>
+		<ToolbarSpacer/>
+		<VBox>
+			<VBox class="centralbutton">
+				<Button icon="./Images/Product.svg" press="onProductPress" class="productsfooterbtn"></Button>
+			</VBox>
+			<VBox class="text3">
+				<Label id="products" text="Products" design="Bold"></Label>
+			</VBox>
+		</VBox>
+		<ToolbarSpacer/>
+		<VBox>
+			<VBox class="text1">
+				<Button icon="./Images/Booking.svg" press="onBookingsPress" class="footerbtn"></Button>
+			</VBox>
+			<VBox class="text2">
+				<Label id="bookings" text="Bookings" design="Bold"></Label>
+			</VBox>
+		</VBox>
+		<ToolbarSpacer/>
+		<VBox>
+			<VBox class="text1">
+				<Button icon="./Images/More.svg" press="onMorePress" class="footerbtn"></Button>
+			</VBox>
+			<VBox class="text2">
+				<Label id="more" text="More" design="Bold"></Label>
+			</VBox>
+		</VBox>
+	</Toolbar>
+</core:FragmentDefinition>

@@ -15,7 +15,7 @@
 			</Bar>
 		</customHeader>
 		<content>
-			<Carousel class="sapUiResponsiveLayout" height="40%">
+			<Carousel id="idcarousel" class="sapUiResponsiveLayout carouselClass" height="40%" pageChanged="carouselScroll" loop="true">
 				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
 				<Image src="./Images/car1.jpg" width="100%"></Image>
 				<Image src="./Images/car2.jpg" width="100%"></Image>
@@ -130,7 +130,7 @@
 						<Label text="BOOK A SERVICE" class="barLabel"></Label>
 					</contentMiddle>
 					<contentRight>
-						<Image src="./Images/Path1.png" press="onBookservicePress"></Image>
+						<Image src="./Images/Path1.png" press="onBookservicePress" width="14px" height="26px" class="sapUiTinyMarginBegin"></Image>
 					</contentRight>
 				</Bar>
 				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass"
@@ -142,13 +142,14 @@
 						<Label text="MY SERVICES" class="barLabel"></Label>
 					</contentMiddle>
 					<contentRight >
-						<Image src="./Images/Path1.png" press="onMyServicesPress"></Image>
+						<Image src="./Images/Path1.png" press="onMyServicesPress" width="14px" height="26px" class="sapUiTinyMarginBegin"></Image>
 					</contentRight>
 				</Bar>
 			</VBox>
 		</content>
 		<footer>
-			<Toolbar class="stylefooter">
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
+			<!--<Toolbar class="stylefooter">
 				<VBox>
 					<VBox class="text1">
 						<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
@@ -193,7 +194,7 @@
 						<Label id="more" text="More" design="Bold"></Label>
 					</VBox>
 				</VBox>
-			</Toolbar>
+			</Toolbar>-->
 		</footer>
 	</Page>
 </mvc:View>
