@@ -1,5 +1,5 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.MyCars"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
 	<App>
 		<pages>
 			<Page title="Title">
@@ -14,7 +14,7 @@
 					</Bar>
 				</customHeader>
 				<content>
-					<VBox class="selectVehicleCar">
+					<VBox class="selectVehicleCar2">
 						<HBox justifyContent="SpaceBetween">
 							<VBox renderType="Bare">
 								<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
@@ -26,150 +26,230 @@
 								<Button class="selectVehicleBtn" text="+ Add Vehicle" width="100%"/>
 							</VBox>
 						</HBox>
-						<ScrollContainer  height="100%" width="100%" horizontal="true" focusable="true"
-							class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom grayScroller carScroll">
+						<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
+							class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom WhiteScroller carScroll">
 							<HBox items="{oDataGlobalModel>/carCategory}" renderType="Bare">
 								<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList" type="XML"/>
 							</HBox>
 						</ScrollContainer>
 					</VBox>
-					<VBox class="aljVBoxDarkGray">
-						<VBox class="aljVBoxWhite sapUiSmallMarginBottom">
+					<VBox class="aljVBoxDarkGray myServicesVbox2">
+						<VBox class="aljVBoxWhite4 sapUiSmallMarginBottom">
 							<VBox>
 								<Label design="Bold" text="Vehicle Informatics" required="true" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-								<VBox class="aljWhiteSmokeVbox sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginLeft sapUiTinyMarginRight">
-								
+								<VBox alignItems="Center" justifyContent="Center"
+									class="aljWhiteSmokeVbox sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginLeft sapUiTinyMarginRight">
+									<!--<f:SimpleForm id="SimpleFormChange354" editable="true">-->
+									<!--	<f:content>-->
+									<l:VerticalLayout width="100%" class="gridWrapper">
+										<l:Grid>
+											<Label text="Vehicle Model">
+												<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" Camry">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="Model Year ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" March 2018">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="VIN ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" LSRG5785WER">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="Plate Number ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" 3487 KAA">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="Last Service Done ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" 23/04/1923">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="Vehicle Type ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" Own">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<Label text="Warranty ">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Label>
+											<Text class="aljBoldText" text=" 06/02/1992 to 05/06/2019">
+													<layoutData>
+													<l:GridData span="S6"></l:GridData>
+												</layoutData>
+											</Text>
+											<!--	</f:content>-->
+											<!--</f:SimpleForm>-->
+										</l:Grid>
+									</l:VerticalLayout>
 								</VBox>
 							</VBox>
 						</VBox>
 					</VBox>
-				<!--</VBox>-->
-				<VBox class="aljVBoxDarkGray">
-					<VBox class="aljVBoxWhite">
-						<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
-							class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
-							<VBox>
-								<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-								<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop">
-									<VBox class="productsClass2 sapUiTinyMarginEnd">
-										<Label text="Brake Service" design="Bold" class="labelclass"></Label>
-										<Image src="./Images/product1.png"></Image>
-										<Label text="SAR100" design="Bold" class="labelclass2"></Label>
-										<Text text="SAR350" class="textclass"></Text>
-										<Button text="Book" class="productsbuttonclass"></Button>
-									</VBox>
-									<VBox class="productsClass2 sapUiTinyMarginEnd">
-										<Label text="Battery" design="Bold" class="labelclass"></Label>
-										<Image src="./Images/product2.png"></Image>
-										<Label text="SAR100" design="Bold" class="labelclass2"></Label>
-										<Text></Text>
-										<Button text="Book" class="productsbuttonclass"></Button>
-									</VBox>
-									<VBox class="productsClass2 sapUiTinyMarginEnd">
-										<Label text="AC Service" design="Bold" class="labelclass"></Label>
-										<Image src="./Images/product1.png"></Image>
-										<Label text="SAR100" design="Bold" class="labelclass2"></Label>
-										<Text text="SAR350" class="textclass"></Text>
-										<Button text="Book" class="productsbuttonclass"></Button>
-									</VBox>
-								</HBox>
-							</VBox>
-						</ScrollContainer>
+					<!--</VBox>-->
+					<VBox class="aljVBoxDarkGray">
+						<VBox class="aljVBoxWhite2">
+							<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
+								class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
+								<VBox>
+									<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
+									<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop">
+										<VBox class="productsClass3 sapUiTinyMarginEnd">
+											<Label text="Brake Service" design="Bold" class="labelclass"></Label>
+											<Image src="./Images/product1.png"></Image>
+											<Label text="SAR100" design="Bold" class="labelclass2"></Label>
+											<Text text="SAR350" class="textclass"></Text>
+											<Button text="Book" class="productsbuttonclass"></Button>
+										</VBox>
+										<VBox class="productsClass3 sapUiTinyMarginEnd">
+											<Label text="Battery" design="Bold" class="labelclass"></Label>
+											<Image src="./Images/product2.png"></Image>
+											<Label text="SAR100" design="Bold" class="labelclass2"></Label>
+											<Text></Text>
+											<Button text="Book" class="productsbuttonclass"></Button>
+										</VBox>
+										<VBox class="productsClass3 sapUiTinyMarginEnd">
+											<Label text="AC Service" design="Bold" class="labelclass"></Label>
+											<Image src="./Images/product1.png"></Image>
+											<Label text="SAR100" design="Bold" class="labelclass2"></Label>
+											<Text text="SAR350" class="textclass"></Text>
+											<Button text="Book" class="productsbuttonclass"></Button>
+										</VBox>
+									</HBox>
+								</VBox>
+							</ScrollContainer>
+						</VBox>
 					</VBox>
-				</VBox>
-				<VBox class="sapUiSmallMarginTop myServicesVbox">
-					<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-					<HBox>
-						<VBox>
-							<core:Icon class="wbCustomTaskIcon" color="white" backgroundColor="#979797" height="24px" width="24px"></core:Icon>
-							<HBox class="wbCustomTaskLineDone"></HBox>
-						</VBox>
-						<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTop myServicesHbox">
+					<VBox class="aljWhiteBackground">
+						<VBox class="sapUiSmallMarginTop myServicesVbox">
+							<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 							<HBox>
 								<VBox>
-									<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
-									<Text text="VIN:LS81234" class="myservicesText1"></Text>
-									<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
+									<core:Icon class="wbCustomTaskIcon" color="white" backgroundColor="#979797" height="24px" width="24px"></core:Icon>
+									<HBox class="wbCustomTaskLineDone"></HBox>
 								</VBox>
-								<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
+								<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTop myServicesHbox">
+									<HBox>
+										<VBox>
+											<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
+											<Text text="VIN:LS81234" class="myservicesText1"></Text>
+											<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
+										</VBox>
+										<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
+									</HBox>
+									<HBox class="sapUiTinyMarginTop">
+										<Image src="./Images/group3.png"></Image>
+										<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
+									</HBox>
+								</VBox>
 							</HBox>
-							<HBox class="sapUiTinyMarginTop">
-								<Image src="./Images/group3.png"></Image>
-								<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
-							</HBox>
-						</VBox>
-					</HBox>
-					<HBox>
-						<VBox>
-							<core:Icon class="wbCustomTaskIcon" color="white" backgroundColor="#979797" height="24px" width="24px"></core:Icon>
-							<HBox class="wbCustomTaskLineDone"></HBox>
-						</VBox>
-						<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTop myServicesHbox">
 							<HBox>
 								<VBox>
-									<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
-									<Text text="VIN:RSS81234" class="myservicesText1"></Text>
-									<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
+									<core:Icon class="wbCustomTaskIcon" color="white" backgroundColor="#979797" height="24px" width="24px"></core:Icon>
+									<HBox class="wbCustomTaskLineDone"></HBox>
 								</VBox>
-								<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
-							</HBox>
-							<HBox class="sapUiTinyMarginTop">
-								<Image src="./Images/group3.png"></Image>
-								<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
+								<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTop myServicesHbox">
+									<HBox>
+										<VBox>
+											<Image src="./Images/Artboard2.png" class="myservicesimg"></Image>
+											<Text text="VIN:RSS81234" class="myservicesText1"></Text>
+											<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
+										</VBox>
+										<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
+									</HBox>
+									<HBox class="sapUiTinyMarginTop">
+										<Image src="./Images/group3.png"></Image>
+										<Text text="30 May 2020, 09:00 AM - 10:00 AM" class="sapUiTinyMarginTop sapUiTinyMarginBegin"></Text>
+									</HBox>
+								</VBox>
 							</HBox>
 						</VBox>
-					</HBox>
-				</VBox>
-			</content>
+					</VBox>
+				</content>
 				<footer>
-			<Toolbar class="stylefooter">
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/icons8-home-16-2.png" press="onPressHome" tooltip="Home" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="home" text="Home" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/Group2.png" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="mycar" text="My Car" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="centralbutton">
-						<Button icon="./Images/products.png" press="onProductPress" class="productsfooterbtn"></Button>
-					</VBox>
-					<VBox class="text3">
-						<Label id="products" text="Products" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/calendar.png" press="onBookingsPress" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="bookings" text="Bookings" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="more" text="More" design="Bold"></Label>
-					</VBox>
-				</VBox>
-			</Toolbar>
-		</footer>
-		</Page>
-	</pages>
-</App>
+					<Toolbar class="stylefooter">
+						<VBox>
+							<VBox class="text1">
+								<Button icon="./Images/icons8-home-16-2.png" press="onPressHome" tooltip="Home" class="footerbtn"></Button>
+							</VBox>
+							<VBox class="text2">
+								<Label id="home" text="Home" design="Bold"></Label>
+							</VBox>
+						</VBox>
+						<ToolbarSpacer/>
+						<VBox>
+							<VBox class="text1">
+								<Button icon="./Images/Group2.png" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
+							</VBox>
+							<VBox class="text2">
+								<Label id="mycar" text="My Car" design="Bold"></Label>
+							</VBox>
+						</VBox>
+						<ToolbarSpacer/>
+						<VBox>
+							<VBox class="centralbutton">
+								<Button icon="./Images/products.png" press="onProductPress" class="productsfooterbtn"></Button>
+							</VBox>
+							<VBox class="text3">
+								<Label id="products" text="Products" design="Bold"></Label>
+							</VBox>
+						</VBox>
+						<ToolbarSpacer/>
+						<VBox>
+							<VBox class="text1">
+								<Button icon="./Images/calendar.png" press="onBookingsPress" class="footerbtn"></Button>
+							</VBox>
+							<VBox class="text2">
+								<Label id="bookings" text="Bookings" design="Bold"></Label>
+							</VBox>
+						</VBox>
+						<ToolbarSpacer/>
+						<VBox>
+							<VBox class="text1">
+								<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
+							</VBox>
+							<VBox class="text2">
+								<Label id="more" text="More" design="Bold"></Label>
+							</VBox>
+						</VBox>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
