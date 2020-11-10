@@ -102,12 +102,23 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border-radius: 2rem;
     width: 125px;
 }
-/*.aljGrayButtonNew .sapMIBar .sapMBtnInner {*/
-/*    background-color: #D9D9D9 !important;*/
-/*    color: black !important;*/
-/*    border-radius: 2rem;*/
-/*    width: 125px;*/
-/*}*/
+.productsClass3 {
+    align-items: center;
+    background: #f2f2f2 !important;
+    border-radius: 6%;
+    padding: 20px;
+    width: 10rem;
+}
+.aljVBoxWhite4.sapMVBox {
+    background-color: #ffffff;
+    /* border-top-left-radius: 2rem; */
+    border-radius: 1rem;
+}
+.aljVBoxWhite2.sapMVBox {
+    background-color: #ffffff;
+    /*border-radius: 1rem;*/
+    border-top-left-radius: 2rem;
+}
 .aljBarPadding {
     padding-top: 0.5rem !important;
 }
@@ -186,7 +197,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border-top-left-radius: 2rem;
 }
 .aljVBoxDarkGray.sapMVBox {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     
 }
 
@@ -243,7 +254,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: White !important;
 }
 
-.aljGrayButtons.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+.aljGrayButtons .html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     outline: .0625rem dotted #0000 !important;
     outline-offset: -0.1875rem;
     background-color: #D9D9D9 !important;
@@ -571,14 +582,21 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*MY SERVICES*/
-
+.aljWhiteBackground{
+    background-color: white;
+}
 .myServicesVbox {
     background: #dadada;
     border-top-left-radius: 2rem;
     padding: 1rem;
     padding-bottom: 6rem;
 }
-
+.myServicesVbox2 {
+    background: #dadada;
+    border-top-left-radius: 2rem;
+    padding: 1rem;
+    padding-bottom: 0rem !important;
+}
 .myServicesHbox {
     background: #ffffff;
     border-top-left-radius: 1rem;
@@ -1221,7 +1239,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     margin-top: 10px;
     background: #D9D9D9;
 }
-
+.carList5 {
+	 margin-top: 10px;
+    background: #d9d9d900;
+}
 .carList.sapMLIB.sapMLIBActive,
 .aljVehicleListHorStyle.sapMLIB.sapMLIBActive,
 .aljMoreTilesStyle .sapMLIB.sapMLIBActive {
@@ -1260,7 +1281,16 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 .selectVehicleCar {
   background-color: #d9d9d9;
-    
+}
+.carList5 {
+    margin-top: 10px;
+    background: #ffffff;
+}
+.WhiteScroller {
+    background-color: #ffffff;
+}
+.selectVehicleCar2 {
+    background-color: #ffffff;
 }
 
 .selectProduct {
