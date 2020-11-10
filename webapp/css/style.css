@@ -254,7 +254,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: White !important;
 }
 
-.aljGrayButtons.html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+.aljGrayButtons .html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     outline: .0625rem dotted #0000 !important;
     outline-offset: -0.1875rem;
     background-color: #D9D9D9 !important;
