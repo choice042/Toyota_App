@@ -16,12 +16,13 @@
 		</customHeader>
 		<content>
 			<Carousel class="sapUiResponsiveLayout" height="40%">
-				<Image src="./Images/Bitmap-1.png"></Image>
-				<Image src="./Images/car1.jpg"></Image>
-				<Image src="./Images/car2.jpg"></Image>
-				<Image src="./Images/car3.jpg"></Image>
+				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
+				<Image src="./Images/car1.jpg" width="100%"></Image>
+				<Image src="./Images/car2.jpg" width="100%"></Image>
+				<Image src="./Images/car3.jpg" width="100%"></Image>
 			</Carousel>
-			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading" visible="{oDataGlobalModel>/logoutVisible}"></Label>
+			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"
+				visible="{oDataGlobalModel>/logoutVisible}"></Label>
 			<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard2.png"></Image>
@@ -112,9 +113,9 @@
 							<Label text="Service done" design="Bold" class="sapUiSmallMarginBegin sapUiTinyMarginTop serviceStatusLabel"></Label>
 						</HBox>
 					</VBox>
-					<VBox>
-						<Button text="Service Status" press="onServiceStatusPress"></Button>
-						<Button text="confirmation" press="onPressConfirm"></Button>
+					<VBox class="sapUiSmallMarginBegin">
+						<Button text="Service Status" press="onServiceStatusPress" class="productsbuttonclass"></Button>
+						<Button text="confirmation" press="onPressConfirm" class="productsbuttonclass"></Button>
 					</VBox>
 					<!--<Image src="./Images/Servicedone-1.svg" width="110px" height="110px"></Image>-->
 				</HBox>
@@ -132,7 +133,8 @@
 						<Image src="./Images/Path1.png" press="onBookservicePress"></Image>
 					</contentRight>
 				</Bar>
-				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass" visible="{oDataGlobalModel>/logoutVisible}">
+				<Bar class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom sapUiTinyMarginTop servicesBarClass"
+					visible="{oDataGlobalModel>/logoutVisible}">
 					<contentLeft>
 						<Image src="./Images/myservices1.png" press="onMyServicesPress"></Image>
 					</contentLeft>
@@ -176,7 +178,7 @@
 				<ToolbarSpacer/>
 				<VBox>
 					<VBox class="text1">
-						<Button icon="./Images/calendar.png" press="onBookservicePress" class="footerbtn"></Button>
+						<Button icon="./Images/calendar.png" press="onBookingsPress" class="footerbtn"></Button>
 					</VBox>
 					<VBox class="text2">
 						<Label id="bookings" text="Bookings" design="Bold"></Label>
@@ -185,7 +187,7 @@
 				<ToolbarSpacer/>
 				<VBox>
 					<VBox class="text1">
-						<Button icon="./Images/More-4.png" press="onMorePress2" class="footerbtn"></Button>
+						<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
 					</VBox>
 					<VBox class="text2">
 						<Label id="more" text="More" design="Bold"></Label>

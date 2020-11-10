@@ -1,31 +1,29 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-		"sap/ui/core/UIComponent"
-], function (Controller,UIComponent) {
+	"sap/ui/core/UIComponent"
+], function (Controller, UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Products", {
 
-
 		onInit: function () {
-				this.oRouter = this.getRouter();
+			this.oRouter = this.getRouter();
 			this.oRouter.getRoute("Products");
-			 var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-             oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-			 this.oDataGlobalModel = oDataGlobalModel;
-			 
-          
-
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;
+			this.onProductPress();
 		},
-			getRouter: function () {
+		getRouter: function () {
 			return UIComponent.getRouterFor(this);
 		},
-			onHomePress: function () {
+		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("Home");
 		},
 		onMyCarPress: function () {
 			this.getView().byId("mycar").addStyleClass("redFooter");
@@ -33,6 +31,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("MyCars");
 		},
 		onProductPress: function () {
 			this.getView().byId("products").addStyleClass("redFooter");
@@ -40,6 +39,7 @@ sap.ui.define([
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			// this.oRouter.navTo("Products");
 		},
 		onBookingsPress: function () {
 			this.getView().byId("bookings").addStyleClass("redFooter");
@@ -47,6 +47,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("BookingScreen");
 		},
 		onMorePress: function () {
 			this.getView().byId("more").addStyleClass("redFooter");
@@ -54,6 +55,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
+			this.oRouter.navTo("More");
 		},
 		onNotificationPress: function () {
 			this.oRouter.navTo("Notifications");
@@ -61,9 +63,9 @@ sap.ui.define([
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
-		onProductPress: function () {
+		/*onProductPress: function () {
 			this.oRouter.navTo("Products");
-		},
+		},*/
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		},
@@ -73,9 +75,9 @@ sap.ui.define([
 		onBookservicePress: function () {
 			this.oRouter.navTo("BookingScreen");
 		},
-		onMyCarPress: function () {
+		/*onMyCarPress: function () {
 			this.oRouter.navTo("MyCars");
-		},
+		},*/
 		onPressHome: function () {
 			this.oRouter.navTo("Home");
 		},
@@ -89,8 +91,6 @@ sap.ui.define([
 			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
 		}
-
-	
 
 	});
 

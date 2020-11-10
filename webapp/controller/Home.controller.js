@@ -28,6 +28,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("MyCars");
 		},
 		onProductPress: function () {
 			this.getView().byId("products").addStyleClass("redFooter");
@@ -35,6 +36,7 @@ sap.ui.define([
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("Products");
 		},
 		onBookingsPress: function () {
 			this.getView().byId("bookings").addStyleClass("redFooter");
@@ -42,6 +44,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");
+			this.oRouter.navTo("BookingScreen");
 		},
 		onMorePress: function () {
 			this.getView().byId("more").addStyleClass("redFooter");
@@ -49,6 +52,7 @@ sap.ui.define([
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
+			this.oRouter.navTo("More");
 		},
 		onNotificationPress: function () {
 			this.oRouter.navTo("Notifications");
@@ -56,9 +60,9 @@ sap.ui.define([
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
-		onProductPress: function () {
+	/*	onProductPress: function () {
 			this.oRouter.navTo("Products");
-		},
+		},*/
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		},
@@ -68,19 +72,19 @@ sap.ui.define([
 		onBookservicePress: function () {
 			this.oRouter.navTo("BookingScreen");
 		},
-		onBookingsPress: function () {
+		/*onBookingsPress: function () {
 			this.oRouter.navTo("BookingScreen");
 			// console.log("sample");
 		},
 		onMyCarPress: function () {
 			this.oRouter.navTo("MyCars");
-		},
+		},*/
 		onClose: function () {
 			this.oRouter.navTo("Home");
 		},
-			onMorePress2: function () {
+	/*	onMorePress2: function () {
 			this.oRouter.navTo("More");
-		},
+		},*/
 		onUserPress: function () {
 			/*var that = this;
 			if (!this.userDetails) {
