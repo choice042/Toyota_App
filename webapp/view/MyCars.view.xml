@@ -29,7 +29,7 @@
 						<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
 							class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom WhiteScroller carScroll">
 							<HBox items="{oDataGlobalModel>/carCategory}" renderType="Bare">
-								<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList" type="XML"/>
+								<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList2" type="XML"/>
 							</HBox>
 						</ScrollContainer>
 					</VBox>
