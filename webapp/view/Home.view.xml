@@ -18,19 +18,27 @@
 			<Carousel id="idcarousel" class="sapUiResponsiveLayout carouselClass" height="40%" pageChanged="carouselScroll" loop="true">
 				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
 				<Image src="./Images/car1.jpg" width="100%"></Image>
-				<Image src="./Images/car2.jpg" width="100%"></Image>
+				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
 				<Image src="./Images/car3.jpg" width="100%"></Image>
 			</Carousel>
 			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"
 				visible="{oDataGlobalModel>/logoutVisible}"></Label>
 			<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
+				<!--<VBox class="productsClass sapUiTinyMarginEnd">
+					<Image src="{oDataGlobalModel>img1}"></Image>
+					<Label text="{oDataGlobalModel>serviceName}" design="Bold" class="labelclass"></Label>
+					<Image src="{oDataGlobalModel>img2}"></Image>
+					<Label text="{oDataGlobalModel>price1}" design="Bold" class="labelclass2"></Label>
+					<Text text="{oDataGlobalModel>price2}" class="textclass"></Text>
+					<Button text="Book" class="productsbuttonclass" press="onBookservicePress"></Button>
+				</VBox>-->
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard2.png"></Image>
 					<Label text="Brake Service" design="Bold" class="labelclass"></Label>
 					<Image src="./Images/product1.png"></Image>
 					<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 					<Text text="SAR350" class="textclass"></Text>
-					<Button text="Book" class="productsbuttonclass"></Button>
+					<Button text="Book" class="productsbuttonclass" press="onBookservicePress"></Button>
 				</VBox>
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard3.png"></Image>
@@ -38,7 +46,7 @@
 					<Image src="./Images/product2.png"></Image>
 					<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 					<Text></Text>
-					<Button text="Book" class="productsbuttonclass"></Button>
+					<Button text="Book" class="productsbuttonclass" press="onBookservicePress"></Button>
 				</VBox>
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard2-11.png"></Image>
@@ -46,7 +54,7 @@
 					<Image src="./Images/product1.png"></Image>
 					<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 					<Text text="SAR350" class="textclass"></Text>
-					<Button text="Book" class="productsbuttonclass"></Button>
+					<Button text="Book" class="productsbuttonclass" press="onBookservicePress"></Button>
 				</VBox>
 				<VBox class="productsClass sapUiTinyMarginEnd">
 					<Image src="./Images/Artboard3.png"></Image>
