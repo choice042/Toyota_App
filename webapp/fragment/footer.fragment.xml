@@ -2,48 +2,57 @@
 	<Toolbar class="stylefooter">
 		<VBox>
 			<VBox class="text1">
-				<Button id="homebtn1" icon="./Images/Home.svg" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
-				<Button id="homebtn2" icon="./Images/HomeRed.svg" press="onHomePress" tooltip="Home" class="footerbtn" visible="false"></Button>
+				<Button id="homebtn1" icon="./Images/Home.svg" press="onHomePress" tooltip="Home" class="footerbtn" visible="{oDataGlobalModel>/homebtn1}"></Button>
+				<Button id="homebtn2" icon="./Images/HomeRed.svg" press="onHomePress" tooltip="Home" class="footerbtn"
+					visible="{oDataGlobalModel>/homebtn2}"></Button>
 			</VBox>
 			<VBox class="text2">
-				<Label id="home" text="Home" design="Bold"></Label>
+				<Label id="home" text="Home" design="Bold" visible="{oDataGlobalModel>/homebtn1}"></Label>
+				<Label text="Home" design="Bold" class="redFooter" visible="{oDataGlobalModel>/homebtn2}"></Label>
 			</VBox>
 		</VBox>
 		<ToolbarSpacer/>
 		<VBox>
 			<VBox class="text1">
-				<Button id="mycarbtn1" icon="./Images/MyCar.svg" press="onMyCarPress" class="footerbtn"></Button>
-				<Button id="mycarbtn2" icon="./Images/Group2.png" press="onMyCarPress" class="footerbtn" visible="false"></Button>
+				<Button id="mycarbtn1" icon="./Images/MyCar.svg" press="onMyCarPress" class="footerbtn" visible="{oDataGlobalModel>/mycarbtn1}"></Button>
+				<Button id="mycarbtn2" icon="./Images/Group2.png" press="onMyCarPress" class="footerbtn" visible="{oDataGlobalModel>/mycarbtn2}"></Button>
 			</VBox>
 			<VBox class="text2">
-				<Label id="mycar" text="My Car" design="Bold"></Label>
+				<Label id="mycar" text="My Car" design="Bold" visible="{oDataGlobalModel>/mycarbtn1}"></Label>
+				<Label text="My Car" design="Bold" class="redFooter" visible="{oDataGlobalModel>/mycarbtn2}"></Label>
 			</VBox>
 		</VBox>
 		<ToolbarSpacer/>
 		<VBox>
 			<VBox class="centralbutton">
-				<Button icon="./Images/Product.svg" press="onProductPress" class="productsfooterbtn"></Button>
+				<Button icon="./Images/Product.svg" press="onProductPress" class="productsfooterbtn" visible="{oDataGlobalModel>/productbtn1}"></Button>
+				<Button icon="./Images/products.png" press="onProductPress" class="productsfooterbtn" visible="{oDataGlobalModel>/productbtn2}"></Button>
 			</VBox>
 			<VBox class="text3">
-				<Label id="products" text="Products" design="Bold"></Label>
+				<Label id="products" text="Products" design="Bold" visible="{oDataGlobalModel>/productbtn1}"></Label>
+				<Label text="Products" design="Bold" class="redFooter" visible="{oDataGlobalModel>/productbtn2}"></Label>
 			</VBox>
 		</VBox>
 		<ToolbarSpacer/>
 		<VBox>
 			<VBox class="text1">
-				<Button icon="./Images/Booking.svg" press="onBookingsPress" class="footerbtn"></Button>
+				<Button icon="./Images/Booking.svg" press="onBookingsPress" class="footerbtn" visible="{oDataGlobalModel>/bookingbtn1}"></Button>
+				<Button icon="./Images/BookingRed.png" press="onBookingsPress" class="footerbtn" visible="{oDataGlobalModel>/bookingbtn2}"></Button>
 			</VBox>
 			<VBox class="text2">
-				<Label id="bookings" text="Bookings" design="Bold"></Label>
+				<Label id="bookings" text="Bookings" design="Bold" visible="{oDataGlobalModel>/bookingbtn1}"></Label>
+				<Label text="Bookings" design="Bold" class="redFooter" visible="{oDataGlobalModel>/bookingbtn2}"></Label>
 			</VBox>
 		</VBox>
 		<ToolbarSpacer/>
 		<VBox>
 			<VBox class="text1">
-				<Button icon="./Images/More.svg" press="onMorePress" class="footerbtn"></Button>
+				<Button icon="./Images/More.svg" press="onMorePress" class="footerbtn" visible="{oDataGlobalModel>/morebtn1}"></Button>
+				<Button icon="./Images/MoreRed.jpg" press="onMorePress" class="footerbtn" visible="{oDataGlobalModel>/morebtn2}"></Button>
 			</VBox>
 			<VBox class="text2">
-				<Label id="more" text="More" design="Bold"></Label>
+				<Label id="more" text="More" design="Bold" visible="{oDataGlobalModel>/morebtn1}"></Label>
+				<Label text="More" design="Bold" class="redFooter" visible="{oDataGlobalModel>/morebtn2}"></Label>
 			</VBox>
 		</VBox>
 	</Toolbar>

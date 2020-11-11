@@ -48,6 +48,13 @@
 		"price1": "SAR100",
 		"price2": ""
 
+	}, {
+		"img1": "Images/Artboard3.png",
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
 	}],
 	"Notifications": [{
 		"title": "Lorem ipsum dolot sit amet",
