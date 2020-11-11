@@ -11,7 +11,7 @@
 							<Text text="Select Vehicle" class="headingBold sapUiSmallMarginBegin"></Text>
 						</contentLeft>
 						<contentRight>
-							<Button class="aljGrayButtonsSmall aljGrayButtonNew" text="+Add Vehicle"></Button>
+							<Button class="aljGrayButtonsSmall aljGrayButtonNew" text="+Add Vehicle" press="onAddVehicle"></Button>
 						</contentRight>
 					</Bar>
 					<!--</HBox>-->

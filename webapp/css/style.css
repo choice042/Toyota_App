@@ -444,7 +444,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*Home*/
-
+.aljHomeCustomItem.sapMLIB {
+    background: #f2f2f2 !important;
+}
 .sapMIBar.sapMIBar-CTX.stylebar {
     background-color: #e62f2d;
 }
@@ -457,7 +459,10 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .btn .sapMBtnIcon {
     color: white;
 }
-
+  .aljHomeServiceStatus{
+  	
+    width: 11rem !important;
+    } 
 .btn .sapUiIcon {
     font-size: 1.5rem;
 }

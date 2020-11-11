@@ -8,7 +8,7 @@
 			&lt;video id=&quot;video&quot; style=&quot; width: 17rem; &quot; &gt;
 			&lt;/video &gt;
 			&lt;/div&gt;'></core:HTML>	
-			 <Image id="photoFragment" width="100%" press="onCameraOpen"/>
+			
 		</HBox>
 			
 			 <!--visible="{oAppModel>/oVisibleCameraPhoto}" -->

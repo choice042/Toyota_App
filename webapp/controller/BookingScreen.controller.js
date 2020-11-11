@@ -73,6 +73,9 @@ sap.ui.define([
 		},
 		onNavBack: function(){
 			this.oRouter.navTo("Home");
+		},
+			onPressConfirm: function () {
+			this.oRouter.navTo("confirmAppointment");
 		}
 		
 	});

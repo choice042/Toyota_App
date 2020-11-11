@@ -28,9 +28,9 @@ sap.ui.define([
 		},
 
 		startup: function () {
-			var oAppModel = this.getOwnerComponent().getModel("oAppModel");
+			// var oAppModel = this.getOwnerComponent().getModel("oAppModel");
 		
-			oAppModel.refresh();
+			// oAppModel.refresh();
 			var video = document.getElementById('video');
 		
 			navigator.mediaDevices.getUserMedia({
@@ -67,7 +67,6 @@ sap.ui.define([
 		clearphoto: function () {
 			var canvas = document.getElementById('canvas');
 			var photo = this.byId("photo");
-				var photoFragment = this.byId("photoFragment");
 			var context = canvas.getContext('2d');
 			context.fillStyle = "#AAA";
 			context.fillRect(0, 0, canvas.width, canvas.height);
@@ -79,15 +78,15 @@ sap.ui.define([
 
 		takepicture: function () {
 			var that = this;
-			var oAppModel = this.getOwnerComponent().getModel("oAppModel");
-			oAppModel.setProperty("/oVisibleCameraButton", false);
-			oAppModel.setProperty("/oVisibleCameraVideo", false);
-			oAppModel.setProperty("/oVisibleCameraPhoto", true);
-			oAppModel.setProperty("/oVisibleCameraCanva", true);
+			// var oAppModel = this.getOwnerComponent().getModel("oAppModel");
+			// oAppModel.setProperty("/oVisibleCameraButton", false);
+			// oAppModel.setProperty("/oVisibleCameraVideo", false);
+			// oAppModel.setProperty("/oVisibleCameraPhoto", true);
+			// oAppModel.setProperty("/oVisibleCameraCanva", true);
 			var video = document.getElementById('video');
 			var canvas = document.getElementById('canvas');
 			var photo = this.byId("photo");
-				var photoFragment = this.byId("photoFragment");
+			
 			var context = canvas.getContext('2d');
 			var value = true;
 			if (value) {
@@ -100,24 +99,24 @@ sap.ui.define([
 				photo.setSrc(payloadString);
 					// photoFragment.setSrc(payloadString);
 					
-				oAppModel.setProperty("/oVisibleCameraCanva", false);
+				// oAppModel.setProperty("/oVisibleCameraCanva", false);
 				var sUrl = "/Java_Service/alj/misc/ocr/getvin";
-				jQuery.ajax({
-					traditional: true,
-					type: "POST",
-					contentType: false,
-					url: sUrl,
-					data: payloadString,
-					async: false,
-					success: function (data, textStatus, jqXHR) {
-						console.log(data);
-						oAppModel.setProperty("/oEnteredVIN", data);
+				// jQuery.ajax({
+				// 	traditional: true,
+				// 	type: "POST",
+				// 	contentType: false,
+				// 	url: sUrl,
+				// 	data: payloadString,
+				// 	async: false,
+				// 	success: function (data, textStatus, jqXHR) {
+				// 		console.log(data);
+				// 		oAppModel.setProperty("/oEnteredVIN", data);
 
-					},
-					error: function (data) {
-						console.log(data);
-					}
-				});
+				// 	},
+				// 	error: function (data) {
+				// 		console.log(data);
+				// 	}
+				// });
 
 				// oAppModel.setPoperty("/oEnteredVIN",newData);
 				this.showCAMERA.close();
@@ -128,10 +127,10 @@ sap.ui.define([
 
 		onCancelCamera: function () {
 			this.showCAMERA.close();
-			var oAppModel = this.getOwnerComponent().getModel("oAppModel");
-			oAppModel.setProperty("/oVisibleCameraButton", true);
-			oAppModel.setProperty("/oVisibleCameraPhoto", false);
-			oAppModel.setProperty("/oVisibleCameraCanva", false);
+			// var oAppModel = this.getOwnerComponent().getModel("oAppModel");
+			// oAppModel.setProperty("/oVisibleCameraButton", true);
+			// oAppModel.setProperty("/oVisibleCameraPhoto", false);
+			// oAppModel.setProperty("/oVisibleCameraCanva", false);
 		},
 
 		onOKPress: function (payloadString) {

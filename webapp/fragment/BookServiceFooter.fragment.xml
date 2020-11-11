@@ -24,7 +24,7 @@
 		</VBox>
 		<VBox alignItems="Center" class="sapUiLargeMarginBegin">
 			<Label text="SAR 200" class="brakeFooterLabel"/>
-			<Button class="confirmBtn sapUiTinyMarginTop" text="Confirm" width="100%"/>
+			<Button class="confirmBtn sapUiTinyMarginTop" press="onPressConfirm" text="Confirm" width="100%"/>
 		</VBox>
 	</OverflowToolbar>
 </core:FragmentDefinition>

@@ -90,6 +90,9 @@ sap.ui.define([
 			// this.userDetails.open();
 			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
+		},
+		onAddVehicle: function(){
+			this.oRouter.navTo("Scan");
 		}
 
 	});

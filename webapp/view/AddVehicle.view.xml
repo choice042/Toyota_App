@@ -18,15 +18,19 @@
 			
 			<!--</VBox>-->
 			<VBox  alignItems="Center" justifyContent="Center" class="sapUiSmallMarginTop">
-				<Text text="Scan Isthimara"></Text>
+				<Label design="Bold" text="Scan Isthimara"></Label>
 				<Text text="OR"></Text>
 				<Text text="Enter Manually"></Text>
 				</VBox>
 			<VBox class="sapUiSmallMarginTop">
-				<Label text="VIN no."></Label><Input></Input>
+				<Label design="Bold" text="What is your VIN number?"></Label><Input></Input>
 				
 			</VBox>
+			<VBox class="sapUiSmallMarginTop">
+			 <Image id="photo" width="100%" press="onCameraOpen"/>
+			 </VBox>
 			</VBox>
+			  <core:HTML content='&lt;canvas id=&quot;canvas&quot;&gt; &lt;/canvas&gt;'></core:HTML>
 		</content>
 		<footer class="scanFooter">
 			<Toolbar class="scanFooter">
