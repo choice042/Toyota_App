@@ -28,7 +28,7 @@
         <text id="Waiting_for_approval" data-name="Waiting for approval" transform="translate(84 74)" fill="#fff" font-size="12" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-35.736" y="0">Waiting for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-26.79" y="14">approval</tspan></text>
       </g>
     </g>
-    <!--<g id="Group_7" data-name="Group 7" transform="translate(-52)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-52)">
       <g id="Group_6" data-name="Group 6">
         <text id="Order_created" data-name="Order created" transform="translate(170 10)" fill="#00d1ce" font-size="14" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Order created</tspan></text>
         <text id="Car_received" data-name="Car received" transform="translate(300 84)" fill="#00d1ce" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Car received</tspan></text>
@@ -36,6 +36,6 @@
         <text id="Ready_for_Delivery" data-name="Ready for Delivery" transform="translate(92 84)" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-40.144" y="0">Ready for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-34.464" y="19">Delivery</tspan></text>
         <text id="Service_done-2" data-name="Service done" transform="translate(276 171)" fill="#00d1ce" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Service done</tspan></text>
       </g>
-    </g>-->
+    </g>
   </g>
 </svg>

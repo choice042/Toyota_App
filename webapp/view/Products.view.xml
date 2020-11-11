@@ -24,10 +24,10 @@
 					</ScrollContainer>
 				</VBox>
 				<VBox class="aljVBoxGray">
-					
+					<Label design="Bold" text="Product Catalog" class="sapUiSmallMarginBegin sapUiMediumMarginBegin sapUiSmallMarginTop heading"></Label>
 					<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
 						class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
-							<Label design="Bold" text="General Jobs" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
+							
 						<HBox items="{oDataGlobalModel>/productCatalog}" class="sapUiTinyMarginBegin ">
 							<core:Fragment fragmentName="inc.demo.Toyota.fragment.ProductCatalog" type="XML"/>
 						</HBox>
@@ -38,7 +38,7 @@
 				<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
 					class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
 				
-					<VBox>
+					<VBox class="sapUiSmallMarginBottom">
 						<Label design="Bold" text="General Jobs" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 						<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop">
 							<VBox class="productsClass2 sapUiTinyMarginEnd">
