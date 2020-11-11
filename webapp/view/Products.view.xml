@@ -46,21 +46,21 @@
 								<Image src="./Images/product1.png"></Image>
 								<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 								<Text text="SAR350" class="textclass"></Text>
-								<Button text="Book" class="productsbuttonclass"></Button>
+								<Button text="Book" press="onPressProductDetail" class="productsbuttonclass"></Button>
 							</VBox>
 							<VBox class="productsClass2 sapUiTinyMarginEnd">
 								<Label text="Battery" design="Bold" class="labelclass"></Label>
 								<Image src="./Images/product2.png"></Image>
 								<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 								<Text></Text>
-								<Button text="Book" class="productsbuttonclass"></Button>
+								<Button text="Book" press="onPressProductDetail"  class="productsbuttonclass"></Button>
 							</VBox>
 							<VBox class="productsClass2 sapUiTinyMarginEnd">
 								<Label text="AC Service" design="Bold" class="labelclass"></Label>
 								<Image src="./Images/product1.png"></Image>
 								<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 								<Text text="SAR350" class="textclass"></Text>
-								<Button text="Book" class="productsbuttonclass"></Button>
+								<Button text="Book"  press="onPressProductDetail" class="productsbuttonclass"></Button>
 							</VBox>
 						</HBox>
 					</VBox>

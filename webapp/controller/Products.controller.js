@@ -168,6 +168,9 @@ sap.ui.define([
 		},
 		onAddVehicle: function(){
 			this.oRouter.navTo("Scan");
+		},
+		onPressProductDetail: function(){
+			this.oRouter.navTo("productDetail");
 		}
 
 	});

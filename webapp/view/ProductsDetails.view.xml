@@ -1,0 +1,51 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.ProductsDetails"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" class="whitePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="PRODUCTS" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<Label design="Bold" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading" text="Brake Service"></Label>
+			<VBox class="sapUiMediumMarginTop">
+				<!--<VBox alignItems="Center" justifyContent="Center">-->
+				<HBox class="aljHboxImage sapUiSmallMarginBegin">
+					<HBox class="sapUiMediumMarginEnd"><Image src="./Images/product1.png"></Image></HBox>
+					<VBox class="sapUiMediumMarginBegin">
+						<Label text="SAR100" design="Bold" class="labelclass2"></Label>
+						<Text text="SAR350" class="textclass"></Text>
+					</VBox>
+				</HBox>
+				<!--</VBox>-->
+				<VBox class="sapUiSmallMarginTop">
+					<Panel expandable="true" width="auto" class="sapUiResponsiveMargin ">
+						<headerToolbar>
+							<OverflowToolbar style="Clear">
+								<Title text="Detail"/>
+								<ToolbarSpacer/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Text text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"></Text>
+						</content>
+					</Panel>
+				</VBox>
+			</VBox>
+		</content>
+		<footer class="scanFooter">
+			<Toolbar class="scanFooter">
+				<ToolbarSpacer></ToolbarSpacer>
+				<VBox alignItems="Center" justifyContent="Center">
+					<Button class="aljRedFillButton  aljGrayButtons " press="onAddVehicle" text="Book"></Button>
+				</VBox>
+				<ToolbarSpacer></ToolbarSpacer>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

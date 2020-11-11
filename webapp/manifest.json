@@ -167,11 +167,18 @@
 						"More"
 					]
 				},
-					{
+				{
 					"name": "Scan",
 					"pattern": "Scan",
 					"target": [
 						"AddVehicle"
+					]
+				},
+					{
+					"name": "productDetail",
+					"pattern": "productDetail",
+					"target": [
+						"ProductsDetails"
 					]
 				}
 			],
@@ -225,6 +232,10 @@
 				"AddVehicle": {
 					"viewType": "XML",
 					"viewName": "AddVehicle"
+				},
+				"ProductsDetails": {
+					"viewType": "XML",
+					"viewName": "ProductsDetails"
 				}
 			}
 		}
