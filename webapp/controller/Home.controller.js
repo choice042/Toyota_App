@@ -50,7 +50,7 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
-			console.log("ALJ");
+			// console.log("ALJ");
 			/*this.getView().byId("home").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
 			this.getView().byId("products").removeStyleClass("redFooter");

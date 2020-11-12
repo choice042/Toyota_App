@@ -18,24 +18,27 @@
 				<Button text="Edit" class="myProfileEditBtn" press="EditProfilePress"></Button>
 			</HBox>
 			<Label text="Basic Information" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
-			<VBox class="sapUiSmallMarginBegin myProfileClass">
-				<HBox>
-					<Text text="Name:"></Text>
-					<Text text="Abhishek Jain - Verified BP"></Text>
-				</HBox>
-				<HBox>
-					<Text text="Mobile No:"></Text>
-					<Text text="8529568450"></Text>
-				</HBox>
-				<HBox>
-					<Text text="Email:"></Text>
-					<Text text=""></Text>
-				</HBox>
-				<HBox>
-					<Text text="National ID:"></Text>
-					<Text text="12345678"></Text>
-				</HBox>
-			</VBox>
+			<HBox>
+				<VBox class="sapUiSmallMarginBegin myProfileClass">
+					<HBox>
+						<Text text="Name:"></Text>
+						<Text text="Abhishek Jain - Verified BP"></Text>
+					</HBox>
+					<HBox>
+						<Text text="Mobile No:"></Text>
+						<Text text="8529568450"></Text>
+					</HBox>
+					<HBox>
+						<Text text="Email:"></Text>
+						<Text text=""></Text>
+					</HBox>
+					<HBox>
+						<Text text="National ID:"></Text>
+						<Text text="12345678"></Text>
+					</HBox>
+				</VBox>
+				<Image src="./Images/percentage1.png"></Image>
+			</HBox>
 			<Label text="Select Language" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
 			<VBox class="myProfileLanguageClass sapUiSmallMarginTop">
 				<HBox class="myProfileLanguageHboxClass">

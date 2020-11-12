@@ -1,7 +1,8 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form">
-	<HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin">
+	<HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin editProfileHboxClass" justifyContent="SpaceBetween">
 		<!--<Button icon="sap-icon://customer" class="myProfileImg"></Button>-->
 		<Avatar></Avatar>
+		<Image src="./Images/percentage2.png"></Image>
 	</HBox>
 	<Label text="Basic Information" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
 	<f:SimpleForm editable="true" id="idEditprofileForm">

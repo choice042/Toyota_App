@@ -1061,6 +1061,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: .0625rem solid #EB0A1E;
     border-radius: 7px;
 }
+.editProfileHboxClass{
+	padding-right: 1rem;
+}
 
 /*bijay's css*/
 
