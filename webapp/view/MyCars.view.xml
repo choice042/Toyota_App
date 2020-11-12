@@ -41,7 +41,7 @@
 									class="aljWhiteSmokeVbox sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginLeft sapUiTinyMarginRight">
 									<!--<f:SimpleForm id="SimpleFormChange354" editable="true">-->
 									<!--	<f:content>-->
-									<l:VerticalLayout width="100%" class="gridWrapper">
+									<l:VerticalLayout width="100%" >
 										<l:Grid>
 											<Label text="Vehicle Model">
 												<layoutData>
@@ -117,6 +117,7 @@
 											<!--</f:SimpleForm>-->
 										</l:Grid>
 									</l:VerticalLayout>
+		
 								</VBox>
 							</VBox>
 						</VBox>

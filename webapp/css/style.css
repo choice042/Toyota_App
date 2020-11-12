@@ -551,7 +551,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: 1px solid white;
     box-shadow: 1px -1px 6px 0px #6a6d70;
     padding: 13%;
-    margin-top: -11px;
+    margin-top: -13px;
     background-color: #ffffff;
 }
 
@@ -656,7 +656,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     padding-bottom: 0rem !important;
 }
 .myServicesHbox {
-    background: #ffffff;
+    background: #f5f5f5;
     border-top-left-radius: 1rem;
     border-radius: 1rem;
     padding: 0.6rem;
@@ -665,17 +665,26 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .myservicesBtnClick .sapMBtnInner {
-    border: 0.1rem solid #f3979f !important;
-    color: black !important;
+    border: 1px solid #EB0A1E !important;
+    color: #37383B !important;
     font-weight: bold;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: #f7f7f7;
 }
 
 .myservicesBtnnotClick .sapMBtnInner {
-    border: .0625rem solid #d2d2d2 !important;
-    color: #d2d2d2 !important;
+    border: .0625rem solid #979797 !important;
+    color: #68696C !important;
     font-weight: bold;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: #f7f7f7;
 }
-
+.myservicesBtn{
+	width: 90px;
+    height: 38px;
+}
 .myserviceKnowmoreBtn .sapMBtnInner {
     background-color: #68696c;
     border: .0625rem solid #68696c;

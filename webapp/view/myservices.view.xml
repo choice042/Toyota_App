@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.myservices"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page class="homePage">
+	<Page>
 		<customHeader>
 			<Bar class="stylebar">
 				<contentMiddle>
@@ -14,9 +14,9 @@
 		<content>
 			<Label design="Bold" text="Service Type" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 			<HBox class="sapUiMediumMarginTop">
-				<Button id="ongoing" text="Ongoing" class="sapUiMediumMarginBegin sapUiTinyMarginEnd" press="onOngoingPress"></Button>
-				<Button id="past" text="Past" class="sapUiTinyMarginEnd" press="onPastPress"></Button>
-				<Button id="upcoming" text="Upcoming" press="onUpcomingPress"></Button>
+				<Button id="ongoing" text="Ongoing" class="sapUiMediumMarginBegin sapUiTinyMarginEnd myservicesBtn" press="onOngoingPress"></Button>
+				<Button id="past" text="Past" class="sapUiTinyMarginEnd myservicesBtn" press="onPastPress"></Button>
+				<Button id="upcoming" text="Upcoming" press="onUpcomingPress" class="myservicesBtn"></Button>
 			</HBox>
 			<VBox class="sapUiSmallMarginTop myServicesVbox">
 				<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
