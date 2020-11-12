@@ -52,7 +52,7 @@
 								<Text text="VIN:RSS81234" class="myservicesText1"></Text>
 								<Text text="Brake Service" class="sapUiTinyMarginTop myservicesText1"></Text>
 							</VBox>
-							<Button text="Know More" class="myserviceKnowmoreBtn"></Button>
+							<Button text="Know More" press="onPressKnowMore" class="myserviceKnowmoreBtn"></Button>
 						</HBox>
 						<HBox class="sapUiTinyMarginTop">
 							<Image src="./Images/group3.png"></Image>
