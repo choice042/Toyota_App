@@ -103,6 +103,9 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
+		},
+		onPressConfirm: function(){
+			this.oRouter.navTo("confirmAppointment");
 		}
 
 	});
