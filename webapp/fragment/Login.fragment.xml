@@ -7,11 +7,11 @@
 			<VBox>
 				<VBox>
 					<Label class="loginLabels" text="User Name"></Label>
-					<Input class="loginInputs" value="Abhishek Jain" type="Text"></Input>
+					<Input class="loginInputs" value="{oDataGlobalModel>/userData/userName}" type="Text"></Input>
 				</VBox>
 				<VBox>
 					<Label class="loginLabels" text="Password"></Label>
-					<Input class="loginInputs" value="Abhishek123" type="Password"></Input>
+					<Input class="loginInputs" value="{oDataGlobalModel>/userData/passsword}" type="Password"></Input>
 				</VBox>
 				<VBox class="SignInbox">
 					<Button class="siginButton" text="Login" press="onLoginPress"></Button>

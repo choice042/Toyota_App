@@ -22,19 +22,19 @@
 				<VBox class="sapUiSmallMarginBegin myProfileClass">
 					<HBox>
 						<Text text="Name:"></Text>
-						<Text text="Abhishek Jain - Verified BP"></Text>
+						<Text text="{oDataGlobalModel>/userData/firstName}{oDataGlobalModel>/userData/lastName} - Verified BP"></Text>
 					</HBox>
 					<HBox>
 						<Text text="Mobile No:"></Text>
-						<Text text="8529568450"></Text>
+						<Text text="{oDataGlobalModel>/userData/mobile}"></Text>
 					</HBox>
 					<HBox>
 						<Text text="Email:"></Text>
-						<Text text=""></Text>
+						<Text text="{oDataGlobalModel>/userData/mail}"></Text>
 					</HBox>
 					<HBox>
 						<Text text="National ID:"></Text>
-						<Text text="12345678"></Text>
+						<Text text="{oDataGlobalModel>/userData/nationalId}"></Text>
 					</HBox>
 				</VBox>
 				<Image src="./Images/percentage1.png"></Image>
