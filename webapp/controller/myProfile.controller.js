@@ -27,6 +27,7 @@ sap.ui.define([
 			this.getView().byId("idMyProfile").setVisible(true);
 			this.getView().byId("idLogin").setVisible(false);
 			// this.getRouter().navTo("Home");
+			// console.log(msg);
 			var logoutVisible = true;
 			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
 			var data = oDataGlobalModel.getProperty("/userData");
