@@ -171,6 +171,9 @@ sap.ui.define([
 		},
 		onPressProductDetail: function(){
 			this.oRouter.navTo("productDetail");
+		},
+		onNavBack: function(){
+			this.oRouter.navTo("Home");
 		}
 
 	});

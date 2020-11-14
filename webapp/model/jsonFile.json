@@ -46,16 +46,16 @@
 		"productPrice": "SAR 100"
 	}],
 	"locationCategory": [{
-		"locationName": "Madina Road"
+		"locationName": "Medina"
 
 	}, {
-		"locationName": "Madina Road"
+		"locationName": "Riyadh"
 
 	}, {
-		"locationName": "Madina Road"
+		"locationName": "Jeddah"
 
 	}, {
-		"locationName": "Madina Road"
+		"locationName": "Mecca"
 
 	}],
 	"timeSlot": [{
@@ -80,14 +80,371 @@
 		"pickUpFacility": "Pick Up and Deliver",
 		"pickUpTerms": "online payments only*"
 	}],
-	"productCatalog": [{
-		"src": "Images/group3.png",
-		"catalog": "Campaign"
-	}, {
+	"productCatalog": [ {
 		"src": "Images/dateIcon.png",
-		"catalog": "General Job"
+		"catalog": "General Job",
+		"subcategory":[{
+		
+	   	"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
+	}]
+	},{
+		"src": "Images/group3.png",
+		"catalog": "Campaign",
+		"subcategory":[{
+		
+	   	"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
+	}]
 	},{
 		"src": "Images/deliver.png",
-		"catalog": "Body & Paint"
+		"catalog": "Body & Paint",
+		"subcategory":[{
+		
+	   	"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
 	}]
+	},
+	{
+		"src": "Images/deliver.png",
+		"catalog": "Wash & Clean",
+		"subcategory":[{
+		
+	   	"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
+	}]
+	}],
+		"HomeProductsMyCars": [{
+		
+	   	"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+	
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+	
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
+	}],
+	"HomeProducts": [{
+		"img1": "Images/Artboard2.png",
+		"serviceName": "Brake Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+		"img1": "Images/Artboard3.png",
+		"serviceName": "Battery",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+		"img1": "Images/Artboard2-11.png",
+		"serviceName": "AC Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+		"img1": "Images/Artboard3.png",
+		"serviceName": "Air Filter",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+		"img1": "Images/Artboard2-1.png",
+		"serviceName": "Engine Oil",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR350"
+
+	}, {
+		"img1": "Images/Artboard3.png",
+		"serviceName": "Wipers",
+		"img2": "Images/product2.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+		"img1": "Images/Artboard2-1.png",
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": ""
+
+	}, {
+		"img1": "Images/Artboard3.png",
+		"serviceName": "General Service",
+		"img2": "Images/product1.png",
+		"price1": "SAR100",
+		"price2": "SAR300"
+
+	}],
+	"Notifications": [{
+		"title": "Lorem ipsum dolot sit amet",
+		"description": "this is the first notification"
+	}, {
+		"title": "Lorem ipsum dolot sit amet",
+		"description": "this is the second notification"
+	}, {
+		"title": "Lorem ipsum dolot sit amet",
+		"description": "this is the third notification"
+	}]
+
 }

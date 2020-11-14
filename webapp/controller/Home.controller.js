@@ -12,7 +12,7 @@ sap.ui.define([
 			this.oRouter.getRoute("Home");
 			this.onHomePress();
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonSarath.json", null, false);
+			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			var logoutVisible = false;
 			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
 			var homebtn1 = false;

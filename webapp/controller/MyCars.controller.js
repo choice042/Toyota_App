@@ -9,7 +9,9 @@ sap.ui.define([
 		formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			
 			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+		
 			this.oDataGlobalModel = oDataGlobalModel;
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.onMyCarPress();
@@ -161,6 +163,9 @@ sap.ui.define([
 		},
 		onBookservicePress: function () {
 				this.oRouter.navTo("BookingScreen");
+			},
+			onPressKnowMore: function(){
+					this.oRouter.navTo("ServiceStatus");
 			}
 			/*onPressHome: function () {
 				this.oRouter.navTo("Home");

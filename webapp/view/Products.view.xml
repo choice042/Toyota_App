@@ -1,6 +1,16 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.Products"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="PRODUCTS" class="aljBoldHeading">
+	<Page>
+			<customHeader>
+					<Bar class="stylebar">
+						<contentLeft>
+							<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
+						</contentLeft>
+						<contentMiddle>
+							<Label text="PRODUCTS"  class="logo"></Label>
+						</contentMiddle>
+					</Bar>
+				</customHeader>
 		<content>
 			<VBox>
 				<VBox></VBox>
