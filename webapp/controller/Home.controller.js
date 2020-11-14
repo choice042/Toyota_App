@@ -38,6 +38,18 @@ sap.ui.define([
 			console.log(oDataGlobalModel);
 			this.carouselScroll();
 		},
+		loginWarningFragmentOpen: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			}
+		},
 		onHomePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			oDataGlobalModel.setProperty("/homebtn1", false);
@@ -50,6 +62,7 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
+			// this.loginWarningFragmentOpen();
 			// console.log("ALJ");
 			/*this.getView().byId("home").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
@@ -69,12 +82,23 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			}
 			/*this.getView().byId("mycar").addStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");*/
-			this.oRouter.navTo("MyCars");
+			else {
+				this.oRouter.navTo("MyCars");
+			}
 		},
 		onProductPress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -88,12 +112,23 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			}
 			/*this.getView().byId("products").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");*/
-			this.oRouter.navTo("Products");
+			else {
+				this.oRouter.navTo("Products");
+			}
 		},
 		onBookingsPress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -107,12 +142,23 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", true);
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			}
 			/*this.getView().byId("bookings").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");
 			this.getView().byId("more").removeStyleClass("redFooter");*/
-			this.oRouter.navTo("BookingScreen");
+			else {
+				this.oRouter.navTo("BookingScreen");
+			}
 		},
 		onMorePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -126,12 +172,23 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/bookingbtn2", false);
 			oDataGlobalModel.setProperty("/morebtn1", false);
 			oDataGlobalModel.setProperty("/morebtn2", true);
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			}
 			/*this.getView().byId("more").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
 			this.getView().byId("products").removeStyleClass("redFooter");
 			this.getView().byId("bookings").removeStyleClass("redFooter");
 			this.getView().byId("home").removeStyleClass("redFooter");*/
-			this.oRouter.navTo("More");
+			else {
+				this.oRouter.navTo("More");
+			}
 		},
 		onNotificationPress: function () {
 			this.oRouter.navTo("Notifications");
@@ -142,12 +199,24 @@ sap.ui.define([
 		/*	onProductPress: function () {
 				this.oRouter.navTo("Products");
 			},*/
-	
+
 		onMyServicesPress: function () {
 			this.oRouter.navTo("myservices");
 		},
 		onBookservicePress: function () {
-			this.oRouter.navTo("BookingScreen");
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
+			if (visibility === false) {
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("idEditProfileFrag", "inc.demo.Toyota.fragment.loginWarning",
+						this);
+				}
+				this.getView().addDependent(this._oDialog);
+				this._oDialog.open();
+			} else {
+				this.oRouter.navTo("BookingScreen");
+			}
+
 		},
 		/*onBookingsPress: function () {
 			this.oRouter.navTo("BookingScreen");
@@ -170,6 +239,25 @@ sap.ui.define([
 			setTimeout(function () {
 				carousel.next();
 			}, 1500);
+		},
+		onCancel: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			oDataGlobalModel.setProperty("/homebtn1", false);
+			oDataGlobalModel.setProperty("/homebtn2", true);
+			oDataGlobalModel.setProperty("/mycarbtn1", true);
+			oDataGlobalModel.setProperty("/mycarbtn2", false);
+			oDataGlobalModel.setProperty("/productbtn1", true);
+			oDataGlobalModel.setProperty("/productbtn2", false);
+			oDataGlobalModel.setProperty("/bookingbtn1", true);
+			oDataGlobalModel.setProperty("/bookingbtn2", false);
+			oDataGlobalModel.setProperty("/morebtn1", true);
+			oDataGlobalModel.setProperty("/morebtn2", false);
+			this._oDialog.close();
+			this._oDialog.destroy();
+			this._oDialog = null;
+		},
+		onContinue: function () {
+			this.oRouter.navTo("myProfile");
 		}
 
 	});
