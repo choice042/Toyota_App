@@ -724,6 +724,23 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border-radius: 50%;
  }
  /*MY PROFILE*/
+ .sapMMessageToastLogin{
+ 	color: white !important;
+    background-color: #e62f2d !important;
+ }
+ .warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
+    background-color: #e62f2d;
+}
+.dialogToolbarClass.sapMTBStandard {
+    border-bottom: solid .0625rem #ffffff;
+}
+.dialogCancelBtn .sapMBtnInner{
+	border: .0625rem solid #e62f2d;
+    color: #e62f2d;
+}
+.dialogCancelBtn{
+	width:80px;
+}
 .myProfileClass{
 	padding: 0.8rem;
 }
