@@ -41,11 +41,11 @@
 			</HBox>
 			<Label text="Select Language" class="sapUiSmallMarginTop sapUiSmallMarginBegin heading"></Label>
 			<VBox class="myProfileLanguageClass sapUiSmallMarginTop">
-				<HBox class="myProfileLanguageHboxClass">
+				<HBox class="myProfileLanguageHboxClass" justifyContent="SpaceBetween">
 					<Label text="{i18n>Arabic}" class="sapUiTinyMarginTop"></Label>
 					<RadioButton class="myProfileRadioBtn"></RadioButton>
 				</HBox>
-				<HBox class="sapUiTinyMarginTop">
+				<HBox class="sapUiTinyMarginTop" justifyContent="SpaceBetween">
 					<Label text="English" class="sapUiTinyMarginTop"></Label>
 					<RadioButton selected="true" class="myProfileRadioBtn"></RadioButton>
 				</HBox>

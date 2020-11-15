@@ -15,11 +15,11 @@
 			</Bar>
 		</customHeader>
 		<content>
-			<Carousel id="idcarousel" class="sapUiResponsiveLayout carouselClass" height="40%" pageChanged="carouselScroll" loop="true">
-				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
-				<Image src="./Images/car1.jpg" width="100%"></Image>
-				<Image src="./Images/Bitmap-1.png" width="100%"></Image>
-				<Image src="./Images/car3.jpg" width="100%"></Image>
+			<Carousel id="idcarousel" class="sapUiResponsiveLayout carouselClass" height="14rem" pageChanged="carouselScroll" loop="true">
+				<Image src="./Images/Bitmap-1.png" width="100%" height="100%"></Image>
+				<Image src="./Images/car1.jpg" width="100%" height="100%"></Image>
+				<Image src="./Images/Bitmap-1.png" width="100%" height="100%"></Image>
+				<Image src="./Images/car3.jpg" width="100%" height="100%"></Image>
 			</Carousel>
 			<Label design="Bold" text="Recommended for you" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"
 				visible="{oDataGlobalModel>/logoutVisible}"></Label>

@@ -756,7 +756,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .myserviceKnowmoreBtn {
-    margin-left: 5.2rem;
+    margin-left: 6rem;
 }
 
 .myservicesText1 {
@@ -840,7 +840,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     /* height: 28px; */
 }
 .myProfileLogoutClass{
-	padding-top: 9rem;
+	padding-top: 18rem;
 }
 .myProfileLogoutBtn{
 	width: 19.75rem;

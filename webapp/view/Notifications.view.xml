@@ -12,18 +12,23 @@
 			</Bar>
 		</customHeader>
 		<content>
-			<HBox class="sapUiSmallMarginBegin" width="100%">
-				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
-			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
-			</HBox>
-			<HBox class="sapUiSmallMarginBegin" width="100%">
-				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
-			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the second notification" datetime="1:38 PM"></NotificationListItem>
-			</HBox>
-			<HBox class="sapUiSmallMarginBegin" width="100%">
-				<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
-			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the third notification" datetime="Yesterday"></NotificationListItem>
-			</HBox>
+			<VBox items="{oDataGlobalModel>/Notifications}">
+				<HBox class="sapUiSmallMarginBegin" width="100%">
+					<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
+					<NotificationListItem title="{oDataGlobalModel>title}" showCloseButton="false" unread="true" description="{oDataGlobalModel>description}"
+						datetime="{oDataGlobalModel>time}"></NotificationListItem>
+				</HBox>
+				<!--<HBox class="sapUiSmallMarginBegin" width="100%">
+					<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
+					<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the second notification"
+						datetime="1:38 PM"></NotificationListItem>
+				</HBox>
+				<HBox class="sapUiSmallMarginBegin" width="100%">
+					<HBox class="notificationsDotClass sapUiSmallMarginEnd"></HBox>
+					<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the third notification"
+						datetime="Yesterday"></NotificationListItem>
+				</HBox>-->
+			</VBox>
 			<!--<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="1:38 PM"></NotificationListItem>
 			<NotificationListItem title="Lorem ipsum dolot sit amet" showCloseButton="false" unread="true" description="this is the first notification" datetime="Yesterday"></NotificationListItem>-->
 		</content>
