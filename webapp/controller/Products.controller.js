@@ -174,6 +174,12 @@ sap.ui.define([
 		},
 		onNavBack: function(){
 			this.oRouter.navTo("Home");
+		},
+		onCarPress: function(oEvent){
+			// var context= oEvent.getSource();
+			// console.log(context);
+			oEvent.removeStyleClass("carBox3");
+			oEvent.addStyleClass("carBox6");
 		}
 
 	});

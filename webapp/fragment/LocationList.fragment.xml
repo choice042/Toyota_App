@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
-	<CustomListItem class="locationList" type="Active" >
+	<CustomListItem class="locationList redBorderHighlight" type="Active" >
 	
 	<VBox alignItems="Center" visible="{path: 'oDataGlobalModel>isSelected', formatter:'inc.demo.Toyota.util.formatter.fnCarSelected'}"
 		class="locationBox sapUiTinyMarginBottom" renderType="Bare">

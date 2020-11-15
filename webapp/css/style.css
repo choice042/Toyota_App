@@ -125,6 +125,15 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     /*border-radius: 2rem;*/
     /*width: 125px;*/
 /*}*/
+.redBorderHighlight.sapMLIB.sapMLIBActive {
+	background:red !important;
+
+}
+.carBox6 {
+   
+    border: 2px solid #f12727 !important;
+   
+}
 .aljGrayButtonsSmall .sapMBtnInner.sapMBtnText {
     padding-left: 0.5625rem;
     padding-right: 0.5625rem;

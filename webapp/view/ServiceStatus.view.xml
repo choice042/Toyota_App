@@ -144,7 +144,7 @@
 							<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 								<Text text="987-65432-8735" class="aljHeadingText"></Text>
 							</VBox>
-							<Image src="Images/Call.svg"  width="1.3rem"></Image>
+							<Image src="Images/Call.svg" press="onCall"  width="1.3rem"></Image>
 						</HBox>
 					</CustomListItem>
 				</List>
