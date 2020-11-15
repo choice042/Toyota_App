@@ -10,6 +10,18 @@
     justify-content: center !important;
 }
 /*   Calender background   */
+.sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
+    background-color: #085caf00 !important;
+}
+.sapUiCalItem.sapUiCalItemNow {
+    border: .125rem solid #ce282c;
+}
+.sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween) {
+    background-color: #0854a000 !important;
+}
+.sapUiCalItem {
+    background-color: #d2d2d2 !important;
+}
 .sapUiCalRowWeekNumber {
     color: #32363a00 !important;
     background-color: #fff0 !important;
@@ -17,10 +29,11 @@
 }
 .sapUiCalHead>button, .sapUiCalCancel {
     color: #ff2222 !important;
+    font-weight: bold;
 }
 .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
     background-color: #af170800;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid red;
 }
 .sapUiCalItemSel:not(.sapUiCalItemSelBetween)>.sapUiCalItemText {
     color: #000 !important;
