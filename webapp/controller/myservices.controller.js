@@ -38,6 +38,7 @@ sap.ui.define([
 			this.getView().byId("ongoing").addStyleClass("myservicesBtnnotClick");
 			this.getView().byId("past").removeStyleClass("myservicesBtnClick");
 			this.getView().byId("upcoming").addStyleClass("myservicesBtnClick");
+			// console.log("sample");
 		},
 		onPressKnowMore: function(){
 			this.getRouter().navTo("ServiceStatus");
