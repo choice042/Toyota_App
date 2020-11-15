@@ -1,5 +1,11 @@
-<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
-	<VBox alignItems="Center" class="calenderBox sapUiTinyMarginBottom" renderType="Bare">
-		<Label text="**Calender on Construction" class="labelStyle"/>
-	</VBox>
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m" 
+		xmlns:u="sap.ui.unified">
+
+	<l:VerticalLayout>
+		<u:CalendarDateInterval
+			class="widthCalender"
+				width="330px"
+				select="handleCalendarSelect"/>
+	</l:VerticalLayout>
+
 </core:FragmentDefinition>
