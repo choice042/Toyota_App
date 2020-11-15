@@ -9,11 +9,21 @@
 .sapMBarTitleStart .sapMBarPH {
     justify-content: center !important;
 }
-/*   Calender background gray  */
+/*   Calender background   */
 .sapUiCalRowWeekNumber {
     color: #32363a00 !important;
     background-color: #fff0 !important;
     border-color: #e5e5e500 !important;
+}
+.sapUiCalHead>button, .sapUiCalCancel {
+    color: #ff2222 !important;
+}
+.sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
+    background-color: #af170800;
+    border-bottom: 1px solid red;
+}
+.sapUiCalItemSel:not(.sapUiCalItemSelBetween)>.sapUiCalItemText {
+    color: #000 !important;
 }
 .sapUiCal {
     background: none repeat scroll 0 0 #d9d9d9;
