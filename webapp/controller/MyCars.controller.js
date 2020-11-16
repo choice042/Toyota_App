@@ -1,7 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"inc/demo/Toyota/util/formatter"
-], function (Controller, formatter) {
+	"inc/demo/Toyota/util/formatter",
+		"sap/ui/core/routing/History",
+	"sap/ui/core/UIComponent"
+], function (Controller, formatter,History,UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.MyCars", {
@@ -37,20 +39,20 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 		},
-		onNavBack: function () {
-			this.oRouter.navTo("Home");
-			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.setProperty("/homebtn1", false);
-			oDataGlobalModel.setProperty("/homebtn2", true);
-			oDataGlobalModel.setProperty("/mycarbtn1", true);
-			oDataGlobalModel.setProperty("/mycarbtn2", false);
-			oDataGlobalModel.setProperty("/productbtn1", true);
-			oDataGlobalModel.setProperty("/productbtn2", false);
-			oDataGlobalModel.setProperty("/bookingbtn1", true);
-			oDataGlobalModel.setProperty("/bookingbtn2", false);
-			oDataGlobalModel.setProperty("/morebtn1", true);
-			oDataGlobalModel.setProperty("/morebtn2", false);
-		},
+		// onNavBack: function () {
+		// 	this.oRouter.navTo("Home");
+		// 	var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+		// 	oDataGlobalModel.setProperty("/homebtn1", false);
+		// 	oDataGlobalModel.setProperty("/homebtn2", true);
+		// 	oDataGlobalModel.setProperty("/mycarbtn1", true);
+		// 	oDataGlobalModel.setProperty("/mycarbtn2", false);
+		// 	oDataGlobalModel.setProperty("/productbtn1", true);
+		// 	oDataGlobalModel.setProperty("/productbtn2", false);
+		// 	oDataGlobalModel.setProperty("/bookingbtn1", true);
+		// 	oDataGlobalModel.setProperty("/bookingbtn2", false);
+		// 	oDataGlobalModel.setProperty("/morebtn1", true);
+		// 	oDataGlobalModel.setProperty("/morebtn2", false);
+		// },
 		onServiceStatusPress: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
@@ -166,7 +168,19 @@ sap.ui.define([
 			},
 			onPressKnowMore: function(){
 					this.oRouter.navTo("ServiceStatus");
+			},
+			
+				onNavBack: function () {
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("overview", {}, true);
 			}
+		}
 			/*onPressHome: function () {
 				this.oRouter.navTo("Home");
 			}*/

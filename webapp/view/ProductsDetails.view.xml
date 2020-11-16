@@ -7,7 +7,7 @@
 					<Label text="PRODUCTS" class="logo"></Label>
 				</contentMiddle>
 				<contentRight>
-					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onClose"></Button>
+					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onNavBack"></Button>
 				</contentRight>
 			</Bar>
 		</customHeader>
@@ -42,7 +42,7 @@
 			<Toolbar class="scanFooter">
 				<ToolbarSpacer></ToolbarSpacer>
 				<VBox alignItems="Center" justifyContent="Center">
-					<Button class="aljRedFillButton  aljGrayButtons " press="onAddVehicle" text="Book"></Button>
+					<Button class="aljRedFillButton  aljGrayButtons " press="onNavBack" text="Book"></Button>
 				</VBox>
 				<ToolbarSpacer></ToolbarSpacer>
 			</Toolbar>
