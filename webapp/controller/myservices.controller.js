@@ -1,10 +1,10 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+], function (BaseController, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.myservices", {
+	return BaseController.extend("inc.demo.Toyota.controller.myservices", {
 
 		onInit: function () {
 			this.onOngoingPress();
@@ -15,13 +15,22 @@ sap.ui.define([
 		onClose: function () {
 			this.getRouter().navTo("Home");
 		},
-		onOngoingPress: function () {
+		onOngoingPress: function (oEvent) {
+			
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			// var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+			// console.log(sPath); 
+			console.log(oDataGlobalModel);
+			console.log(oEvent);
+			
 			this.getView().byId("ongoing").addStyleClass("myservicesBtnClick");
 			this.getView().byId("past").addStyleClass("myservicesBtnnotClick");
 			this.getView().byId("upcoming").addStyleClass("myservicesBtnnotClick");
 			this.getView().byId("ongoing").removeStyleClass("myservicesBtnnotClick");
 			this.getView().byId("past").removeStyleClass("myservicesBtnClick");
 			this.getView().byId("upcoming").removeStyleClass("myservicesBtnClick");
+			
+			
 		},
 		onPastPress: function () {
 			this.getView().byId("ongoing").removeStyleClass("myservicesBtnClick");

@@ -9,7 +9,7 @@
 							<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
 						</contentLeft>
 						<contentMiddle>
-							<Label text="MY CARS"  class="logo"></Label>
+							<Label text="MY CARS" class="logo"></Label>
 						</contentMiddle>
 					</Bar>
 				</customHeader>
@@ -33,96 +33,142 @@
 							</HBox>
 						</ScrollContainer>
 					</VBox>
-					<VBox class="aljVBoxDarkGray myServicesVbox2">
-						<VBox class="aljVBoxWhite4 sapUiSmallMarginBottom">
-							<VBox>
-								<Label design="Bold" text="Vehicle Informatics" required="true" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-								<VBox alignItems="Center" justifyContent="Center"
-									class="aljWhiteSmokeVbox sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginLeft sapUiTinyMarginRight">
-									<!--<f:SimpleForm id="SimpleFormChange354" editable="true">-->
-									<!--	<f:content>-->
-									<l:VerticalLayout width="100%" >
-										<l:Grid>
-											<Label text="Vehicle Model">
-												<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" Camry">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="Model Year ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" March 2018">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="VIN ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" LSRG5785WER">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="Plate Number ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" 3487 KAA">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="Last Service Done ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" 23/04/1923">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="Vehicle Type ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" Own">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<Label text="Warranty ">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Label>
-											<Text class="aljBoldText" text=" 06/02/1992 to 05/06/2019">
-													<layoutData>
-													<l:GridData span="S6"></l:GridData>
-												</layoutData>
-											</Text>
-											<!--	</f:content>-->
-											<!--</f:SimpleForm>-->
-										</l:Grid>
-									</l:VerticalLayout>
-		
-								</VBox>
+					<!--<VBox class="aljVBoxDarkGray myServicesVbox2">-->
+					<!--	<VBox class="aljVBoxWhite4 sapUiSmallMarginBottom">-->
+					<!--		<VBox>-->
+					<!--			<Label design="Bold" text="Vehicle Informatics" required="true" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>-->
+					<!--			<VBox alignItems="Center" justifyContent="Center"-->
+					<!--				class="aljWhiteSmokeVbox sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginLeft sapUiTinyMarginRight">-->
+					<!--<f:SimpleForm id="SimpleFormChange354" editable="true">-->
+					<!--	<f:content>-->
+					<!--				<l:VerticalLayout width="100%" >-->
+					<!--					<l:Grid>-->
+					<!--						<Label text="Vehicle Model">-->
+					<!--							<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" Camry">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="Model Year ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" March 2018">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="VIN ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" LSRG5785WER">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="Plate Number ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" 3487 KAA">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="Last Service Done ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" 23/04/1923">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="Vehicle Type ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" Own">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--						<Label text="Warranty ">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Label>-->
+					<!--						<Text class="aljBoldText" text=" 06/02/1992 to 05/06/2019">-->
+					<!--								<layoutData>-->
+					<!--								<l:GridData span="S6"></l:GridData>-->
+					<!--							</layoutData>-->
+					<!--						</Text>-->
+					<!--	</f:content>-->
+					<!--</f:SimpleForm>-->
+					<!--					</l:Grid>-->
+					<!--				</l:VerticalLayout>-->
+					<!--			</VBox>-->
+					<!--		</VBox>-->
+					<!--	</VBox>-->
+					<!--</VBox>-->
+					<!--</VBox>-->
+					<VBox class="vehicleInformaticsMain">
+						<HBox justifyContent="SpaceBetween">
+							<VBox renderType="Bare">
+								<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
+									<Image src="Images/vehicleIcon.png" class="iconStyle"/>
+									<Label text="Vehicle Informatics" class="labelStyle"/>
+								</HBox>
 							</VBox>
+						</HBox>
+						<VBox class="vehicleInformaticsSub">
+							<HBox justifyContent="Start" class="InformationStyle sapUiSmallMarginTop">
+								<Label text="Vehicle Model" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsVehicle"/>
+								<Label text="Camry TRD" class="labelStyleInformatics"/>
+							</HBox>
+							<HBox justifyContent="Start" class="InformationStyle sapUiTinyMarginTop">
+								<Label text="Model Year" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsModel"/>
+								<Label text="March 2018" class="labelStyleInformatics"/>
+							</HBox>
+							<HBox justifyContent="Start" class="InformationStyle  sapUiTinyMarginTop">
+								<Label text="VIN" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsVin"/>
+								<Label text="LS5812S2176176" class="labelStyleInformatics"/>
+							</HBox>
+							<HBox justifyContent="Start" class="InformationStyle  sapUiTinyMarginTop">
+								<Label text="Plate Number" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsPlate"/>
+								<Label text="3487 KAA" class="labelStyleInformatics"/>
+							</HBox>
+							<!--<HBox justifyContent="Start" class="InformationStyle">-->
+							<!--	<Label text="Last Service Number" class="labelNormal" />-->
+							<!--	<Label text=":" class="labelStyleInformaticsLast"/>-->
+							<!--	<Label text="23/04/2019" class="labelStyleInformatics"/>-->
+							<!--</HBox>-->
+							<HBox justifyContent="Start" class="InformationStyle sapUiTinyMarginTop">
+								<Label text="Vehicle Type" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsType"/>
+								<Label text="Own" class="labelStyleInformatics"/>
+							</HBox>
+							<HBox justifyContent="Start" class="InformationStyle sapUiTinyMarginTop">
+								<Label text="Warranty" class="labelNormal"/>
+								<Label text=":" class="labelStyleInformaticsWarr"/>
+								<Label text="06/02/2020 to 05/12/2021" class="labelStyleInformatics"/>
+							</HBox>
 						</VBox>
 					</VBox>
-					<!--</VBox>-->
 					<VBox class="aljVBoxDarkGray">
 						<VBox class="aljVBoxWhite2">
 							<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
@@ -137,7 +183,6 @@
 											<Text text="{oDataGlobalModel>price2}" class="textclass"></Text>
 											<Button text="Book" class="productsbuttonclass"></Button>
 										</VBox>
-									
 									</HBox>
 								</VBox>
 							</ScrollContainer>

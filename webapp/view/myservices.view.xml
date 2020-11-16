@@ -14,9 +14,9 @@
 		<content>
 			<Label design="Bold" text="Service Type" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 			<HBox class="sapUiMediumMarginTop">
-				<Button id="ongoing" text="Ongoing" class="sapUiMediumMarginBegin sapUiTinyMarginEnd myservicesBtn" press="onOngoingPress"></Button>
-				<Button id="past" text="Past" class="sapUiTinyMarginEnd myservicesBtn" press="onPastPress"></Button>
-				<Button id="upcoming" text="Upcoming" press="onUpcomingPress" class="myservicesBtn"></Button>
+				<Button id="ongoing" text="{oDataGlobalModel>/serviceOngoing}" class="sapUiMediumMarginBegin sapUiTinyMarginEnd myservicesBtn" press="onOngoingPress"></Button>
+				<Button id="past" text="{oDataGlobalModel>/servicePast}" class="sapUiTinyMarginEnd myservicesBtn" press="onPastPress"></Button>
+				<Button id="upcoming" text="{oDataGlobalModel>/serviceUpcoming}" press="onUpcomingPress" class="myservicesBtn"></Button>
 			</HBox>
 			<VBox class="sapUiSmallMarginTop myServicesVbox">
 				<Label design="Bold" text="Services" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>

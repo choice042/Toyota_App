@@ -1,11 +1,11 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"inc/demo/Toyota/util/formatter",
 	"sap/ui/core/Fragment"
-], function (Controller, formatter, Fragment) {
+], function (BaseController, formatter, Fragment) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.Home", {
+	return BaseController.extend("inc.demo.Toyota.controller.Home", {
 		formatter: formatter,
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
