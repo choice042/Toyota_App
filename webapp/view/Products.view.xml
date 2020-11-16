@@ -50,8 +50,15 @@
 				
 					<VBox class="sapUiSmallMarginBottom">
 						<Label design="Bold" text="General Jobs" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
-						<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop">
+						<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop" items="{oDataGlobalModel>/HomeProducts}">
 							<VBox class="productsClass2 sapUiTinyMarginEnd">
+								<Label text="{oDataGlobalModel>serviceName}" design="Bold" class="labelclass"></Label>
+								<Image src="{oDataGlobalModel>img2}"></Image>
+								<Label text="{oDataGlobalModel>price1}" design="Bold" class="labelclass2"></Label>
+								<Text text="{oDataGlobalModel>price2}" class="textclass"></Text>
+								<Button text="Book" press="onPressProductDetail" class="productsbuttonclass"></Button>
+							</VBox>
+							<!--<VBox class="productsClass2 sapUiTinyMarginEnd">
 								<Label text="Brake Service" design="Bold" class="labelclass"></Label>
 								<Image src="./Images/product1.png"></Image>
 								<Label text="SAR100" design="Bold" class="labelclass2"></Label>
@@ -78,7 +85,7 @@
 								<Label text="SAR100" design="Bold" class="labelclass2"></Label>
 								<Text text="SAR350" class="textclass"></Text>
 								<Button text="Book"  press="onPressProductDetail" class="productsbuttonclass"></Button>
-							</VBox>
+							</VBox>-->
 						</HBox>
 					</VBox>
 				
@@ -89,52 +96,6 @@
 		</content>
 			<footer>
 				<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
-			<!--<Toolbar class="stylefooter">
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/icons8-home-16-2.png" press="onPressHome" tooltip="Home" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="home" text="Home" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/Group2.png" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="mycar" text="My Car" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="centralbutton">
-						<Button icon="./Images/products.png" press="onProductPress" class="productsfooterbtn"></Button>
-					</VBox>
-					<VBox class="text3">
-						<Label id="products" text="Products" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/calendar.png" press="onBookingsPress" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="bookings" text="Bookings" design="Bold"></Label>
-					</VBox>
-				</VBox>
-				<ToolbarSpacer/>
-				<VBox>
-					<VBox class="text1">
-						<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
-					</VBox>
-					<VBox class="text2">
-						<Label id="more" text="More" design="Bold"></Label>
-					</VBox>
-				</VBox>
-			</Toolbar>-->
 		</footer>
 	</Page>
 </mvc:View>

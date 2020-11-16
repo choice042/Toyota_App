@@ -216,6 +216,7 @@ sap.ui.define([
 			} else {
 				this.oRouter.navTo("BookingScreen");
 			}
+			// this.oRouter.navTo("BookingScreen");
 
 		},
 		/*onBookingsPress: function () {

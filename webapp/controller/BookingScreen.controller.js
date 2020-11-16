@@ -13,6 +13,8 @@ sap.ui.define([
 			this.oDataGlobalModel = oDataGlobalModel;
 
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			/*var logoutVisible = false;
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);*/
 			var homebtn1 = true;
 			var homebtn2 = false;
 			oDataGlobalModel.setProperty("/homebtn1", homebtn1);
@@ -33,6 +35,7 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
+			console.log(oDataGlobalModel);
 
 		},
 		onCarPress: function (oEvent) {
@@ -104,7 +107,7 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", true);
 			oDataGlobalModel.setProperty("/morebtn2", false);
 		},
-		onPressConfirm: function(){
+		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
 		}
 

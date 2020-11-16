@@ -1,37 +1,38 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-		"sap/ui/core/UIComponent"
-], function (Controller,UIComponent) {
+	"sap/ui/core/UIComponent"
+], function (Controller, UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.ServiceStatus", {
 
-	
 		onInit: function () {
-				var oRouter = this.getRouter();
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;
+			var oRouter = this.getRouter();
 			oRouter.getRoute("ServiceStatus");
 
 		},
-			getRouter: function () {
+		getRouter: function () {
 			return UIComponent.getRouterFor(this);
 		},
-		onCall: function(){
+		onCall: function () {
 			sap.m.URLHelper.triggerTel("+91 8218975934");
 		},
-	onMapOpen:function(){
-		if (!this.mapBox) {
+		onMapOpen: function () {
+			if (!this.mapBox) {
 				this.mapBox = sap.ui.xmlfragment("inc.demo.Toyota.fragment.MapDialog", this);
 				this.getView().addDependent(this.mapBox);
 			}
-		this.mapBox.open();
+			this.mapBox.open();
 			setTimeout(function () {
-			
+
 				this.loadMap(this, "googleMap", {});
 
 			}.bind(this), 3000);
-		
-		
-	},
+
+		},
 		loadMap: function (that, domId, options) {
 			options = {
 				"lat": 25.5941,
@@ -40,7 +41,7 @@ sap.ui.define([
 				"zoom": "10"
 			};
 			var latlng = new google.maps.LatLng(options.lat, options.lgn);
-			var that=this;
+			var that = this;
 			var mapType;
 			switch (options.maptype) {
 			case "ROADMAP":
@@ -56,7 +57,7 @@ sap.ui.define([
 				center: latlng,
 				zoom: options.zoom,
 				mapTypeControl: false,
-				zoomControl:false,
+				zoomControl: false,
 				// mapTypeId: mapType,
 				// mapTypeControlOptions: {
 				// 	style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
@@ -73,23 +74,22 @@ sap.ui.define([
 			}
 			var map = new google.maps.Map(domRef,
 				mapOptions);
-				this.addMarker(map);
+			this.addMarker(map);
 			return map;
-			
-			
+
 		},
-		addMarker: function(map){
-				var locations = [{
-					"lat": 24.5544,
+		addMarker: function (map) {
+			var locations = [{
+				"lat": 24.5544,
 				"lng": 39.7146,
-				"id":67
-				}];
-				var location;
-				for(location in locations){
-				this.addMarkers(this,locations[location],"",map);
-				}
+				"id": 67
+			}];
+			var location;
+			for (location in locations) {
+				this.addMarkers(this, locations[location], "", map);
+			}
 		},
-			addMarkers: function (that, oOptions, info,map) {
+		addMarkers: function (that, oOptions, info, map) {
 			if (oOptions.lat && oOptions.lng) {
 				var location = {
 					lat: oOptions.lat,
@@ -111,9 +111,9 @@ sap.ui.define([
 					// title: 'You are here.',
 					icon: icon,
 					// zIndex	 : 10,
-					map:map
+					map: map
 				});
-			
+
 				oPosMarker.addListener('click', function (oDate) {
 
 					for (var i = 0; i < that.CenterMarkers.length; i++) {
@@ -139,7 +139,7 @@ sap.ui.define([
 						// }
 				});
 				// }
-				var markers=[];
+				var markers = [];
 				markers.push(oPosMarker);
 
 				// Set Bounds To Show All Marker Visible 
@@ -160,14 +160,35 @@ sap.ui.define([
 				return markers;
 			}
 		},
-		onMapClose:function(){
-		
+		onMapClose: function () {
+
 			this.mapBox.close();
-	},
-	onClose: function(){
+		},
+		onClose: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var homebtn1 = true;
+			var homebtn2 = false;
+			oDataGlobalModel.setProperty("/homebtn1", homebtn1);
+			oDataGlobalModel.setProperty("/homebtn2", homebtn2);
+			var mycarbtn1 = true;
+			var mycarbtn2 = false;
+			oDataGlobalModel.setProperty("/mycarbtn1", mycarbtn1);
+			oDataGlobalModel.setProperty("/mycarbtn2", mycarbtn2);
+			var productbtn1 = true;
+			var productbtn2 = false;
+			oDataGlobalModel.setProperty("/productbtn1", productbtn1);
+			oDataGlobalModel.setProperty("/productbtn2", productbtn2);
+			var bookingbtn1 = false;
+			var bookingbtn2 = true;
+			oDataGlobalModel.setProperty("/bookingbtn1", bookingbtn1);
+			oDataGlobalModel.setProperty("/bookingbtn2", bookingbtn2);
+			var morebtn1 = true;
+			var morebtn2 = false;
+			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
+			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		this.oRouter.navTo("Home");
-	}
+			this.oRouter.navTo("Home");
+		}
 
 	});
 

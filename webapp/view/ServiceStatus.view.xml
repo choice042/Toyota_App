@@ -102,7 +102,7 @@
 						<HBox alignItems="Center">
 							<Image src="Images/carUs.png"></Image>
 							<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
-								<Text text="Fortuner 2018" class="aljHeadingText"></Text>
+								<Text text="{oDataGlobalModel>/CarServiceStatus/carName}" class="aljHeadingText"></Text>
 							</VBox>
 							<Text text="IN" class="aljBoldText sapUiTinyMarginEnd"></Text>
 							<Switch class="aljSwitch" state="false" customTextOn=" " customTextOff=" ">
@@ -117,7 +117,7 @@
 						<HBox>
 							<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 							<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
-								<Text text="30 May 2020,09:00 AM-10:00 AM" class="aljHeadingText"></Text>
+								<Text text="{oDataGlobalModel>/CarServiceStatus/Date}" class="aljHeadingText"></Text>
 							</VBox>
 						</HBox>
 					</CustomListItem>
@@ -125,7 +125,7 @@
 						<HBox>
 							<Image src="Images/icons8-tow-truck-64-6.png"></Image>
 							<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
-								<Text text="Madina mun centre,Wairah" class="aljHeadingText"></Text>
+								<Text text="{oDataGlobalModel>/CarServiceStatus/Location}" class="aljHeadingText"></Text>
 							</VBox>
 							<Image src="Images/mapIcon.png" press="onMapOpen" width="1.3rem"></Image>
 						</HBox>
