@@ -7,7 +7,7 @@
 					<Label text="ADD VEHICLE" class="logo"></Label>
 				</contentMiddle>
 				<contentRight>
-					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onClose"></Button>
+					<Button icon="sap-icon://decline" class="btn aljRedDisabledButtons" press="onNavBack"></Button>
 				</contentRight>
 			</Bar>
 		</customHeader>

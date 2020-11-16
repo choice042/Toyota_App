@@ -1,6 +1,8 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+		"sap/ui/core/routing/History",
+	"sap/ui/core/UIComponent"
+], function (Controller,History,UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.AddVehicle", {
@@ -10,8 +12,16 @@ sap.ui.define([
 	this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.getRoute("Scan");
 		},
-		onClose: function(){
-			this.oRouter.navTo("Home");
+			onNavBack: function () {
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("overview", {}, true);
+			}
 		},
 	
 			onAddVehicle: function () {
@@ -120,6 +130,7 @@ sap.ui.define([
 
 				// oAppModel.setPoperty("/oEnteredVIN",newData);
 				this.showCAMERA.close();
+				this.onNavBack();
 			} else {
 				this.clearphoto();
 			}
@@ -137,7 +148,8 @@ sap.ui.define([
 
 			this.showVIN.close();
 
-		}
+		},
+		
 
 	
 	});

@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+	"sap/ui/core/UIComponent",
+		"sap/ui/core/routing/History"
+], function (Controller, UIComponent,History) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Products", {
@@ -172,8 +173,16 @@ sap.ui.define([
 		onPressProductDetail: function(){
 			this.oRouter.navTo("productDetail");
 		},
-		onNavBack: function(){
-			this.oRouter.navTo("Home");
+		onNavBack: function () {
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("overview", {}, true);
+			}
 		},
 		onCarPress: function(oEvent){
 			// var context= oEvent.getSource();
