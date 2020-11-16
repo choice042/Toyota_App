@@ -9,6 +9,24 @@
 .sapMBarTitleStart .sapMBarPH {
     justify-content: center !important;
 }
+/*warning dialog*/
+.warningDialogClass.sapMDialog>header.sapMDialogTitle .sapMTitle {
+    color: #ffffff;
+}
+ .warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
+    background-color: #e62f2d;
+    color:#fff;
+}
+.LoginButton .sapMBtnInner {
+    background-color: #e22d2c;
+    border: .0625rem solid #e22d2c;
+    color: #fff;
+}
+.cancelButton .sapMBtnInner {
+    background-color: #fff;
+    border: .0625rem solid #e22d2c;
+    color: #e22d2c;
+}
 /*   Calender background   */
 .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
     background-color: #085caf00 !important;
