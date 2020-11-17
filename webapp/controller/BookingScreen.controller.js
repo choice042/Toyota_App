@@ -14,6 +14,7 @@ sap.ui.define([
 			console.log(oDataGlobalModel);
 			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			this.oDataGlobalModel = oDataGlobalModel;
+			// console.log(oDataGlobalModel);
 
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			/*var logoutVisible = false;
