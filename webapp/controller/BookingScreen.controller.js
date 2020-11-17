@@ -48,6 +48,7 @@ sap.ui.define([
 			var carPath = sPath + "/carName";
 			var selectedcar = oDataGlobalModel.getProperty(carPath);
 			MessageToast.show(selectedcar);
+			oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
 			var carArray = oDataGlobalModel.getProperty("/carCategory");
 			var len = carArray.length;
 			for (var i = 0; i < len; i++) {
@@ -55,7 +56,7 @@ sap.ui.define([
 			}
 
 			oDataGlobalModel.setProperty(sPath + "isSelected", true);
-
+           console.log(oDataGlobalModel);
 		},
 		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
@@ -112,6 +113,7 @@ sap.ui.define([
 		onNavBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
+		
 
 			if (sPreviousHash !== undefined) {
 				window.history.go(-1);

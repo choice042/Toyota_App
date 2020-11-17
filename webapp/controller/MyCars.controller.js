@@ -1,9 +1,10 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"inc/demo/Toyota/util/formatter",
-		"sap/ui/core/routing/History",
+	"sap/ui/core/routing/History",
+	"sap/m/MessageToast",
 	"sap/ui/core/UIComponent"
-], function (Controller, formatter,History,UIComponent) {
+], function (Controller, formatter, History, MessageToast, UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.MyCars", {
@@ -11,9 +12,9 @@ sap.ui.define([
 		formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			
+
 			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-		
+
 			this.oDataGlobalModel = oDataGlobalModel;
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.onMyCarPress();
@@ -38,6 +39,24 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
+		},
+		onCarPress: function (oEvent) {
+
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+			var selectedObj = oEvent.getSource().getBindingContext("oDataGlobalModel").getObject();
+			var carPath = sPath + "/carName";
+			var selectedcar = oDataGlobalModel.getProperty(carPath);
+			MessageToast.show(selectedcar);
+            oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
+			var carArray = oDataGlobalModel.getProperty("/carCategory");
+			var len = carArray.length;
+			for (var i = 0; i < len; i++) {
+				oDataGlobalModel.setProperty("/carCategory/" + i + "isSelected", false);
+			}
+
+			oDataGlobalModel.setProperty(sPath + "isSelected", true);
+
 		},
 		// onNavBack: function () {
 		// 	this.oRouter.navTo("Home");
@@ -164,23 +183,23 @@ sap.ui.define([
 			this.oRouter.navTo("myservices");
 		},
 		onBookservicePress: function () {
-				this.oRouter.navTo("BookingScreen");
-			},
-			onPressKnowMore: function(){
-					this.oRouter.navTo("ServiceStatus");
-			},
-			
-				onNavBack: function () {
-			var oHistory = History.getInstance();
-			var sPreviousHash = oHistory.getPreviousHash();
+			this.oRouter.navTo("BookingScreen");
+		},
+		onPressKnowMore: function () {
+			this.oRouter.navTo("ServiceStatus");
+		},
 
-			if (sPreviousHash !== undefined) {
-				window.history.go(-1);
-			} else {
-				var oRouter = UIComponent.getRouterFor(this);
-				oRouter.navTo("overview", {}, true);
+		onNavBack: function () {
+				var oHistory = History.getInstance();
+				var sPreviousHash = oHistory.getPreviousHash();
+                
+				if (sPreviousHash !== undefined) {
+					window.history.go(-1);
+				} else {
+					var oRouter = UIComponent.getRouterFor(this);
+					oRouter.navTo("overview", {}, true);
+				}
 			}
-		}
 			/*onPressHome: function () {
 				this.oRouter.navTo("Home");
 			}*/

@@ -24,6 +24,7 @@
 		"isSelected": true
 
 	}],
+	"currentVehicle":"",
 	"productCategory": [{
 		"productName": "Brake Service",
 		"src": "Images/brakeService.png",
@@ -456,4 +457,5 @@
 	"serviceOngoing": "Ongoing",
 	"servicePast": "Past",
 	"serviceUpcoming": "Upcoming"
+	
 }
