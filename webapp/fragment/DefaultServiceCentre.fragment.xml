@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog class="aljMapDialog" showHeader="false">
+		<VBox id="googleMap2" class="aljMapVbox" >
+	
+			
+	
+			
+			
+	
+		</VBox>
+			<HBox><ComboBox change="onRelocate">
+				<items>
+				<core:Item  key="Mecca" 
+           text="Mecca" ></core:Item>
+           	<core:Item  key="Medina"   
+           text="Medina" ></core:Item>
+           	<core:Item  key="Airport"  
+           text="Airport" ></core:Item>
+           </items>
+           </ComboBox></HBox>
+	<HBox><Button icon="sap-icon://decline" class="aljCloseRedButton" press="onMapClose"></Button></HBox>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,28 +1,156 @@
 {
+	"serviceStatusBindings":[
+		{
+	     	"statusval":"orderCreated",
+	     	"fill1":"none",
+	     	"fill2":"none",
+	     	"fill3":"none",
+	     	"fill4":"none",
+	     	"fill5":"none"
+	},{
+			"statusval":"carReceived",
+				"fill1":"#00d1ce",
+	     	"fill2":"none",
+	     	"fill3":"none",
+	     	"fill4":"none",
+	     	"fill5":"none"
+	},{
+			"statusval":"serviceDone",
+				"fill1":"#00d1ce",
+	     	"fill2":"#00d1ce",
+	     	"fill3":"none",
+	     	"fill4":"none",
+	     	"fill5":"none"
+	},{
+			"statusval":"waitingForApproval",
+				"fill1":"#00d1ce",
+	     	"fill2":"#00d1ce",
+	     	"fill3":"none",
+	     	"fill4":"none",
+	     	"fill5":"none"
+	},{
+			"statusval":"qualityInspection",
+				"fill1":"#00d1ce",
+	     	"fill2":"#00d1ce",
+	     	"fill3":"#ffffff",
+	     	"fill4":"none",
+	     	"fill5":"none"
+	},{
+			"statusval":"ready",
+				"fill1":"#00d1ce",
+	     	"fill2":"#00d1ce",
+	     	"fill3":"#00d1ce",
+	     	"fill4":"#00d1ce",
+	     	"fill5":"none"
+	},{
+		"statusval":"postReady",
+			"fill1":"#00d1ce",
+	     	"fill2":"#00d1ce",
+	     	"fill3":"#00d1ce",
+	     	"fill4":"#00d1ce",
+	     	"fill5":"#00d1ce"
+	}],
+	"locationArabia":{
+		"lat":"",
+		"lon":""
+	},
+	"serviceStatusView":"",
 	"carCategory": [{
 		"carName": "Supra 2020",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true
+		"isSelected": true,
+		"serviceStatus": {
+			"past": [{
+				"date": "30 May 2020",
+				"time": "9:00 AM - 10:00 AM"
+			}, {
+				"date": "20 May 2020",
+				"time": "8:00 AM - 10:00 AM"
+
+			}],
+			"upcoming": [{
+				"date": "12 June 2020",
+				"time": "9:00 AM - 1:00 PM"
+
+			}],
+			"ongoing": {
+				"date": "1 June 2020",
+				"time": "9:00 AM - 10:00 AM",
+				"status":"serviceDone"
+
+			}
+		}
 
 	}, {
 		"carName": "Camry 2019",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true
-
+		"isSelected": true,
+		"serviceStatus": {
+			"past": [{
+				"date": "10 May 2020",
+				"time": "9:00 AM - 10:00 AM"
+			}, {
+				"date": "21 May 2020",
+				"time": "8:00 AM - 10:00 AM"
+			}],
+			"upcoming": [{
+				"date": "12 June 2020",
+				"time": "9:00 AM - 1:00 PM"
+			}],
+			"ongoing": {
+				"date": "1 June 2020",
+				"time": "9:00 AM - 10:00 AM",
+					"status":"qualityInspection"
+			}
+		}
 	}, {
-		"carName": "Supra 2020",
+		"carName": "Supra 2019",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true
-
+		"isSelected": true,
+		"serviceStatus": {
+			"past": [{
+				"date": "13 May 2020",
+				"time": "9:00 AM - 10:00 AM"
+			}, {
+				"date": "15 May 2020",
+				"time": "8:00 AM - 10:00 AM"
+			}],
+			"upcoming": [{
+				"date": "12 June 2020",
+				"time": "9:00 AM - 1:00 PM"
+			}],
+			"ongoing": {
+				"date": "1 June 2020",
+				"time": "9:00 AM - 10:00 AM",
+					"status":"carReceived"
+			}
+		}
 	}, {
-		"carName": "Camry 2019",
+		"carName": "Camry 2020",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true
-
+		"isSelected": true,
+		"serviceStatus": {
+			"past": [{
+				"date": "30 May 2020",
+				"time": "9:00 AM - 10:00 AM"
+			}, {
+				"date": "20 May 2020",
+				"time": "8:00 AM - 10:00 AM"
+			}],
+			"upcoming": [{
+				"date": "12 June 2020",
+				"time": "9:00 AM - 1:00 PM"
+			}],
+			"ongoing": {
+				"date": "1 June 2020",
+				"time": "9:00 AM - 10:00 AM",
+					"status":"ready"
+			}
+		}
 	}],
 	"currentVehicle": "",
 	"productCategory": [{
