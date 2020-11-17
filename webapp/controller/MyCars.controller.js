@@ -48,7 +48,7 @@ sap.ui.define([
 			var carPath = sPath + "/carName";
 			var selectedcar = oDataGlobalModel.getProperty(carPath);
 			MessageToast.show(selectedcar);
-            oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
+			oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
 			var carArray = oDataGlobalModel.getProperty("/carCategory");
 			var len = carArray.length;
 			for (var i = 0; i < len; i++) {
@@ -190,9 +190,65 @@ sap.ui.define([
 		},
 
 		onNavBack: function () {
+				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 				var oHistory = History.getInstance();
 				var sPreviousHash = oHistory.getPreviousHash();
-                
+				if (sPreviousHash === "Homeview") {
+					oDataGlobalModel.setProperty("/homebtn1", false);
+					oDataGlobalModel.setProperty("/homebtn2", true);
+					oDataGlobalModel.setProperty("/mycarbtn1", true);
+					oDataGlobalModel.setProperty("/mycarbtn2", false);
+					oDataGlobalModel.setProperty("/productbtn1", true);
+					oDataGlobalModel.setProperty("/productbtn2", false);
+					oDataGlobalModel.setProperty("/bookingbtn1", true);
+					oDataGlobalModel.setProperty("/bookingbtn2", false);
+					oDataGlobalModel.setProperty("/morebtn1", true);
+					oDataGlobalModel.setProperty("/morebtn2", false);
+				} else if (sPreviousHash === "Productsview") {
+					oDataGlobalModel.setProperty("/homebtn1", true);
+					oDataGlobalModel.setProperty("/homebtn2", false);
+					oDataGlobalModel.setProperty("/mycarbtn1", true);
+					oDataGlobalModel.setProperty("/mycarbtn2", false);
+					oDataGlobalModel.setProperty("/productbtn1", false);
+					oDataGlobalModel.setProperty("/productbtn2", true);
+					oDataGlobalModel.setProperty("/bookingbtn1", true);
+					oDataGlobalModel.setProperty("/bookingbtn2", false);
+					oDataGlobalModel.setProperty("/morebtn1", true);
+					oDataGlobalModel.setProperty("/morebtn2", false);
+				} else if (sPreviousHash === "MyCars") {
+					oDataGlobalModel.setProperty("/homebtn1", true);
+					oDataGlobalModel.setProperty("/homebtn2", false);
+					oDataGlobalModel.setProperty("/mycarbtn1", false);
+					oDataGlobalModel.setProperty("/mycarbtn2", true);
+					oDataGlobalModel.setProperty("/productbtn1", true);
+					oDataGlobalModel.setProperty("/productbtn2", false);
+					oDataGlobalModel.setProperty("/bookingbtn1", true);
+					oDataGlobalModel.setProperty("/bookingbtn2", false);
+					oDataGlobalModel.setProperty("/morebtn1", true);
+					oDataGlobalModel.setProperty("/morebtn2", false);
+				} else if (sPreviousHash === "BookingScreen") {
+					oDataGlobalModel.setProperty("/homebtn1", true);
+					oDataGlobalModel.setProperty("/homebtn2", false);
+					oDataGlobalModel.setProperty("/mycarbtn1", true);
+					oDataGlobalModel.setProperty("/mycarbtn2", false);
+					oDataGlobalModel.setProperty("/productbtn1", true);
+					oDataGlobalModel.setProperty("/productbtn2", false);
+					oDataGlobalModel.setProperty("/bookingbtn1", false);
+					oDataGlobalModel.setProperty("/bookingbtn2", true);
+					oDataGlobalModel.setProperty("/morebtn1", true);
+					oDataGlobalModel.setProperty("/morebtn2", false);
+				} else if (sPreviousHash === "More") {
+					oDataGlobalModel.setProperty("/homebtn1", true);
+					oDataGlobalModel.setProperty("/homebtn2", false);
+					oDataGlobalModel.setProperty("/mycarbtn1", true);
+					oDataGlobalModel.setProperty("/mycarbtn2", false);
+					oDataGlobalModel.setProperty("/productbtn1", true);
+					oDataGlobalModel.setProperty("/productbtn2", false);
+					oDataGlobalModel.setProperty("/bookingbtn1", true);
+					oDataGlobalModel.setProperty("/bookingbtn2", false);
+					oDataGlobalModel.setProperty("/morebtn1", false);
+					oDataGlobalModel.setProperty("/morebtn2", true);
+				}
 				if (sPreviousHash !== undefined) {
 					window.history.go(-1);
 				} else {
