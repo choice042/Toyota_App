@@ -46,63 +46,17 @@
 					</VBox>
 				</HBox>
 				<HBox class="sapUiSmallMarginTop">
-					<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
+					<wt:VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare" press="onDefaultVehiclePress">
 						<Label text="Default Vehicle" class="sapUiTinyMarginTop"/>
-						<Label text="Supra 2020" class="labelStyle"/>
-						<Image src="Images/supraCar.png" class=" sapUiSmallMarginTop"/>
+						<Label text="{oDataGlobalModel>/selectDefaultVehiclecarName}" class="labelStyle"/>
+						<Image src="{oDataGlobalModel>/selectDefaultVehiclecarimg}" class=" sapUiSmallMarginTop"/>
 						<Label text="VIN: LS5812S2176176" class="sapUiTinyMarginTop"/>
-					</VBox>
+					</wt:VBox>
 				</HBox>
 			</VBox>
 		</content>
 		<footer>
 			<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
-			<!--<Toolbar class="stylefooter">
-						<VBox>
-							<VBox class="text1">
-								<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
-							</VBox>
-							<VBox class="text2">
-								<Label id="home" text="Home" design="Bold"></Label>
-							</VBox>
-						</VBox>
-						<ToolbarSpacer/>
-						<VBox>
-							<VBox class="text1">
-								<Button icon="./Images/MyCar.svg" press="onMyCarPress" tooltip="rental" class="footerbtn"></Button>
-							</VBox>
-							<VBox class="text2">
-								<Label id="mycar" text="My Car" design="Bold"></Label>
-							</VBox>
-						</VBox>
-						<ToolbarSpacer/>
-						<VBox>
-							<VBox class="centralbutton">
-								<Button icon="./Images/products.png" press="onProductPress" class="productsfooterbtn"></Button>
-							</VBox>
-							<VBox class="text3">
-								<Label id="products" text="Products" design="Bold"></Label>
-							</VBox>
-						</VBox>
-						<ToolbarSpacer/>
-						<VBox>
-							<VBox class="text1">
-								<Button icon="./Images/calendar.png" press="onBookservicePress" class="footerbtn"></Button>
-							</VBox>
-							<VBox class="text2">
-								<Label id="bookings" text="Bookings" design="Bold"></Label>
-							</VBox>
-						</VBox>
-						<ToolbarSpacer/>
-						<VBox>
-							<VBox class="text1">
-								<Button icon="./Images/More-4.png" press="onMorePress" class="footerbtn"></Button>
-							</VBox>
-							<VBox class="text2">
-								<Label id="more" text="More" design="Bold"></Label>
-							</VBox>
-						</VBox>
-					</Toolbar>-->
 		</footer>
 	</Page>
 	<Page id="idsafety" visible="false" class="homePage">
@@ -118,6 +72,21 @@
 		</customHeader>
 		<content>
 			<core:Fragment fragmentName="inc.demo.Toyota.fragment.SafetyandMaintanance" type="XML"/>
+		</content>
+	</Page>
+	<Page id="idDefault" visible="false" class="homePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="SELECT VEHICLE" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onCloseDefault"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.SelectDefaultVehicle" type="XML"/>
 		</content>
 	</Page>
 </mvc:View>

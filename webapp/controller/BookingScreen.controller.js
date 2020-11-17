@@ -11,6 +11,7 @@ sap.ui.define([
 		formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			console.log(oDataGlobalModel);
 			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			this.oDataGlobalModel = oDataGlobalModel;
 
@@ -37,7 +38,7 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
-			console.log(oDataGlobalModel);
+			// console.log(oDataGlobalModel);
 
 		},
 		onCarPress: function (oEvent) {

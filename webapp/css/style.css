@@ -1163,6 +1163,16 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 	padding-right: 1rem;
 }
 
+/*SELECT DEFAULT VEHICLE*/
+.SelectDefaultVboxClass{
+	height:4rem;
+	width:24rem;
+	padding: 1.5rem;
+    border-bottom: 2px solid #EB0A1E;
+}
+.SelectDefaultLabelClass{
+	font-size: 1rem;
+}
 /*bijay's css*/
 
 

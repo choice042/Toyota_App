@@ -24,7 +24,7 @@
 		"isSelected": true
 
 	}],
-	"currentVehicle":"",
+	"currentVehicle": "",
 	"productCategory": [{
 		"productName": "Brake Service",
 		"src": "Images/brakeService.png",
@@ -454,8 +454,28 @@
 		"Date": "30 May 2020,9:00 AM - 10:00 AM",
 		"Location": "Madina mun centre,Wairah"
 	},
+	"selectDefault": [{
+		"carName": "Camry 2019",
+		"carImage": "Images/camryCar.png"
+	}, {
+		"carName": "Supra 2019",
+		"carImage": "Images/supraCar.png"
+	}, {
+		"carName": "Fortuner 2018",
+		"carImage": "Images/supraCar.png"
+	}, {
+		"carName": "Supra 2020",
+		"carImage": "Images/supraCar.png"
+	}, {
+		"carName": "Camry 2020",
+		"carImage": "Images/camryCar.png"
+	}],
+
+	"selectDefaultVehiclecarName": "Supra 2020",
+	"selectDefaultVehiclecarimg": "Images/supraCar.png",
+
 	"serviceOngoing": "Ongoing",
 	"servicePast": "Past",
 	"serviceUpcoming": "Upcoming"
-	
+
 }

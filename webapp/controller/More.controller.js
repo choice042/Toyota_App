@@ -187,7 +187,40 @@ sap.ui.define([
 			this.getView().byId("idsafety").setVisible(true);
 		},
 		onCloseSafety: function () {
-			this.oRouter.navTo("More");
+			this.getView().byId("More").setVisible(true);
+			this.getView().byId("idsafety").setVisible(false);
+		},
+		onDefaultVehiclePress: function () {
+			this.getView().byId("More").setVisible(false);
+			this.getView().byId("idDefault").setVisible(true);
+		},
+		onCloseDefault: function () {
+			this.getView().byId("More").setVisible(true);
+			this.getView().byId("idDefault").setVisible(false);
+		},
+		onAfterSelectingVehicle: function (oEvent) {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			/*var spath = oEvent.getSource().getParent().getBindingContextPath();
+			console.log(spath);*/
+			var newName = "Camry 2019";
+			var newImg = "Images/camryCar.png";
+			oDataGlobalModel.setProperty("/selectDefaultVehiclecarName", newName);
+			oDataGlobalModel.setProperty("/selectDefaultVehiclecarimg", newImg);
+			console.log(oDataGlobalModel);
+			this.getView().byId("More").setVisible(true);
+			this.getView().byId("idDefault").setVisible(false);
+		},
+		onAfterSelectingVehicle2: function (oEvent) {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			/*var spath = oEvent.getSource().getParent().getBindingContextPath();
+			console.log(spath);*/
+			var newName = "Supra 2020";
+			var newImg = "Images/supraCar.png";
+			oDataGlobalModel.setProperty("/selectDefaultVehiclecarName", newName);
+			oDataGlobalModel.setProperty("/selectDefaultVehiclecarimg", newImg);
+			console.log(oDataGlobalModel);
+			this.getView().byId("More").setVisible(true);
+			this.getView().byId("idDefault").setVisible(false);
 		}
 
 	});
