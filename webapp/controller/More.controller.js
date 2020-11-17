@@ -237,6 +237,13 @@ sap.ui.define([
 		},*/
 		onClose: function () {
 			this.oRouter.navTo("Home");
+		},
+		onSafetyMaintanancePress: function () {
+			this.getView().byId("More").setVisible(false);
+			this.getView().byId("idsafety").setVisible(true);
+		},
+		onCloseSafety: function () {
+			this.oRouter.navTo("More");
 		}
 
 	});

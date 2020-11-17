@@ -6,7 +6,7 @@
 		<f:content>
 			<VBox>
 				<VBox>
-					<Label class="signupLabels" text="First Name"></Label>
+					<Label class="signupLabels" text="First &amp; Middle Name"></Label>
 					<Input class="signupInputs" value="{oDataGlobalModel>/userData/firstName}" type="Text"></Input>
 				</VBox>
 				<VBox>
