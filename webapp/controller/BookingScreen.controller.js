@@ -47,6 +47,7 @@ sap.ui.define([
 				this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehiclebtnLogoutClass");
 				this.getView().byId("hbox2Logout").addStyleClass("selectVehicleHboxLogoutClass");
 				this.getView().byId("btn2Logout").addStyleClass("bookWithoutVehiclebtnLogoutClass");
+				// console.log("alj");
 			}
 			else{
 				this.getView().byId("hbox1Logout").removeStyleClass("selectVehicleHboxLogoutClass");
