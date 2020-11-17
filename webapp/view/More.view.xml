@@ -39,11 +39,11 @@
 					<wt:VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare" press="onSafetyMaintanancePress">
 						<Label text="Safety and " class="moreLabelSafety" wrapping="true"/>
 						<Label text="Maintenance Tips" class="labelStyle" wrapping="true"/>
-					</wt:VBox>
-					<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
+				</wt:VBox>	
+					<wt:VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare" press="onMapOpen">
 						<Label text="Default Service Center" class="sapUiTinyMarginTop"/>
 						<Label text="Madina Road" class="moreLabelCenter" wrapping="false"/>
-					</VBox>
+				</wt:VBox>
 				</HBox>
 				<HBox class="sapUiSmallMarginTop">
 					<wt:VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare" press="onDefaultVehiclePress">
