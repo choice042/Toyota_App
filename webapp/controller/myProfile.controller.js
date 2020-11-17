@@ -1,11 +1,11 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent",
 	"sap/m/MessageToast"
-], function (Controller, UIComponent, MessageToast) {
+], function (BaseController, UIComponent, MessageToast) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.myProfile", {
+	return BaseController.extend("inc.demo.Toyota.controller.myProfile", {
 
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -19,12 +19,14 @@ sap.ui.define([
 				"nationalId": "4567"
 			};
 			oDataGlobalModel.setProperty("/userData", userData);
+			this.carouselScroll();
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
 		},
 		onLoginPress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			console.log(oDataGlobalModel);
 			/*this.getView().byId("idMyProfile").setVisible(true);
 			this.getView().byId("idLogin").setVisible(false);
 			var logoutVisible = true;
@@ -48,6 +50,11 @@ sap.ui.define([
 				oDataGlobalModel.setProperty("/bookingbtn2", false);
 				oDataGlobalModel.setProperty("/morebtn1", true);
 				oDataGlobalModel.setProperty("/morebtn2", false);
+				// var hbox1Logout = $("div[id$='hbox1Logout']");
+				sap.ui.getCore().byId("hbox1Logout").removeStyleClass("selectVehicleHboxLogoutClass");
+				sap.ui.getCore().byId("btn1Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
+				sap.ui.getCore().byId("hbox2Logout").removeStyleClass("selectVehicleHboxLogoutClass");
+				sap.ui.getCore().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 			} else {
 				MessageToast.show("Invalid Credentials");
 				$(".sapMMessageToast").addClass("sapMMessageToastLogin");

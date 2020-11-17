@@ -1,17 +1,18 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+], function (BaseController, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.ServiceStatus", {
+	return BaseController.extend("inc.demo.Toyota.controller.ServiceStatus", {
 
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-			this.oDataGlobalModel = oDataGlobalModel;
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;*/
 			var oRouter = this.getRouter();
 			oRouter.getRoute("ServiceStatus");
+			this.carouselScroll();
 
 		},
 		getRouter: function () {

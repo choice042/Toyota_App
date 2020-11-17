@@ -12,9 +12,10 @@ sap.ui.define([
 			this.oRouter.getRoute("Home");
 			this.onHomePress();
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.onLoadData();
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			var logoutVisible = false;
-			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);
+			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);*/
 			var homebtn1 = false;
 			var homebtn2 = true;
 			oDataGlobalModel.setProperty("/homebtn1", homebtn1);
@@ -204,7 +205,7 @@ sap.ui.define([
 			this.oRouter.navTo("myservices");
 		},
 		onBookservicePress: function () {
-			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			/*var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var visibility = oDataGlobalModel.getProperty("/logoutVisible");
 			if (visibility === false) {
 				if (!this._oDialog) {
@@ -215,8 +216,8 @@ sap.ui.define([
 				this._oDialog.open();
 			} else {
 				this.oRouter.navTo("BookingScreen");
-			}
-			// this.oRouter.navTo("BookingScreen");
+			}*/
+			this.oRouter.navTo("BookingScreen");
 
 		},
 		/*onBookingsPress: function () {
@@ -235,12 +236,12 @@ sap.ui.define([
 		onUserPress: function () {
 			this.oRouter.navTo("myProfile");
 		},
-		carouselScroll: function () {
+		/*carouselScroll: function () {
 			var carousel = this.getView().byId("idcarousel");
 			setTimeout(function () {
 				carousel.next();
 			}, 1500);
-		},
+		},*/
 		onCancel: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			oDataGlobalModel.setProperty("/homebtn1", false);
