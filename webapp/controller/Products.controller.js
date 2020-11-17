@@ -1,8 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/UIComponent",
-		"sap/ui/core/routing/History"
-], function (Controller, UIComponent,History) {
+	"sap/ui/core/routing/History"
+], function (Controller, UIComponent, History) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.Products", {
@@ -167,16 +167,72 @@ sap.ui.define([
 			// console.log("sarath");
 			this.oRouter.navTo("myProfile");
 		},
-		onAddVehicle: function(){
+		onAddVehicle: function () {
 			this.oRouter.navTo("Scan");
 		},
-		onPressProductDetail: function(){
+		onPressProductDetail: function () {
 			this.oRouter.navTo("productDetail");
 		},
 		onNavBack: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
-
+			if (sPreviousHash === "Homeview") {
+				oDataGlobalModel.setProperty("/homebtn1", false);
+				oDataGlobalModel.setProperty("/homebtn2", true);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "Productsview") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", false);
+				oDataGlobalModel.setProperty("/productbtn2", true);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "MyCars") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", false);
+				oDataGlobalModel.setProperty("/mycarbtn2", true);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "BookingScreen") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", false);
+				oDataGlobalModel.setProperty("/bookingbtn2", true);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "More") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", false);
+				oDataGlobalModel.setProperty("/morebtn2", true);
+			}
 			if (sPreviousHash !== undefined) {
 				window.history.go(-1);
 			} else {
@@ -184,7 +240,7 @@ sap.ui.define([
 				oRouter.navTo("overview", {}, true);
 			}
 		},
-		onCarPress: function(oEvent){
+		onCarPress: function (oEvent) {
 			// var context= oEvent.getSource();
 			// console.log(context);
 			oEvent.removeStyleClass("carBox3");
