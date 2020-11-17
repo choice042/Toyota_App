@@ -1,64 +1,63 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="inc.demo.Toyota.controller.More"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
-
-			<Page title="More">
-				<customHeader>
-					<Bar class="stylebar">
-						<contentLeft>
-							<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
-						</contentLeft>
-						<contentMiddle>
-							<Label text="MORE" class="logo"></Label>
-						</contentMiddle>
-					</Bar>
-				</customHeader>
-				<content>
-					<!--<VBox>-->
-					<!--	<HBox>-->
-					<!--		<VBox class="productsClass sapUiSmallMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd" justifyContent="Center">-->
-					<!--<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Safety and Maintenance Tips" -->
-					<!--	press="press">-->
-					<!--</GenericTile>-->
-					<!--				<Label text="Safety and Maintenance Tips" wrapping="true" design="Bold" class="labelclass"></Label>-->
-					<!--		</VBox>-->
-					<!--		<VBox class="productsClass sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd">-->
-					<!--			<Label text="Default Service Centre" wrapping="true" design="Bold" class="labelclass"></Label>-->
-					<!--				<Label text="Medinah Road" wrapping="true" design="Bold" class="labelclass"></Label>-->
-					<!--		</VBox>-->
-					<!--	</HBox>-->
-					<!--	<VBox class="productsClass sapUiSmallMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd">-->
-					<!--		<Image src="./Images/Artboard3.png"></Image>-->
-					<!--		<Label text="Battery" design="Bold" class="labelclass"></Label>-->
-					<!--		<Image src="./Images/product2.png"></Image>-->
-					<!--		<Label text="SAR100" design="Bold" class="labelclass2"></Label>-->
-					<!--		<Text></Text>-->
-					<!--		<Button text="Book" class="productsbuttonclass"></Button>-->
-					<!--	</VBox>-->
-					<!--</VBox>-->
-					<VBox class="moreContent">
-						<HBox class="sapUiSmallMarginTop">
-							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-								<Label text="Safety and " class="moreLabelSafety" wrapping="true"/>
-								<Label text="Maintenance Tips" class="labelStyle" wrapping="true"/>
-							</VBox>
-							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-								<Label text="Default Service Center" class="sapUiTinyMarginTop"/>
-								<Label text="Madina Road" class="moreLabelCenter" wrapping="false"/>
-							</VBox>
-						</HBox>
-						<HBox class="sapUiSmallMarginTop">
-							<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
-								<Label text="Default Vehicle" class="sapUiTinyMarginTop"/>
-								<Label text="Supra 2020" class="labelStyle"/>
-								<Image src="Images/supraCar.png" class=" sapUiSmallMarginTop"/>
-								<Label text="VIN: LS5812S2176176" class="sapUiTinyMarginTop"/>
-							</VBox>
-						</HBox>
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:wt="inc.demo.Toyota.util">
+	<Page title="More" id="More">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentLeft>
+					<Button icon="Images/Path13.png" class="backBtnBooking" press="onNavBack"></Button>
+				</contentLeft>
+				<contentMiddle>
+					<Label text="MORE" class="logo"></Label>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
+		<content>
+			<!--<VBox>-->
+			<!--	<HBox>-->
+			<!--		<VBox class="productsClass sapUiSmallMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd" justifyContent="Center">-->
+			<!--<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Safety and Maintenance Tips" -->
+			<!--	press="press">-->
+			<!--</GenericTile>-->
+			<!--				<Label text="Safety and Maintenance Tips" wrapping="true" design="Bold" class="labelclass"></Label>-->
+			<!--		</VBox>-->
+			<!--		<VBox class="productsClass sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd">-->
+			<!--			<Label text="Default Service Centre" wrapping="true" design="Bold" class="labelclass"></Label>-->
+			<!--				<Label text="Medinah Road" wrapping="true" design="Bold" class="labelclass"></Label>-->
+			<!--		</VBox>-->
+			<!--	</HBox>-->
+			<!--	<VBox class="productsClass sapUiSmallMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom sapUiTinyMarginEnd">-->
+			<!--		<Image src="./Images/Artboard3.png"></Image>-->
+			<!--		<Label text="Battery" design="Bold" class="labelclass"></Label>-->
+			<!--		<Image src="./Images/product2.png"></Image>-->
+			<!--		<Label text="SAR100" design="Bold" class="labelclass2"></Label>-->
+			<!--		<Text></Text>-->
+			<!--		<Button text="Book" class="productsbuttonclass"></Button>-->
+			<!--	</VBox>-->
+			<!--</VBox>-->
+			<VBox class="moreContent">
+				<HBox class="sapUiSmallMarginTop">
+					<wt:VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare" press="onSafetyMaintanancePress">
+						<Label text="Safety and " class="moreLabelSafety" wrapping="true"/>
+						<Label text="Maintenance Tips" class="labelStyle" wrapping="true"/>
+					</wt:VBox>
+					<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
+						<Label text="Default Service Center" class="sapUiTinyMarginTop"/>
+						<Label text="Madina Road" class="moreLabelCenter" wrapping="false"/>
 					</VBox>
-				</content>
-				<footer>
-					<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
-					<!--<Toolbar class="stylefooter">
+				</HBox>
+				<HBox class="sapUiSmallMarginTop">
+					<VBox alignItems="Center" visible="true" class="moreBox sapUiTinyMarginBottom" renderType="Bare">
+						<Label text="Default Vehicle" class="sapUiTinyMarginTop"/>
+						<Label text="Supra 2020" class="labelStyle"/>
+						<Image src="Images/supraCar.png" class=" sapUiSmallMarginTop"/>
+						<Label text="VIN: LS5812S2176176" class="sapUiTinyMarginTop"/>
+					</VBox>
+				</HBox>
+			</VBox>
+		</content>
+		<footer>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.footer" type="XML"/>
+			<!--<Toolbar class="stylefooter">
 						<VBox>
 							<VBox class="text1">
 								<Button icon="./Images/icons8-home-16-2.png" press="onHomePress" tooltip="Home" class="footerbtn"></Button>
@@ -104,7 +103,21 @@
 							</VBox>
 						</VBox>
 					</Toolbar>-->
-				</footer>
-			</Page>
-	
+		</footer>
+	</Page>
+	<Page id="idsafety" visible="false" class="homePage">
+		<customHeader>
+			<Bar class="stylebar">
+				<contentMiddle>
+					<Label text="SAFETY TIPS" class="logo"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://decline" class="btn" press="onCloseSafety"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<core:Fragment fragmentName="inc.demo.Toyota.fragment.SafetyandMaintanance" type="XML"/>
+		</content>
+	</Page>
 </mvc:View>

@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/m/MessageToast",
 	"sap/ui/core/routing/History",
 	"sap/ui/core/UIComponent"
-], function (Controller, formatter, MessageToast,History,UIComponent) {
+], function (Controller, formatter, MessageToast, History, UIComponent) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.More", {
@@ -147,7 +147,7 @@ sap.ui.define([
 		// 	oDataGlobalModel.setProperty("/morebtn1", true);
 		// 	oDataGlobalModel.setProperty("/morebtn2", false);
 		// },
-			onNavBack: function () {
+		onNavBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
 
@@ -181,6 +181,13 @@ sap.ui.define([
 		},*/
 		onClose: function () {
 			this.oRouter.navTo("Home");
+		},
+		onSafetyMaintanancePress: function () {
+			this.getView().byId("More").setVisible(false);
+			this.getView().byId("idsafety").setVisible(true);
+		},
+		onCloseSafety: function () {
+			this.oRouter.navTo("More");
 		}
 
 	});
