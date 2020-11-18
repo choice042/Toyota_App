@@ -1812,6 +1812,12 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 .selectVehicleHboxLogoutClass{
 	height: 6rem;
+	/*background-color: #ffffff;
+    border-top-left-radius: 0px;*/
+}
+.selectVehicleVboxLogoutClass{
+	background-color: #ffffff;
+    border-top-left-radius: 0px;
 }
 .bookWithoutVehiclebtnLogoutClass{
 	margin-top: 1.9rem;

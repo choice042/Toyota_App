@@ -55,6 +55,8 @@ sap.ui.define([
 				sap.ui.getCore().byId("btn1Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 				sap.ui.getCore().byId("hbox2Logout").removeStyleClass("selectVehicleHboxLogoutClass");
 				sap.ui.getCore().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");*/
+				var viewidvbox1 = oDataGlobalModel.getProperty("/viewidvbox1");
+				viewidvbox1.removeStyleClass("selectVehicleVboxLogoutClass");
 				var viewidhbox1 = oDataGlobalModel.getProperty("/viewidhbox1");
 				viewidhbox1.removeStyleClass("selectVehicleHboxLogoutClass");
 				var viewidbtn1 = oDataGlobalModel.getProperty("/viewidbtn1");

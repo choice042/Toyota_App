@@ -56,6 +56,11 @@ sap.ui.define([
 			this._oDialog1.close();
 			this._oDialog1.destroy();
 			this._oDialog1 = null;
+		},
+		onCancelReschedule: function () {
+			this._oDialog1.close();
+			this._oDialog1.destroy();
+			this._oDialog1 = null;
 		}
 
 	});

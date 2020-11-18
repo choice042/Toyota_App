@@ -45,17 +45,21 @@ sap.ui.define([
 				this.carouselScroll();
 				var visibility = oDataGlobalModel.getProperty("/logoutVisible");
 				if (visibility === false) {
+					this.getView().byId("vbox1logout").addStyleClass("selectVehicleVboxLogoutClass");
 					this.getView().byId("hbox1Logout").addStyleClass("selectVehicleHboxLogoutClass");
 					this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehiclebtnLogoutClass");
 					this.getView().byId("hbox2Logout").addStyleClass("selectVehicleHboxLogoutClass");
 					this.getView().byId("btn2Logout").addStyleClass("bookWithoutVehiclebtnLogoutClass");
 					// console.log("alj");
 				} else {
+					this.getView().byId("vbox1logout").removeStyleClass("selectVehicleVboxLogoutClass");
 					this.getView().byId("hbox1Logout").removeStyleClass("selectVehicleHboxLogoutClass");
 					this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 					this.getView().byId("hbox2Logout").removeStyleClass("selectVehicleHboxLogoutClass");
 					this.getView().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 				}
+				var viewidvbox1 = this.getView().byId("vbox1logout");
+				oDataGlobalModel.setProperty("/viewidvbox1", viewidvbox1);
 				var viewidhbox1 = this.getView().byId("hbox1Logout");
 				oDataGlobalModel.setProperty("/viewidhbox1", viewidhbox1);
 				var viewidbtn1 = this.getView().byId("btn1Logout");
@@ -283,13 +287,13 @@ sap.ui.define([
 			},
 			onBookWithoutVehicleBtnPress: function () {
 				this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehicleRedBtn");
-				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
+				// this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
 				MessageToast.show("Book Without Vehicle");
 				$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
 			},
 			onBookWithoutProductBtnPress: function () {
 				this.getView().byId("btn2Logout").addStyleClass("bookWithoutProductRedBtn");
-				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
+				// this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 				MessageToast.show("Book Without Product");
 				$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
 			}

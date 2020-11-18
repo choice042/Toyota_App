@@ -31,7 +31,8 @@
 		</content>
 		<Toolbar class="sapUiSmallMarginTop">
 			<ToolbarSpacer></ToolbarSpacer>
-			<Button width="6rem" text="Confirm" press="onCloseReschedule" class="cancelButton"></Button>
+			<Button width="4rem" text="Cancel" press="onCancelReschedule" class="cancelButton sapUiTinyMarginEnd"></Button>
+			<Button width="6rem" text="Confirm" press="onCloseReschedule" class="LoginButton"></Button>
 		</Toolbar>
 	</Dialog>
 </core:FragmentDefinition>

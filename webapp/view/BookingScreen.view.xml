@@ -24,7 +24,7 @@
 					<Text text="National ID: 2345987601" class="basicInformationLabel"/>
 				</VBox>
 			</VBox>
-			<VBox class="selectVehicle">
+			<VBox id="vbox1logout" class="selectVehicle">
 				<HBox justifyContent="SpaceBetween">
 					<VBox renderType="Bare">
 						<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop vehicleInfo">
