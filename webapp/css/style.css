@@ -1658,6 +1658,12 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
  	color: #000000 !important;
     background-color: #D9D9D9 !important;
  }
+ .rescheduledateAndTime{
+ 	background-color: #D9D9D9;
+ }
+ .reschedulewidthCalender{
+ 	width: 330px !important;
+ }
 
 
 /*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/

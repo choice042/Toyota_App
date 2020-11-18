@@ -204,6 +204,19 @@ sap.ui.define([
 			/*this._oDialog.close();
 			this._oDialog.destroy();
 			this._oDialog = null;*/
+		},
+		onReschedulePress: function () {
+			if (!this._oDialog1) {
+				this._oDialog1 = sap.ui.xmlfragment("idCancelAppointmentFrag", "inc.demo.Toyota.fragment.RescheduleAppointment",
+					this);
+			}
+			this.getView().addDependent(this._oDialog1);
+			this._oDialog1.open();
+		},
+		onCloseReschedule: function () {
+			this._oDialog1.close();
+			this._oDialog1.destroy();
+			this._oDialog1 = null;
 		}
 
 	});
