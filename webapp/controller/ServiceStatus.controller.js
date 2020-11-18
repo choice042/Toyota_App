@@ -1,17 +1,18 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+], function (BaseController, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.ServiceStatus", {
+	return BaseController.extend("inc.demo.Toyota.controller.ServiceStatus", {
 
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-			this.oDataGlobalModel = oDataGlobalModel;
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;*/
 			var oRouter = this.getRouter();
 			oRouter.getRoute("ServiceStatus");
+			this.carouselScroll();
 
 		},
 		getRouter: function () {
@@ -188,6 +189,34 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.navTo("Home");
+		},
+		onCancelAppointmentPress: function () {
+			if (!this._oDialog) {
+				this._oDialog = sap.ui.xmlfragment("idCancelAppointmentFrag", "inc.demo.Toyota.fragment.CancelAppointment",
+					this);
+			}
+			this.getView().addDependent(this._oDialog);
+			this._oDialog.open();
+		},
+		onCancelAppointmentClose: function () {
+			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			this.oRouter.navTo("Home");
+			/*this._oDialog.close();
+			this._oDialog.destroy();
+			this._oDialog = null;*/
+		},
+		onReschedulePress: function () {
+			if (!this._oDialog1) {
+				this._oDialog1 = sap.ui.xmlfragment("idCancelAppointmentFrag", "inc.demo.Toyota.fragment.RescheduleAppointment",
+					this);
+			}
+			this.getView().addDependent(this._oDialog1);
+			this._oDialog1.open();
+		},
+		onCloseReschedule: function () {
+			this._oDialog1.close();
+			this._oDialog1.destroy();
+			this._oDialog1 = null;
 		}
 
 	});

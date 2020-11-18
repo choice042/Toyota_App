@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="Reschedule Appointment" draggable="true" contentWidth="30rem" contentHeight="23rem" resizable="true"
+		class="sapUiSizeCompact warningDialogClass">
+		<content>
+			<VBox class="rescheduledateAndTime">
+				<HBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop dateHeader">
+					<Image src="Images/dateIcon.png" class="iconStyle"/>
+					<Label text="Date and Time" class="labelStyle"/>
+				</HBox>
+				<HBox class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" alignItems="Center">
+					<l:VerticalLayout>
+						<u:CalendarDateInterval class="reschedulewidthCalender" width="330px" select="handleCalendarSelect"/>
+					</l:VerticalLayout>
+				</HBox>
+				<HBox class="timeslotCss">
+					<Label text="Timeslot" class="timeHeaderStyle"/>
+				</HBox>
+				<HBox items="{oDataGlobalModel>/timeSlot}" renderType="Bare" class="sapUiTinyMarginTop timeScroller">
+					<CustomListItem class="timeList" type="Active">
+						<VBox alignItems="Center" visible="{path: 'oDataGlobalModel>isSelected', formatter:'inc.demo.Toyota.util.formatter.fnCarSelected'}"
+							class="timeBox sapUiTinyMarginBottom" renderType="Bare">
+							<Label text="{oDataGlobalModel>time}" class="labelStyle"/>
+						</VBox>
+					</CustomListItem>
+				</HBox>
+			</VBox>
+			<!--<HBox class="sapUiSmallMarginBottom" alignContent="Center" justifyContent="Center">
+				<Button width="4rem" text="Ok" press="onCloseReschedule" class="cancelButton sapUiTinyMarginEnd"></Button>
+			</HBox>-->
+		</content>
+		<Toolbar class="sapUiSmallMarginTop">
+			<ToolbarSpacer></ToolbarSpacer>
+			<Button width="6rem" text="Confirm" press="onCloseReschedule" class="cancelButton"></Button>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>

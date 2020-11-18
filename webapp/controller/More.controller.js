@@ -1,18 +1,18 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"inc/demo/Toyota/util/formatter",
 	"sap/m/MessageToast",
 	"sap/ui/core/routing/History",
 	"sap/ui/core/UIComponent"
-], function (Controller, formatter, MessageToast, History, UIComponent) {
+], function (BaseController, formatter, MessageToast, History, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.More", {
+	return BaseController.extend("inc.demo.Toyota.controller.More", {
 		formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-			this.oDataGlobalModel = oDataGlobalModel;
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;*/
 
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.getRoute("More");
@@ -37,6 +37,7 @@ sap.ui.define([
 			var morebtn2 = true;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
+			this.carouselScroll();
 		},
 		onHomePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -255,11 +256,16 @@ sap.ui.define([
 			this.getView().byId("idDefault").setVisible(false);
 		},
 		onAfterSelectingVehicle: function (oEvent) {
+
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			/*var spath = oEvent.getSource().getParent().getBindingContextPath();
-			console.log(spath);*/
-			var newName = "Camry 2019";
-			var newImg = "Images/camryCar.png";
+			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+			for (var i = 0; i <= 5; i++) {
+				oDataGlobalModel.setProperty("/selectDefault/" + i + "/visible", false);
+			}
+			var data = oDataGlobalModel.getProperty(sPath);
+			var newName = data.carName;
+			var newImg = data.carImage;
+			oDataGlobalModel.setProperty(sPath + "/visible", true);
 			oDataGlobalModel.setProperty("/selectDefaultVehiclecarName", newName);
 			oDataGlobalModel.setProperty("/selectDefaultVehiclecarimg", newImg);
 			console.log(oDataGlobalModel);

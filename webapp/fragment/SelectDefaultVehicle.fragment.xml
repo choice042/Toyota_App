@@ -1,12 +1,17 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form"
 	xmlns:wt="inc.demo.Toyota.util">
-	<!--<wt:VBox press="onAfterSelectingVehicle" items="{oDataGlobalModel>/selectDefault}">
-		<HBox class="SelectDefaultVboxClass">
-			<Image src="./Images/Group2.png"></Image>
-			<Label text="{oDataGlobalModel>carName}" design="Bold" class="sapUiSmallMarginBegin SelectDefaultLabelClass"></Label>
-		</HBox>
-	</wt:VBox>-->
-	<wt:VBox press="onAfterSelectingVehicle" class="SelectDefaultVboxClass">
+	<wt:VBox items="{oDataGlobalModel>/selectDefault}">
+		<wt:VBox press="onAfterSelectingVehicle">
+			<HBox class="SelectDefaultVboxClass">
+				<Image src="./Images/Group2.png"></Image>
+				<Label text="{oDataGlobalModel>carName}" design="Bold" class="sapUiSmallMarginBegin SelectDefaultLabelClass"></Label>
+				<HBox class="SelectDefaultHboxClass sapUiMediumMarginBegin" visible="{oDataGlobalModel>visible}">
+					<Label text="Primary" class="PrimaryLabelClass"></Label>
+				</HBox>
+			</HBox>
+		</wt:VBox>
+	</wt:VBox>
+	<!--<wt:VBox press="onAfterSelectingVehicle" class="SelectDefaultVboxClass">
 		<HBox>
 			<Image src="./Images/Group2.png"></Image>
 			<Label text="Camry 2019" design="Bold" class="sapUiSmallMarginBegin SelectDefaultLabelClass"></Label>
@@ -17,5 +22,5 @@
 			<Image src="./Images/Group2.png"></Image>
 			<Label text="Supra 2020" design="Bold" class="sapUiSmallMarginBegin SelectDefaultLabelClass"></Label>
 		</HBox>
-	</wt:VBox>
+	</wt:VBox>-->
 </core:FragmentDefinition>

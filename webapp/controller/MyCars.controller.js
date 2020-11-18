@@ -1,21 +1,21 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"inc/demo/Toyota/util/formatter",
 	"sap/ui/core/routing/History",
 	"sap/m/MessageToast",
 	"sap/ui/core/UIComponent"
-], function (Controller, formatter, History, MessageToast, UIComponent) {
+], function (BaseController, formatter, History, MessageToast, UIComponent) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.MyCars", {
+	return BaseController.extend("inc.demo.Toyota.controller.MyCars", {
 
 		formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 
-			this.oDataGlobalModel = oDataGlobalModel;
+			this.oDataGlobalModel = oDataGlobalModel;*/
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.onMyCarPress();
 			this.oRouter.getRoute("MyCars");
@@ -39,6 +39,7 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
+			this.carouselScroll();
 		},
 	onCarPress: function (oEvent) {
 

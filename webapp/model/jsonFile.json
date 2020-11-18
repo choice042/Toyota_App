@@ -584,20 +584,26 @@
 	},
 	"selectDefault": [{
 		"carName": "Camry 2019",
-		"carImage": "Images/camryCar.png"
+		"carImage": "Images/camryCar.png",
+		"visible":false
 	}, {
 		"carName": "Supra 2019",
-		"carImage": "Images/supraCar.png"
+		"carImage": "Images/supraCar.png",
+		"visible":false
 	}, {
 		"carName": "Fortuner 2018",
-		"carImage": "Images/supraCar.png"
+		"carImage": "Images/supraCar.png",
+		"visible":false
 	}, {
 		"carName": "Supra 2020",
-		"carImage": "Images/supraCar.png"
+		"carImage": "Images/supraCar.png",
+		"visible":true
 	}, {
 		"carName": "Camry 2020",
-		"carImage": "Images/camryCar.png"
+		"carImage": "Images/camryCar.png",
+		"visible":false
 	}],
+	"logoutVisible":false,
 
 	"selectDefaultVehiclecarName": "Supra 2020",
 	"selectDefaultVehiclecarimg": "Images/supraCar.png",

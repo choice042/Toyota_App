@@ -1,18 +1,18 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent",
 	"sap/ui/core/routing/History"
-], function (Controller, UIComponent, History) {
+], function (BaseController, UIComponent, History) {
 	"use strict";
 
-	return Controller.extend("inc.demo.Toyota.controller.Products", {
+	return BaseController.extend("inc.demo.Toyota.controller.Products", {
 
 		onInit: function () {
 			this.oRouter = this.getRouter();
 			this.oRouter.getRoute("Products");
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			oDataGlobalModel.loadData("model/jsonFile.json", null, false);
-			this.oDataGlobalModel = oDataGlobalModel;
+			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
+			this.oDataGlobalModel = oDataGlobalModel;*/
 			this.onProductPress();
 			var homebtn1 = true;
 			var homebtn2 = false;
@@ -34,6 +34,7 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
+			this.carouselScroll();
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);

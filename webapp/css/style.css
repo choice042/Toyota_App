@@ -1329,8 +1329,19 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .SelectDefaultLabelClass {
     font-size: 1rem;
 }
-
-
+.SelectDefaultHboxClass{
+	height: 2rem;
+    width: 5rem;
+    background-color: #EB0A1E;
+    padding: 6px;
+    /* color: white; */
+    border-radius: 0.8rem;
+    margin-top: -8px;
+}
+.PrimaryLabelClass{
+	color:white;
+	margin-left: 10px;
+}
 /*bijay's css*/
 
 
@@ -1799,7 +1810,29 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: 20px;
     color: black;
 }
-
+.selectVehicleHboxLogoutClass{
+	height: 6rem;
+}
+.bookWithoutVehiclebtnLogoutClass{
+	margin-top: 1.9rem;
+    margin-right: 4rem;
+}
+.bookWithoutVehicleRedBtn .sapMBtnInner{
+	border: 1px solid red;
+}
+.bookWithoutProductRedBtn .sapMBtnInner{
+	border: 1px solid red;
+}
+.sapMMessageToastForBtn{
+ 	color: #000000 !important;
+    background-color: #D9D9D9 !important;
+ }
+ .rescheduledateAndTime{
+ 	background-color: #D9D9D9;
+ }
+ .reschedulewidthCalender{
+ 	width: 330px !important;
+ }
 
 /*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/
 

@@ -152,8 +152,8 @@
 			<HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" justifyContent="Center" alignContent="Center">
 				<VBox justifyContent="Center" alignContent="Center">
 					<Button class="aljRedButton aljGrayButtons" text="Copy to mobile calendar"></Button>
-					<Button class="aljRedButton aljGrayButtons" text="Reschedule"></Button>
-					<Button class="aljRedButton aljGrayButtons" text="Cancel Appointment"></Button>
+					<Button class="aljRedButton aljGrayButtons" text="Reschedule" press="onReschedulePress"></Button>
+					<Button class="aljRedButton aljGrayButtons" text="Cancel Appointment" press="onCancelAppointmentPress"></Button>
 				</VBox>
 			</HBox>
 		</content>

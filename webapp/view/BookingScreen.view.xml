@@ -32,7 +32,7 @@
 							<Label text="Select Vehicle" class="labelStyle"/>
 						</HBox>
 					</VBox>
-					<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
+					<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
 						<Button class="selectVehicleBtn" press="onPressScan" text="+ Add Vehicle" width="100%"/>
 					</VBox>
 				</HBox>
@@ -42,8 +42,8 @@
 						<core:Fragment fragmentName="inc.demo.Toyota.fragment.CarList" type="XML"/>
 					</HBox>
 				</ScrollContainer>
-				<HBox justifyContent="End" class=" sapUiSmallMarginBeginEnd sapUiSmallMarginBottom">
-					<Button text="Book without vehicle" class="withoutVehicleBtn"/>
+				<HBox id="hbox1Logout" justifyContent="End" class=" sapUiSmallMarginBeginEnd sapUiSmallMarginBottom">
+					<Button id="btn1Logout" text="Book without vehicle" press="onBookWithoutVehicleBtnPress" class="withoutVehicleBtn"/>
 				</HBox>
 			</VBox>
 			<VBox class="userInfo sapUiSmallMarginBottom" visible="{oDataGlobalModel>/logoutVisible}">
@@ -68,18 +68,18 @@
 							<Label text="Product" class="labelStyle"/>
 						</HBox>
 					</VBox>
-					<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop">
+					<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
 						<Button class="selectVehicleBtn" text="+ Add Product" width="100%"/>
 					</VBox>
 				</HBox>
 				<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
-					class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
+					class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll" visible="{oDataGlobalModel>/logoutVisible}">
 					<HBox items="{oDataGlobalModel>/productCategory}" renderType="Bare">
 						<core:Fragment fragmentName="inc.demo.Toyota.fragment.ProductList" type="XML"/>
 					</HBox>
 				</ScrollContainer>
-				<HBox justifyContent="End" class=" sapUiSmallMarginBeginEnd ">
-					<Button text="Book without product" class="withoutVehicleBtn"/>
+				<HBox id="hbox2Logout" justifyContent="End" class=" sapUiSmallMarginBeginEnd ">
+					<Button id="btn2Logout" text="Book without product" press="onBookWithoutProductBtnPress" class="withoutVehicleBtn"/>
 				</HBox>
 				<VBox>
 					<HBox class="sapUiSmallMarginBeginEnd">
