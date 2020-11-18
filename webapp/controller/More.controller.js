@@ -344,24 +344,28 @@ sap.ui.define([
 		},
 		addMarker: function (map) {
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			
-			
-				var lat=	oDataGlobalModel.getProperty("/locationArabia/lat");
-				var long=	oDataGlobalModel.getProperty("/locationArabia/lon");
-			if(lat!==""&&long!==""){
+		var locationCurrent=oDataGlobalModel.getProperty("/locationCurrent");
+		if(locationCurrent==="jeddah"){
 			var locations = [{
-				"lat": lat,
-				"lng": long,
+				"lat": 21.4858,
+				"lng": 39.1925,
 				"id": 67
 			}];
-			}
-			else{
-				var locations = [{
-				"lat": "21.3891",
-				"lng": "39.8579",
-				"id": 67
+		}
+		else 	if(locationCurrent==="Medina"){
+			var locations = [{
+				"lat": 24.5247,
+				"lng": 39.5692,
+				"id": 68
 			}];
-			}
+		}
+		else 	if(locationCurrent==="Airport"||locationCurrent==""||locationCurrent==undefined){
+			var locations = [{
+				"lat": 21.6677,
+				"lng": 39.1737,
+				"id": 69
+			}];
+		}
 			var location;
 			for (location in locations) {
 				this.addMarkers(this, locations[location], "", map);
@@ -407,7 +411,7 @@ sap.ui.define([
 					oModel.setProperty("/Selcenter", oPosMarker.id);
 					oModel.refresh();
 					oPosMarker.setIcon({
-							url: "./image/GMarker.png", // url
+							url: "./Image/GMarker.png", // url
 							scaledSize: new google.maps.Size(35, 50), // scaled size
 							origin: new google.maps.Point(0, 0), // origin
 							anchor: new google.maps.Point(15, 43) // anchor
@@ -447,20 +451,15 @@ sap.ui.define([
 			var	value = oEvent.getSource().getValue();
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			
-			if(value==="Mecca"){
-					oDataGlobalModel.setProperty("/locationArabia",{});
-					oDataGlobalModel.setProperty("/locationArabia/lat","24.5247");
-					oDataGlobalModel.setProperty("/locationArabia/lon","39.5692");
+			if(value==="jeddah"){
+					oDataGlobalModel.setProperty("/locationCurrent",value);
+				
 			}
 			if(value==="Medina"){
-					oDataGlobalModel.setProperty("/locationArabia",{});
-					oDataGlobalModel.setProperty("/locationArabia/lat","24.5247");
-					oDataGlobalModel.setProperty("/locationArabia/lon","39.8579");
+					oDataGlobalModel.setProperty("/locationCurrent",value);
 			}
 			if(value==="Airport"){
-					oDataGlobalModel.setProperty("/locationArabia",{});
-					oDataGlobalModel.setProperty("/locationArabia/lat","24.5544");
-					oDataGlobalModel.setProperty("/locationArabia/lon","39.7146");
+					oDataGlobalModel.setProperty("/locationCurrent",value);
 			}
 		// 		"mecca":{"lat":"21.3891","long":"39.8579"},
 		// "medina":{"lat":"24.5247","long":"39.5692"},

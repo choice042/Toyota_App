@@ -10,8 +10,8 @@
 		</VBox>
 			<HBox><ComboBox change="onRelocate">
 				<items>
-				<core:Item  key="Mecca" 
-           text="Mecca" ></core:Item>
+				<core:Item  key="jeddah" 
+           text="jeddah" ></core:Item>
            	<core:Item  key="Medina"   
            text="Medina" ></core:Item>
            	<core:Item  key="Airport"  
