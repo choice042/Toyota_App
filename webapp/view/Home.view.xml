@@ -48,15 +48,15 @@
 					<VBox>
 						<HBox class="sapUiSmallMarginBegin">
 							<Image src="./Images/group3.png"></Image>
-							<Label text="Fortuner 2018" design="Bold" class="sapUiSmallMarginBegin sapUiTinyMarginTop serviceStatusLabel"></Label>
+							<Label text="Fortuner 2018"  class="sapUiSmallMarginBegin sapUiTinyMarginTop labelStyle"></Label>
 						</HBox>
 						<HBox class="sapUiSmallMarginBegin">
 							<Image src="./Images/group3.png"></Image>
-							<Label text="30 May 2020, 6:00 PM" design="Bold" class="sapUiSmallMarginBegin sapUiTinyMarginTop serviceStatusLabel"></Label>
+							<Label text="30 May 2020, 6:00 PM" class="sapUiSmallMarginBegin sapUiTinyMarginTop labelStyle"></Label>
 						</HBox>
 						<HBox class="sapUiSmallMarginBegin">
 							<Image src="./Images/group3.png"></Image>
-							<Label text="Service done" design="Bold" class="sapUiSmallMarginBegin sapUiTinyMarginTop serviceStatusLabel"></Label>
+							<Label text="Service done"  class="sapUiSmallMarginBegin sapUiTinyMarginTop labelStyle"></Label>
 						</HBox>
 					</VBox>
 					<VBox class="sapUiSmallMarginBegin" alignItems="Center" justifyContent="Center">
