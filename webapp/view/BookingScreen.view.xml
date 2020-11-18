@@ -43,7 +43,7 @@
 					</HBox>
 				</ScrollContainer>
 				<HBox id="hbox1Logout" justifyContent="End" class=" sapUiSmallMarginBeginEnd sapUiSmallMarginBottom">
-					<Button id="btn1Logout" text="Book without vehicle" class="withoutVehicleBtn"/>
+					<Button id="btn1Logout" text="Book without vehicle" press="onBookWithoutVehicleBtnPress" class="withoutVehicleBtn"/>
 				</HBox>
 			</VBox>
 			<VBox class="userInfo sapUiSmallMarginBottom" visible="{oDataGlobalModel>/logoutVisible}">
@@ -79,7 +79,7 @@
 					</HBox>
 				</ScrollContainer>
 				<HBox id="hbox2Logout" justifyContent="End" class=" sapUiSmallMarginBeginEnd ">
-					<Button id="btn2Logout" text="Book without product" class="withoutVehicleBtn"/>
+					<Button id="btn2Logout" text="Book without product" press="onBookWithoutProductBtnPress" class="withoutVehicleBtn"/>
 				</HBox>
 				<VBox>
 					<HBox class="sapUiSmallMarginBeginEnd">

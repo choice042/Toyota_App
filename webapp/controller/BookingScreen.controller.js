@@ -19,8 +19,8 @@ sap.ui.define([
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			/*var logoutVisible = false;
 			oDataGlobalModel.setProperty("/logoutVisible", logoutVisible);*/
-			var homebtn1 = true;
-			var homebtn2 = false;
+			var homebtn1 = false;
+			var homebtn2 = true;
 			oDataGlobalModel.setProperty("/homebtn1", homebtn1);
 			oDataGlobalModel.setProperty("/homebtn2", homebtn2);
 			var mycarbtn1 = true;
@@ -31,8 +31,8 @@ sap.ui.define([
 			var productbtn2 = false;
 			oDataGlobalModel.setProperty("/productbtn1", productbtn1);
 			oDataGlobalModel.setProperty("/productbtn2", productbtn2);
-			var bookingbtn1 = false;
-			var bookingbtn2 = true;
+			var bookingbtn1 = true;
+			var bookingbtn2 = false;
 			oDataGlobalModel.setProperty("/bookingbtn1", bookingbtn1);
 			oDataGlobalModel.setProperty("/bookingbtn2", bookingbtn2);
 			var morebtn1 = true;
@@ -48,13 +48,20 @@ sap.ui.define([
 				this.getView().byId("hbox2Logout").addStyleClass("selectVehicleHboxLogoutClass");
 				this.getView().byId("btn2Logout").addStyleClass("bookWithoutVehiclebtnLogoutClass");
 				// console.log("alj");
-			}
-			else{
+			} else {
 				this.getView().byId("hbox1Logout").removeStyleClass("selectVehicleHboxLogoutClass");
 				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 				this.getView().byId("hbox2Logout").removeStyleClass("selectVehicleHboxLogoutClass");
 				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 			}
+			var viewidhbox1 = this.getView().byId("hbox1Logout");
+			oDataGlobalModel.setProperty("/viewidhbox1", viewidhbox1);
+			var viewidbtn1 = this.getView().byId("btn1Logout");
+			oDataGlobalModel.setProperty("/viewidbtn1", viewidbtn1);
+			var viewidhbox2 = this.getView().byId("hbox2Logout");
+			oDataGlobalModel.setProperty("/viewidhbox2", viewidhbox2);
+			var viewidbtn2 = this.getView().byId("btn2Logout");
+			oDataGlobalModel.setProperty("/viewidbtn2", viewidbtn2);
 
 		},
 		onCarPress: function (oEvent) {
@@ -197,6 +204,18 @@ sap.ui.define([
 		},
 		onPressConfirm: function () {
 			this.oRouter.navTo("confirmAppointment");
+		},
+		onBookWithoutVehicleBtnPress: function () {
+			this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehicleRedBtn");
+			this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
+			MessageToast.show("Book Without Vehicle");
+			$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
+		},
+		onBookWithoutProductBtnPress: function () {
+			this.getView().byId("btn2Logout").addStyleClass("bookWithoutProductRedBtn");
+			this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
+			MessageToast.show("Book Without Product");
+			$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
 		}
 
 	});

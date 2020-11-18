@@ -189,6 +189,21 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.navTo("Home");
+		},
+		onCancelAppointmentPress: function () {
+			if (!this._oDialog) {
+				this._oDialog = sap.ui.xmlfragment("idCancelAppointmentFrag", "inc.demo.Toyota.fragment.CancelAppointment",
+					this);
+			}
+			this.getView().addDependent(this._oDialog);
+			this._oDialog.open();
+		},
+		onCancelAppointmentClose: function () {
+			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			this.oRouter.navTo("Home");
+			/*this._oDialog.close();
+			this._oDialog.destroy();
+			this._oDialog = null;*/
 		}
 
 	});

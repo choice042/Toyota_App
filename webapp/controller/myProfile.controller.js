@@ -50,11 +50,19 @@ sap.ui.define([
 				oDataGlobalModel.setProperty("/bookingbtn2", false);
 				oDataGlobalModel.setProperty("/morebtn1", true);
 				oDataGlobalModel.setProperty("/morebtn2", false);
-				// var hbox1Logout = $("div[id$='hbox1Logout']");
-				sap.ui.getCore().byId("hbox1Logout").removeStyleClass("selectVehicleHboxLogoutClass");
+				/*var hbox1Logout = $("div[id$='hbox1Logout']");
+				sap.ui.getCore().byId(hbox1Logout).removeStyleClass("selectVehicleHboxLogoutClass");
 				sap.ui.getCore().byId("btn1Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 				sap.ui.getCore().byId("hbox2Logout").removeStyleClass("selectVehicleHboxLogoutClass");
-				sap.ui.getCore().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");
+				sap.ui.getCore().byId("btn2Logout").removeStyleClass("bookWithoutVehiclebtnLogoutClass");*/
+				var viewidhbox1 = oDataGlobalModel.getProperty("/viewidhbox1");
+				viewidhbox1.removeStyleClass("selectVehicleHboxLogoutClass");
+				var viewidbtn1 = oDataGlobalModel.getProperty("/viewidbtn1");
+				viewidbtn1.removeStyleClass("bookWithoutVehiclebtnLogoutClass");
+				var viewidhbox2 = oDataGlobalModel.getProperty("/viewidhbox2");
+				viewidhbox2.removeStyleClass("selectVehicleHboxLogoutClass");
+				var viewidbtn2 = oDataGlobalModel.getProperty("/viewidbtn2");
+				viewidbtn2.removeStyleClass("bookWithoutVehiclebtnLogoutClass");
 			} else {
 				MessageToast.show("Invalid Credentials");
 				$(".sapMMessageToast").addClass("sapMMessageToastLogin");
