@@ -135,7 +135,7 @@
 							<HBox justifyContent="Start" class="InformationStyle sapUiSmallMarginTop">
 								<Label text="Vehicle Model" class="labelNormal"/>
 								<Label text=":" class="labelStyleInformaticsVehicle"/>
-								<Label text="Camry TRD" class="labelStyleInformatics"/>
+								<Label text="{oDataGlobalModel>/currentVehicle}" class="labelStyleInformatics"/>
 							</HBox>
 							<HBox justifyContent="Start" class="InformationStyle sapUiTinyMarginTop">
 								<Label text="Model Year" class="labelNormal"/>

@@ -241,12 +241,32 @@ sap.ui.define([
 				oRouter.navTo("overview", {}, true);
 			}
 		},
+		// onCarPress: function (oEvent) {
+		// 	// var context= oEvent.getSource();
+		// 	// console.log(context);
+		// 	oEvent.removeStyleClass("carBox3");
+		// 	oEvent.addStyleClass("carBox6");
+		// }, 
 		onCarPress: function (oEvent) {
-			// var context= oEvent.getSource();
-			// console.log(context);
-			oEvent.removeStyleClass("carBox3");
-			oEvent.addStyleClass("carBox6");
-		},
+
+				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+
+				var carPath = sPath + "/carName";
+				var selectedcar = oDataGlobalModel.getProperty(carPath);
+				// MessageToast.show(selectedcar);
+				oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
+				var carArray = oDataGlobalModel.getProperty("/carCategory");
+				var len = carArray.length;
+				for (var i = 0; i < len; i++) {
+					oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
+				}
+
+				oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+
+				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
+				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
+			},
 			onVehicleChange: function(){
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 				var newOne =oDataGlobalModel.getProperty("/currentVehicle");

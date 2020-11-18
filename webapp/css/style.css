@@ -1672,7 +1672,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 }
 
 .vehicleInformaticsSub {
-    margin: 1rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 0.5rem;
     background-color: #fff;
     min-height: 205px;
     border-radius: 17px;

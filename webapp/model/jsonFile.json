@@ -152,7 +152,7 @@
 			}
 		}
 	}],
-	"currentVehicle": "",
+	"currentVehicle": "Supra 2020",
 	"productCategory": [{
 		"productName": "Brake Service",
 		"src": "Images/brakeService.png",
@@ -216,50 +216,50 @@
 
 			"serviceName": "Brake Service",
 			"img2": "Images/product1.png",
-			"price1": "SAR100",
-			"price2": "SAR350"
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
 			"serviceName": "Battery",
 			"img2": "Images/product2.png",
-			"price1": "SAR100",
-			"price2": ""
+			"price1": "SAR 100",
+			"price2": "SAR 200"
 
 		}, {
 
 			"serviceName": "AC Service",
 			"img2": "Images/product1.png",
-			"price1": "SAR100",
-			"price2": "SAR350"
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
 			"serviceName": "Air Filter",
 			"img2": "Images/product2.png",
-			"price1": "SAR100",
-			"price2": ""
+			"price1": "SAR 100",
+			"price2": "SAR 200"
 
 		}, {
 
 			"serviceName": "Engine Oil",
 			"img2": "Images/product1.png",
-			"price1": "SAR100",
-			"price2": "SAR350"
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
 			"serviceName": "Wipers",
 			"img2": "Images/product2.png",
-			"price1": "SAR100",
-			"price2": ""
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
 			"serviceName": "General Service",
 			"img2": "Images/product1.png",
-			"price1": "SAR100",
-			"price2": ""
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
@@ -276,14 +276,14 @@
 
 			"serviceName": "Brake Service",
 			"img2": "Images/product1.png",
-			"price1": "SAR100",
-			"price2": "SAR350"
+			"price1": "SAR 100",
+			"price2": "SAR 350"
 
 		}, {
 
 			"serviceName": "Battery",
 			"img2": "Images/product2.png",
-			"price1": "SAR100",
+			"price1": "SAR 100",
 			"price2": ""
 
 		}, {

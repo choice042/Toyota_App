@@ -69,7 +69,7 @@
 						</HBox>
 					</VBox>
 					<VBox justifyContent="Center" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTop" visible="{oDataGlobalModel>/logoutVisible}">
-						<Button class="selectVehicleBtn" text="+ Add Product" width="100%"/>
+						<Button class="selectVehicleBtn" text="+ Add Product" width="100%" visible="false"/>
 					</VBox>
 				</HBox>
 				<ScrollContainer height="100%" width="100%" horizontal="true" focusable="true"
