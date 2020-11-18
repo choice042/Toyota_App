@@ -40,11 +40,11 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 		},
-		onCarPress: function (oEvent) {
+	onCarPress: function (oEvent) {
 
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
-			var selectedObj = oEvent.getSource().getBindingContext("oDataGlobalModel").getObject();
+
 			var carPath = sPath + "/carName";
 			var selectedcar = oDataGlobalModel.getProperty(carPath);
 			MessageToast.show(selectedcar);
@@ -52,10 +52,10 @@ sap.ui.define([
 			var carArray = oDataGlobalModel.getProperty("/carCategory");
 			var len = carArray.length;
 			for (var i = 0; i < len; i++) {
-				oDataGlobalModel.setProperty("/carCategory/" + i + "isSelected", false);
+				oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
 			}
 
-			oDataGlobalModel.setProperty(sPath + "isSelected", true);
+			oDataGlobalModel.setProperty(sPath + "/isSelected", true);
 
 		},
 		// onNavBack: function () {

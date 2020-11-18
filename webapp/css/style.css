@@ -1,87 +1,119 @@
 /*  STANDARD CLASSES   */
-.invisibleScrollbar html.sap-desktop ::-webkit-scrollbar-thumb {
+
+.invisibleScrollbar html.sap-desktop::-webkit-scrollbar-thumb {
     background-color: #16528800;
 }
-.invisibleScrollbar html.sap-desktop ::-webkit-scrollbar {
+
+.invisibleScrollbar html.sap-desktop::-webkit-scrollbar {
     background-color: #fff0;
     height: 1rem;
 }
+
 .sapMBarTitleStart .sapMBarPH {
     justify-content: center !important;
 }
+
+
 /*warning dialog*/
+
 .warningDialogClass.sapMDialog>header.sapMDialogTitle .sapMTitle {
     color: #ffffff;
 }
- .warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
+
+.warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
     background-color: #e62f2d;
-    color:#fff;
+    color: #fff;
 }
+
 .LoginButton .sapMBtnInner {
     background-color: #e22d2c;
     border: .0625rem solid #e22d2c;
     color: #fff;
 }
+
 .cancelButton .sapMBtnInner {
     background-color: #fff;
     border: .0625rem solid #e22d2c;
     color: #e22d2c;
 }
+
+
 /*   Calender background   */
+
 .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
     background-color: #085caf00 !important;
 }
+
 .sapUiCalItem.sapUiCalItemNow {
     border: .125rem solid #ce282c;
 }
+
 .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween) {
     background-color: #0854a000 !important;
 }
+
 .sapUiCalItem {
     background-color: #d2d2d2 !important;
 }
+
 .sapUiCalRowWeekNumber {
     color: #32363a00 !important;
     background-color: #fff0 !important;
     border-color: #e5e5e500 !important;
 }
-.sapUiCalHead>button, .sapUiCalCancel {
+
+.sapUiCalHead>button,
+.sapUiCalCancel {
     color: #ff2222 !important;
     font-weight: bold;
 }
+
 .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween):hover {
     background-color: #af170800;
     border-bottom: 2px solid red;
 }
+
 .sapUiCalItemSel:not(.sapUiCalItemSelBetween)>.sapUiCalItemText {
     color: #000 !important;
 }
+
 .sapUiCal {
     background: none repeat scroll 0 0 #d9d9d9;
-   
 }
-.widthCalender{
-	width:400px !important;
+
+.widthCalender {
+    width: 400px !important;
 }
-.sapUiCalMonthView, .sapUiCalMonthPicker, .sapUiCalYearPicker, .sapUiCalRow {
+
+.sapUiCalMonthView,
+.sapUiCalMonthPicker,
+.sapUiCalYearPicker,
+.sapUiCalRow {
     background-color: #d9d9d9;
 }
+
 .sapUiCalHead {
     background-color: #d9d9d9;
 }
-.sapUiCalWH, .sapUiCalItem {
+
+.sapUiCalWH,
+.sapUiCalItem {
     border: .0625rem solid #fff0;
 }
+
 .sapUiCalItem {
     background-color: #d9d9d9;
     border-radius: 0.25rem;
 }
+
 .sapUiCalRowWeekNumbers {
-   
     line-height: 0.1rem;
-      height: 0.1rem !important;
+    height: 0.1rem !important;
 }
+
+
 /**/
+
 .sapMBarTitleStart .sapMBarPH {
     background-color: #E20021;
     justify-content: flex-start;
@@ -136,7 +168,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*  CUSTOM CLASSES   */
 
+
 /*AddVehicles*/
+
 .aljRedFillButton .sapMBtnInner {
     background-color: #e62f2d !important;
     color: white !important;
@@ -145,21 +179,20 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .aljHboxImage.sapMHBox {
     width: 35% !important;
 }
+
 .imgScan.sapMImg {
     width: 100%;
 }
+
 .scanFooter.sapMIBar-CTX.sapMFooter-CTX {
     background-color: #fff0 !important;
     margin-bottom: 3rem;
     border-top: 1px solid #d9d9d900 !important;
 }
+
 .whitePage.sapMPageBgStandard {
     background-color: #ffffff;
 }
-
-
-
-
 
 
 /*Products Screen*/
@@ -187,25 +220,46 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*}*/
-/*.aljGrayButtonsSmall{*/
-    /*vertical-align: top;*/
-    /*padding-left: 0.5625rem;*/
-    /*padding-right: 0.5625rem;*/
-    /*vertical-align: top;*/
-    /*background-color: #D9D9D9 !important;*/
-    /*color: black !important;*/
-    /*border-radius: 2rem;*/
-    /*width: 125px;*/
-/*}*/
-.redBorderHighlight.sapMLIB.sapMLIBActive {
-	background:red !important;
 
+
+/*.aljGrayButtonsSmall{*/
+
+
+/*vertical-align: top;*/
+
+
+/*padding-left: 0.5625rem;*/
+
+
+/*padding-right: 0.5625rem;*/
+
+
+/*vertical-align: top;*/
+
+
+/*background-color: #D9D9D9 !important;*/
+
+
+/*color: black !important;*/
+
+
+/*border-radius: 2rem;*/
+
+
+/*width: 125px;*/
+
+
+/*}*/
+
+.redBorderHighlight.sapMLIB.sapMLIBActive {
+    background: red !important;
+    border:none !important;
 }
+
 .carBox6 {
-   
     border: 2px solid #f12727 !important;
-   
 }
+
 .aljGrayButtonsSmall .sapMBtnInner.sapMBtnText {
     padding-left: 0.5625rem;
     padding-right: 0.5625rem;
@@ -214,6 +268,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border-radius: 2rem;
     width: 125px;
 }
+
 .productsClass3 {
     align-items: center;
     background: #f2f2f2 !important;
@@ -221,33 +276,53 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     padding: 20px;
     width: 10rem;
 }
+
 .aljVBoxWhite4.sapMVBox {
     background-color: #ffffff;
     /* border-top-left-radius: 2rem; */
     border-radius: 1rem;
 }
+
 .aljVBoxWhite2.sapMVBox {
     background-color: #ffffff;
     /*border-radius: 1rem;*/
     border-top-left-radius: 2rem;
 }
+
 .aljBarPadding {
     padding-top: 0.5rem !important;
 }
-.aljGrayBoxBack{
-	background-color: #d9d9d9;
+
+.aljGrayBoxBack {
+    background-color: #d9d9d9;
 }
+
 .sapMLIB {
     border-bottom: 1px solid #e5e5e500 !important;
 }
 
+
 /*.aljGrayButtonsSmall.sapMBtn .sapMBtnContent {*/
+
+
 /*    color: black;*/
+
+
 /*    padding-left: 1rem;*/
+
+
 /*    padding-right: 1rem;*/
+
+
 /*    background-color: #80808038;*/
+
+
 /*    border-radius: 2rem;*/
+
+
 /*    width: 90px;*/
+
+
 /*}*/
 
 .aljGrayButtonsSmall:not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive {
@@ -270,10 +345,19 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 /*}*/
 
+
 /*.aljGrayButtonsSmall.html.sap-desktop .sapMBtn:focus>.sapMFocusable {*/
+
+
 /*    outline: .0625rem dotted #0000 !important;*/
+
+
 /*    outline-offset: -0.1875rem;*/
+
+
 /*    background-color: #D9D9D9 !important;*/
+
+
 /*}*/
 
 .productsClass2 {
@@ -308,9 +392,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background-color: #D9D9D9;
     border-top-left-radius: 2rem;
 }
+
 .aljVBoxDarkGray.sapMVBox {
     background-color: #d9d9d9;
-    
 }
 
 .aljVBoxWhite.sapMVBox {
@@ -508,6 +592,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border-radius: 1rem;
     border-color: #E20021;
 }
+
 .aljRedFillButton.sapMBtn .sapMBtnInner {
     display: flex;
     justify-content: center;
@@ -537,9 +622,11 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*Home*/
+
 .aljHomeCustomItem.sapMLIB {
     background: #f2f2f2 !important;
 }
+
 .sapMIBar.sapMIBar-CTX.stylebar {
     background-color: #e62f2d;
 }
@@ -552,10 +639,11 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .btn .sapMBtnIcon {
     color: white;
 }
-  .aljHomeServiceStatus{
-  	
+
+.aljHomeServiceStatus {
     width: 11rem !important;
-    } 
+}
+
 .btn .sapUiIcon {
     font-size: 1.5rem;
 }
@@ -688,16 +776,18 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 .servicesVbox {
     padding-bottom: 3rem;
 }
+
 .carouselClass .sapMCrslBulleted>span.sapMCrslActive {
-	width: 0.6rem;
+    width: 0.6rem;
     height: 0.6rem;
     color: #6a6d70;
     background-color: #ED1D23;
     border: 1px solid #ED1D23;
     /*margin: 0 0.1rem;*/
 }
+
 .carouselClass .sapMCrslBulleted>span {
-	width: 0.6rem;
+    width: 0.6rem;
     height: 0.6rem;
     /*margin: 0 0.1rem;*/
     background-color: #D8D8D8;
@@ -721,21 +811,25 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*MY SERVICES*/
-.aljWhiteBackground{
+
+.aljWhiteBackground {
     background-color: white;
 }
+
 .myServicesVbox {
     background: #dadada;
     border-top-left-radius: 2rem;
     padding: 1rem;
     padding-bottom: 6rem;
 }
+
 .myServicesVbox2 {
     background: #dadada;
     border-top-left-radius: 2rem;
     padding: 1rem;
     padding-bottom: 0rem !important;
 }
+
 .myServicesHbox {
     background: #f5f5f5;
     border-top-left-radius: 1rem;
@@ -762,10 +856,12 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: 12px;
     background-color: #f7f7f7;
 }
-.myservicesBtn{
-	width: 90px;
+
+.myservicesBtn {
+    width: 90px;
     height: 38px;
 }
+
 .myserviceKnowmoreBtn .sapMBtnInner {
     background-color: #68696c;
     border: .0625rem solid #68696c;
@@ -803,34 +899,44 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
- }
- /*MY PROFILE*/
- .sapMMessageToastLogin{
- 	color: white !important;
+}
+
+
+/*MY PROFILE*/
+
+.sapMMessageToastLogin {
+    color: white !important;
     background-color: #e62f2d !important;
- }
- .warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
+}
+
+.warningDialogClass.sapMDialog.sapMPopup-CTX>header .sapMHeader-CTX {
     background-color: #e62f2d;
 }
+
 .dialogToolbarClass.sapMTBStandard {
     border-bottom: solid .0625rem #ffffff;
 }
-.dialogCancelBtn .sapMBtnInner{
-	border: .0625rem solid #e62f2d;
+
+.dialogCancelBtn .sapMBtnInner {
+    border: .0625rem solid #e62f2d;
     color: #e62f2d;
 }
-.dialogCancelBtn{
-	width:80px;
+
+.dialogCancelBtn {
+    width: 80px;
 }
-.myProfileClass{
-	padding: 0.8rem;
+
+.myProfileClass {
+    padding: 0.8rem;
 }
+
 .myProfileEditBtn {
-	margin-left: 11rem;
+    margin-left: 11rem;
     width: 103px;
     height: 36px;
     border-radius: 14px;
 }
+
 .myProfileEditBtn .sapMBtnInner {
     /*opacity: 31%;*/
     font-weight: bold;
@@ -839,8 +945,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: #f3f3f3;
     border-radius: 14px;
 }
-.myProfileLanguageClass{
-	height: 7.625rem;
+
+.myProfileLanguageClass {
+    height: 7.625rem;
     width: 20.5rem;
     border: 1px solid #D5D2D2;
     border-radius: 8px;
@@ -848,22 +955,27 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     padding-left: 24px;
     margin-left: 16px;
 }
-.myProfileLanguageHboxClass{
-	padding: 0.5rem;
+
+.myProfileLanguageHboxClass {
+    padding: 0.5rem;
     border-bottom: 1px solid #D5D2D2;
 }
+
 .myProfileRadioBtn.sapMRbSel .sapMRbBInn {
     fill: #ec0318;
     /* width: 28px; */
     /* height: 28px; */
 }
-.myProfileLogoutClass{
-	padding-top: 18rem;
+
+.myProfileLogoutClass {
+    padding-top: 18rem;
 }
-.myProfileLogoutBtn{
-	width: 19.75rem;
+
+.myProfileLogoutBtn {
+    width: 19.75rem;
     margin-left: 20px;
 }
+
 .myProfileLogoutBtn .sapMBtnInner {
     /*opacity: 31%;*/
     font-weight: bold;
@@ -872,43 +984,50 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: .0625rem solid #D5D2D2;
     border-radius: 7px;
 }
+
+
 /*LOG IN*/
+
 .Logo.sapMFlexBoxAlignContentStretch {
     -webkit-align-content: stretch;
     align-content: stretch;
     text-align: center;
 }
+
 .Logo .sapMLabel {
     color: #FF0000;
     font-size: 1.5rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-weight: 600;
     display: inline-block;
     white-space: nowrap;
     cursor: text;
     overflow: hidden;
 }
+
 .loginLabels .sapMLabel {
     color: #6a6d70;
     font-size: 1.2rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-weight: normal;
     display: inline-block;
     white-space: nowrap;
     cursor: text;
     overflow: hidden;
 }
-.Logo{
-	    margin-top: 30%;
-    margin-bottom: 18%;
 
+.Logo {
+    margin-top: 30%;
+    margin-bottom: 18%;
 }
+
 .loginInputs.sapMInputBaseHeightMargin {
     /* margin: 0.25rem 0; */
     margin-bottom: 1.5rem;
 }
+
 .loginInputs .sapMInputBaseContentWrapper {
-   border-top: 0rem;
+    border-top: 0rem;
     border-left: 0rem;
     background: #fff;
     border-radius: .125rem;
@@ -916,6 +1035,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background: #fff;
     border-radius: .125rem;
 }
+
 .loginInputs .sapMInputBaseInner {
     color: #000000;
     font-weight: bold;
@@ -930,9 +1050,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: none;
     width: 60%;
 }
+
 .siginButton .sapMBtnInner {
-   
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     height: 2.500rem;
     min-width: 2.500rem;
@@ -946,6 +1066,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: #f1fdf6;
     text-shadow: none;
 }
+
 .loginTextField.sapMText {
     display: inline-block;
     box-sizing: border-box;
@@ -953,111 +1074,127 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     word-wrap: break-word;
     cursor: text;
     font-size: 14px;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     line-height: normal;
     color: #000000;
     /*font-weight: 600;*/
 }
-.LoginLink{
-	 font-size: 1rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+
+.LoginLink {
+    font-size: 1rem;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     line-height: normal;
     color: #32363a;
     font-weight: 600;
-   
 }
+
 .LoginLink.sapMLnk:visited {
     color: #32363a;
 }
+
 .LoginLink {
     font-size: 12px;
     border-bottom: 1px solid #000000;
 }
-.LoginLink1{
-	 font-size: 1rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+
+.LoginLink1 {
+    font-size: 1rem;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     line-height: normal;
     color: #32363a;
     font-weight: 600;
-   
 }
+
 .LoginLink1.sapMLnk:visited {
     color: #000000;
 }
-.SignInbox{
-	margin-bottom:1rem;
-	    margin-top: 1rem;
+
+.SignInbox {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
+
 .SignInbox.sapMFlexBoxAlignContentStretch {
     -webkit-align-content: stretch;
     align-content: stretch;
     text-align: center;
 }
+
 .SignInhbox.sapMFlexBoxJustifyStart {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: center;
 }
+
 .sapUiFormEdit .sapMLnk {
     margin-top: 0.7rem;
     margin-bottom: 0.625rem;
     margin-left: 0.5rem;
 }
+
 .inputs.sapMFocus .sapMInputBaseContentWrapper {
     outline: none;
     border: 1px solid rgba(var(--primary-color), 1) !important;
 }
-.SignInhbox1{
- margin-top:36%;
-	
+
+.SignInhbox1 {
+    margin-top: 36%;
 }
+
 .SignInhbox1.sapMFlexBoxJustifyStart {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: center;
 }
+
 .loginInputs.sapMFocus .sapMInputBaseContentWrapper {
     outline: none;
     border: 1px solid rgba(var(--primary-color), 1) !important;
 }
 
+
 /*SIGN UP*/
+
 .signupLogo.sapMFlexBoxAlignContentStretch {
     -webkit-align-content: stretch;
     align-content: stretch;
     text-align: center;
 }
+
 .signupLogo .sapMLabel {
     color: #FF0000;
     font-size: 1.5rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-weight: 600;
     display: inline-block;
     white-space: nowrap;
     cursor: text;
     overflow: hidden;
 }
+
 .signupLabels .sapMLabel {
     color: #6a6d70;
     font-size: 1.2rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-weight: normal;
     display: inline-block;
     white-space: nowrap;
     cursor: text;
     overflow: hidden;
 }
-.signupLogo{
-	    margin-top: 7%;
-    margin-bottom: 6%;
 
+.signupLogo {
+    margin-top: 7%;
+    margin-bottom: 6%;
 }
+
 .signupInputs.sapMInputBaseHeightMargin {
     /* margin: 0.25rem 0; */
     margin-bottom: 1.5rem;
 }
+
 .signupInputs .sapMInputBaseContentWrapper {
-   border-top: 0rem;
+    border-top: 0rem;
     border-left: 0rem;
     background: #fff;
     border-radius: .125rem;
@@ -1065,14 +1202,18 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background: #fff;
     border-radius: .125rem;
 }
+
 .signupInputs .sapMInputBaseInner {
     color: #000000;
     font-weight: bold;
     font-size: 14px;
 }
+
+
 /*.Page{
 	background:white;
 }*/
+
 .signupButton.sapMBtn {
     height: 3rem;
     margin: 0;
@@ -1081,9 +1222,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: none;
     width: 60%;
 }
+
 .signupButton .sapMBtnInner {
-   
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     height: 2.500rem;
     min-width: 2.500rem;
@@ -1097,6 +1238,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: #f1fdf6;
     text-shadow: none;
 }
+
 .signupTextField.sapMText {
     display: inline-block;
     box-sizing: border-box;
@@ -1104,53 +1246,63 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     word-wrap: break-word;
     cursor: text;
     font-size: 14px;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     line-height: normal;
     color: #000000;
     /*font-weight: 600;*/
 }
-.SignupLink{
-	 font-size: 1rem;
-    font-family: "72","72full",Arial,Helvetica,sans-serif;
+
+.SignupLink {
+    font-size: 1rem;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
     line-height: normal;
     color: #32363a;
     font-weight: 600;
-   
 }
+
 .SignupLink.sapMLnk:visited {
     color: #000000;
 }
 
-.Signupbox{
-	margin-bottom:1rem;
+.Signupbox {
+    margin-bottom: 1rem;
 }
+
 .Signupbox.sapMFlexBoxAlignContentStretch {
     -webkit-align-content: stretch;
     align-content: stretch;
     text-align: center;
 }
+
 .Signuphbox.sapMFlexBoxJustifyStart {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: center;
 }
+
 .sapUiFormEdit .sapMLnk {
     margin-top: 0.7rem;
     margin-bottom: 0.625rem;
     margin-left: 0.5rem;
 }
+
 .signupInputs.sapMFocus .sapMInputBaseContentWrapper {
     outline: none;
     border: 1px solid rgba(var(--primary-color), 1) !important;
 }
+
+
 /*EDIT PROFILE*/
-.editProfileClass{
-	padding-top: 6rem;
+
+.editProfileClass {
+    padding-top: 6rem;
 }
-.editProfileConfirmBtn{
-	width: 19.75rem;
+
+.editProfileConfirmBtn {
+    width: 19.75rem;
     margin-left: 20px;
 }
+
 .editProfileConfirmBtn .sapMBtnInner {
     /*opacity: 31%;*/
     font-weight: bold;
@@ -1159,20 +1311,26 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     border: .0625rem solid #EB0A1E;
     border-radius: 7px;
 }
-.editProfileHboxClass{
-	padding-right: 1rem;
+
+.editProfileHboxClass {
+    padding-right: 1rem;
 }
 
+
 /*SELECT DEFAULT VEHICLE*/
-.SelectDefaultVboxClass{
-	height:4rem;
-	width:24rem;
-	padding: 1.5rem;
+
+.SelectDefaultVboxClass {
+    height: 4rem;
+    width: 24rem;
+    padding: 1.5rem;
     border-bottom: 2px solid #EB0A1E;
 }
-.SelectDefaultLabelClass{
-	font-size: 1rem;
+
+.SelectDefaultLabelClass {
+    font-size: 1rem;
 }
+
+
 /*bijay's css*/
 
 
@@ -1259,36 +1417,43 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: 16px;
     color: black;
 }
+
 .labelStyleInformatics {
-    
     font-weight: 550 !important;
     font-size: 16px;
     color: black;
-    margin-left:0.2rem;
-}
-.labelNormal{
-	 font-size: 16px;
-}
-.labelStyleInformaticsVehicle{
-	margin-left:1.5rem;
-	font-size: 16px;
-}
-.labelStyleInformaticsModel{
-	margin-left:2.75rem;
-}
-.labelStyleInformaticsVin{
-	margin-left:6.1rem;
-}
-.labelStyleInformaticsPlate{
-	margin-left:1.6rem;
+    margin-left: 0.2rem;
 }
 
-.labelStyleInformaticsType{
-	margin-left:2.1rem;
+.labelNormal {
+    font-size: 16px;
 }
-.labelStyleInformaticsWarr{
-	margin-left:3.7rem;
+
+.labelStyleInformaticsVehicle {
+    margin-left: 1.5rem;
+    font-size: 16px;
 }
+
+.labelStyleInformaticsModel {
+    margin-left: 2.75rem;
+}
+
+.labelStyleInformaticsVin {
+    margin-left: 6.1rem;
+}
+
+.labelStyleInformaticsPlate {
+    margin-left: 1.6rem;
+}
+
+.labelStyleInformaticsType {
+    margin-left: 2.1rem;
+}
+
+.labelStyleInformaticsWarr {
+    margin-left: 3.7rem;
+}
+
 .timeHeaderStyle {
     margin-top: 0.25rem;
     font-weight: 550 !important;
@@ -1307,6 +1472,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     margin-top: 0.5rem;
     font-size: 13px;
 }
+
 .moreLabelCenter {
     margin-top: 2.3rem;
     margin-left: 0.5rem;
@@ -1314,7 +1480,8 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: 16px;
     color: black;
 }
-.moreLabelSafety{
+
+.moreLabelSafety {
     margin-top: 3.3rem;
     margin-left: 0.5rem;
     font-weight: 550 !important;
@@ -1402,11 +1569,11 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     margin: 0.5rem;
     background: #ffffff;
 }
+
 .moreBox {
     width: 171px;
     min-width: 171px;
     min-height: 158px;
-   
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -1433,23 +1600,21 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     background: none;
 }
 
-
-/*.selectedCarCss {*/
-
-
-/*    border: solid #CE0E2D 1px !important;*/
-
-
-/*}*/
+.selectedEvent {
+    border: solid #CE0E2D 1px !important;
+}
 
 .carList {
     margin-top: 10px;
     background: #D9D9D9;
+    border:none !important;
 }
+
 .carList5 {
-	 margin-top: 10px;
+    margin-top: 10px;
     background: #d9d9d900;
 }
+
 .carList.sapMLIB.sapMLIBActive,
 .aljVehicleListHorStyle.sapMLIB.sapMLIBActive,
 .aljMoreTilesStyle .sapMLIB.sapMLIBActive {
@@ -1479,40 +1644,46 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: black;
     border: 1px solid #EB0A1E;
 }
-.grayScroller{
-	    background-color: #d9d9d9;
+
+.grayScroller {
+    background-color: #d9d9d9;
 }
+
 .selectVehicle {
     background-color: #D9D9D9;
     border-top-left-radius: 27px;
 }
+
 .vehicleInformaticsMain {
     background-color: #D9D9D9;
     border-top-left-radius: 27px;
     min-height: 300px;
 }
-.vehicleInformaticsSub{
 
-	margin:1rem 1rem 0rem 1rem;
-	
-	
-	background-color: #fff;
-	min-height:205px;
-	border-radius:17px;
+.vehicleInformaticsSub {
+    margin: 1rem 1rem 0rem 1rem;
+    background-color: #fff;
+    min-height: 205px;
+    border-radius: 17px;
 }
-.InformationStyle{
-	margin:0rem 2.5rem 0rem 1.5rem;
+
+.InformationStyle {
+    margin: 0rem 2.5rem 0rem 1.5rem;
 }
+
 .selectVehicleCar {
-  background-color: #d9d9d9;
+    background-color: #d9d9d9;
 }
+
 .carList5 {
     margin-top: 10px;
     background: #ffffff;
 }
+
 .WhiteScroller {
     background-color: #ffffff;
 }
+
 .selectVehicleCar2 {
     background-color: #ffffff;
 }
@@ -1580,7 +1751,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 .locCombo .sapMInputBaseContentWrapper {
     width: 640px !important;
-    margin-bottom :3rem !important;
+    margin-bottom: 3rem !important;
 }
 
 .timeslotCss {
@@ -1593,7 +1764,6 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     max-height: 1.5rem;
     margin-top: 0.3rem;
 }
-
 
 .footerToolbar {
     margin-top: 14px;
@@ -1621,6 +1791,7 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     color: #fff;
     border: none;
 }
+
 .brakeFooterLabel {
     margin-top: 0.25rem;
     margin-left: 0rem;
@@ -1628,7 +1799,6 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     font-size: 20px;
     color: black;
 }
-
 
 
 /*.kmBtn .sapMBtnInner.sapMBtnText .sapMBtnIcon:before {*/

@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/ui/core/routing/History",
 	"sap/ui/core/UIComponent",
 	"sap/m/MessageToast"
-], function (Controller, formatter,History,UIComponent, MessageToast) {
+], function (Controller, formatter, History, UIComponent, MessageToast) {
 	"use strict";
 
 	return Controller.extend("inc.demo.Toyota.controller.BookingScreen", {
@@ -46,7 +46,7 @@ sap.ui.define([
 
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
-			var selectedObj = oEvent.getSource().getBindingContext("oDataGlobalModel").getObject();
+
 			var carPath = sPath + "/carName";
 			var selectedcar = oDataGlobalModel.getProperty(carPath);
 			MessageToast.show(selectedcar);
@@ -54,12 +54,81 @@ sap.ui.define([
 			var carArray = oDataGlobalModel.getProperty("/carCategory");
 			var len = carArray.length;
 			for (var i = 0; i < len; i++) {
-				oDataGlobalModel.setProperty("/carCategory/" + i + "isSelected", false);
+				oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
 			}
 
-			oDataGlobalModel.setProperty(sPath + "isSelected", true);
-           console.log(oDataGlobalModel);
+			oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+
 		},
+		productArr: [],
+	
+		onProductTilePress: function (oEvent) {
+
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+
+			var productPath = sPath + "/productName";
+			var selectedproduct = oDataGlobalModel.getProperty(productPath);
+			MessageToast.show(selectedproduct);
+			var flag = 1;
+			// oDataGlobalModel.setProperty("/currentProduct", selectedproduct);
+			// oDataGlobalModel.setProperty("/currentProdPath", sPath);
+
+			// this.productArr.push(selectedproduct);
+			// oDataGlobalModel.setProperty("/selectedProducts", this.productArr);
+
+			// var productArray = oDataGlobalModel.getProperty("/productCategory");
+			var len = this.productArr.length;
+			if (len > 0) {
+				for (var i = 0; i < len; i++) {
+					if (this.productArr[i] === selectedproduct) {
+                        var k = i;
+						flag = 0;
+						break;
+						// this.productArr.splice(i,1);
+					} else {
+						flag = 1;
+					}
+				}
+
+				if (flag === 0) {
+					oDataGlobalModel.setProperty(sPath + "/isSelected", false);
+					 this.productArr.splice(k,1);
+					 oDataGlobalModel.setProperty("/selectedProducts", this.productArr);
+				} else {
+					this.productArr.push(selectedproduct);
+					oDataGlobalModel.setProperty("/selectedProducts", this.productArr);
+					oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+				}
+
+			} else {
+				this.productArr.push(selectedproduct);
+				oDataGlobalModel.setProperty("/selectedProducts", this.productArr);
+				oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+			}
+
+			// oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+			console.log(oDataGlobalModel);
+
+		},
+
+		fnProductValidate: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var currentPath = oDataGlobalModel.getProperty("/currentProdPath");
+			var currentProduct = oDataGlobalModel.getProperty("/currentProduct");
+			var productArraySelected = oDataGlobalModel.getProperty("/selectedProducts");
+			var len = productArraySelected.length;
+			var notProductArr = [];
+			for (var i = 0; i < len; i++) {
+				if (productArraySelected[i] === currentProduct) {
+					// oDataGlobalModel.setProperty(sPath + "/isSelected", false);
+					notProductArr.push(i);
+
+				}
+			}
+			return notProductArr;
+		},
+
 		onHomePress: function () {
 			this.getView().byId("home").addStyleClass("redFooter");
 			this.getView().byId("mycar").removeStyleClass("redFooter");
@@ -115,7 +184,6 @@ sap.ui.define([
 		onNavBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
-		
 
 			if (sPreviousHash !== undefined) {
 				window.history.go(-1);

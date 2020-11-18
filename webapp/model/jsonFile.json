@@ -86,7 +86,7 @@
 		"carName": "Camry 2019",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true,
+	
 		"serviceStatus": {
 			"past": [{
 				"date": "10 May 2020",
@@ -109,7 +109,7 @@
 		"carName": "Supra 2019",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true,
+	
 		"serviceStatus": {
 			"past": [{
 				"date": "13 May 2020",
@@ -132,7 +132,7 @@
 		"carName": "Camry 2020",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true,
+	
 		"serviceStatus": {
 			"past": [{
 				"date": "30 May 2020",
@@ -156,22 +156,22 @@
 	"productCategory": [{
 		"productName": "Brake Service",
 		"src": "Images/brakeService.png",
-		"isSelected": true,
+		
 		"productPrice": "SAR 100"
 	}, {
 		"productName": "Battery",
 		"src": "Images/battery.png",
-		"isSelected": true,
+	
 		"productPrice": "SAR 150"
 	}, {
 		"productName": "AC Service",
 		"src": "Images/acService.png",
-		"isSelected": true,
+	
 		"productPrice": "SAR 200"
 	}, {
-		"productName": "Brake Service",
+		"productName": "Accelerator",
 		"src": "Images/brakeService.png",
-		"isSelected": true,
+	
 		"productPrice": "SAR 100"
 	}],
 	"locationCategory": [{
@@ -604,6 +604,18 @@
 
 	"serviceOngoing": "Ongoing",
 	"servicePast": "Past",
-	"serviceUpcoming": "Upcoming"
+	"serviceUpcoming": "Upcoming",
+	
+	"regionDropdown":[{
+		"regionName": "Jedah"
+	
+	}, {
+		"regionName": "Riyadh"
+	
+	}, {
+		"regionName": "Madina"
+	
+	}]
+	
 
 }

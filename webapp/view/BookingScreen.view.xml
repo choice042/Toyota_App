@@ -94,9 +94,13 @@
 					<Label text="Service Center" class="labelStyle"/>
 				</HBox>
 				<Label text="Region" class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/>
-				<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+				<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" items="{oDataGlobalModel>/regionDropdown}" width="20.2rem">
+					<core:Item key="{oDataGlobalModel>regionName}" text="{oDataGlobalModel>regionName}"/>
+				</ComboBox>
 				<Label text="Service Center" class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/>
-				<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" width="20.2rem"></ComboBox>
+				<ComboBox class="locCombo sapUiSmallMarginBeginEnd sapUiTinyMarginTop" items="{oDataGlobalModel>/regionDropdown}" width="20.2rem">
+					<core:Item key="{oDataGlobalModel>regionName}" text="{oDataGlobalModel>regionName}"/>
+				</ComboBox>
 				<HBox items="{oDataGlobalModel>/locationCategory}" renderType="Bare" class="sapUiSmallMarginTop locationScroller">
 					<core:Fragment fragmentName="inc.demo.Toyota.fragment.LocationList" type="XML"/>
 				</HBox>
