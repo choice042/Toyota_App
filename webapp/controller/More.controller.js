@@ -348,12 +348,20 @@ sap.ui.define([
 			
 				var lat=	oDataGlobalModel.getProperty("/locationArabia/lat");
 				var long=	oDataGlobalModel.getProperty("/locationArabia/lon");
-			
+			if(lat!==""&&long!==""){
 			var locations = [{
 				"lat": lat,
 				"lng": long,
 				"id": 67
 			}];
+			}
+			else{
+				var locations = [{
+				"lat": "21.3891",
+				"lng": "39.8579",
+				"id": 67
+			}];
+			}
 			var location;
 			for (location in locations) {
 				this.addMarkers(this, locations[location], "", map);
@@ -440,14 +448,17 @@ sap.ui.define([
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			
 			if(value==="Mecca"){
+					oDataGlobalModel.setProperty("/locationArabia",{});
 					oDataGlobalModel.setProperty("/locationArabia/lat","24.5247");
 					oDataGlobalModel.setProperty("/locationArabia/lon","39.5692");
 			}
 			if(value==="Medina"){
+					oDataGlobalModel.setProperty("/locationArabia",{});
 					oDataGlobalModel.setProperty("/locationArabia/lat","24.5247");
 					oDataGlobalModel.setProperty("/locationArabia/lon","39.8579");
 			}
 			if(value==="Airport"){
+					oDataGlobalModel.setProperty("/locationArabia",{});
 					oDataGlobalModel.setProperty("/locationArabia/lat","24.5544");
 					oDataGlobalModel.setProperty("/locationArabia/lon","39.7146");
 			}
