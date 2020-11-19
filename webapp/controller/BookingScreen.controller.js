@@ -144,21 +144,44 @@ sap.ui.define([
 
 			},
 
-			fnProductValidate: function () {
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				var currentPath = oDataGlobalModel.getProperty("/currentProdPath");
-				var currentProduct = oDataGlobalModel.getProperty("/currentProduct");
-				var productArraySelected = oDataGlobalModel.getProperty("/selectedProducts");
-				var len = productArraySelected.length;
-				var notProductArr = [];
-				for (var i = 0; i < len; i++) {
-					if (productArraySelected[i] === currentProduct) {
-						// oDataGlobalModel.setProperty(sPath + "/isSelected", false);
-						notProductArr.push(i);
+			onPickUpPress: function (oEvent) {
 
-					}
+				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+
+				var pickPath = sPath + "/pickUpFacility";
+				var selectedpick = oDataGlobalModel.getProperty(pickPath);
+				MessageToast.show(selectedpick);
+				oDataGlobalModel.setProperty("/currentPickUp", selectedpick);
+				var pickArray = oDataGlobalModel.getProperty("/pickCategory");
+				var len = pickArray.length;
+				for (var i = 0; i < len; i++) {
+					oDataGlobalModel.setProperty("/pickCategory/" + i + "/isSelected", false);
 				}
-				return notProductArr;
+
+				oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+
+				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
+				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
+				// this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
+			},
+
+			fnNoCarSelected: function () {
+				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+				var carArray = oDataGlobalModel.getProperty("/carCategory");
+				var len = carArray.length;
+				for (var i = 0; i < len; i++) {
+					oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
+				}
+			},
+			fnNoProductSelected: function () {
+                var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+                var productArray = oDataGlobalModel.getProperty("/productCategory");
+				var len = productArray.length;
+				for (var i = 0; i < len; i++) {
+					oDataGlobalModel.setProperty("/productCategory/" + i + "/isSelected", false);
+				}
+                
 			},
 
 			onHomePress: function () {
@@ -292,12 +315,14 @@ sap.ui.define([
 				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 			},
 			onBookWithoutVehicleBtnPress: function () {
+				this.fnNoCarSelected();
 				this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehicleRedBtn");
 				// this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
 				MessageToast.show("Book Without Vehicle");
 				$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
 			},
 			onBookWithoutProductBtnPress: function () {
+				this.fnNoProductSelected();
 				this.getView().byId("btn2Logout").addStyleClass("bookWithoutProductRedBtn");
 				// this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 				MessageToast.show("Book Without Product");

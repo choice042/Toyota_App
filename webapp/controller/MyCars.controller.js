@@ -189,6 +189,8 @@ sap.ui.define([
 		onPressKnowMore: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
+		
+	
 
 		onNavBack: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
