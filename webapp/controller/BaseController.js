@@ -28,7 +28,7 @@ sap.ui.define([
 			var carousel = this.getView().byId("idcarousel");
 			setTimeout(function () {
 				carousel.next();
-			}, 1500);
+			}, 2000);
 		}
 
 	});

@@ -48,7 +48,7 @@
 					<VBox>
 						<HBox class="sapUiSmallMarginBegin">
 							<Image src="./Images/group3.png"></Image>
-							<Label text="Fortuner 2018"  class="sapUiSmallMarginBegin sapUiTinyMarginTop labelStyle"></Label>
+							<Label text="{oDataGlobalModel>/currentVehicle}"  class="sapUiSmallMarginBegin sapUiTinyMarginTop labelStyle"></Label>
 						</HBox>
 						<HBox class="sapUiSmallMarginBegin">
 							<Image src="./Images/group3.png"></Image>
