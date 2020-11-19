@@ -38,6 +38,7 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			console.log(oDataGlobalModel);
 			this.carouselScroll();
+			this.onVehicleChange();
 		},
 		loginWarningFragmentOpen: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -260,6 +261,26 @@ sap.ui.define([
 		},
 		onContinue: function () {
 			this.oRouter.navTo("myProfile");
+		},
+			onVehicleChange: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var newOne = oDataGlobalModel.getProperty("/currentVehicle");
+			var carCategory = oDataGlobalModel.getProperty("/carCategory");
+			var i;
+			for (i = 0; i < carCategory.length; i++) {
+				if (carCategory[i].carName === newOne) {
+					oDataGlobalModel.setProperty("/currentStatusVehicle", oDataGlobalModel.getProperty("/carCategory/" + i +
+						"/serviceStatus/ongoing/status"));
+				}
+			}
+			var j;
+			var currentStatusVehicle = oDataGlobalModel.getProperty("/currentStatusVehicle");
+			var serviceStatusBindings = oDataGlobalModel.getProperty("/serviceStatusBindings");
+			for (j = 0; j < serviceStatusBindings.length; j++) {
+				if (serviceStatusBindings[j].statusval === currentStatusVehicle) {
+					oDataGlobalModel.setProperty("/serviceStatusView", oDataGlobalModel.getProperty("/serviceStatusBindings/" + j));
+				}
+			}
 		}
 
 	});
