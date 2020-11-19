@@ -1,45 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="147" viewBox="0 0 152 147">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="351" height="185" viewBox="0 0 351 185">
   <defs>
-    <clipPath id="clip-Quality_Inspection">
-      <rect width="152" height="147"/>
+    <clipPath id="clip-Service_done">
+      <rect width="351" height="185"/>
     </clipPath>
   </defs>
-  <g id="Quality_Inspection" data-name="Quality Inspection" clip-path="url(#clip-Quality_Inspection)">
-    <rect width="152" height="147" fill="#fff"/>
-    <g id="Group_2" data-name="Group 2" transform="translate(-3 -1)">
-      <g id="Group_20" data-name="Group 20">
-        <g id="Group_4" data-name="Group 4">
-          <path id="Path_12" data-name="Path 12" d="M48,0,94,36,76.056,93.36h-57.7L0,37Z" transform="translate(32 28)" fill="#15918f"/>
-          <path id="Line_2" data-name="Line 2" d="M.74.5l36,28" transform="translate(78.76 38)" fill="none"/>
-          <path id="Line_3" data-name="Line 3" d="M16.32.95.96,46.57" transform="translate(99.36 64.8)" fill="none"/>
-          <path id="Line_6" data-name="Line 6" d="M16.32,46.57.96.95" transform="translate(40.32 64.8)" fill="none"/>
-          <path id="Line_7" data-name="Line 7" d="M.96,29.3,39.36.945" transform="translate(40.32 37.44)" fill="none"/>
-          <path id="Line_5" data-name="Line 5" d="M45.78,1.06.93,1.44" transform="translate(54.72 109.44)" fill="none"/>
+  <g id="Service_done" data-name="Service done" clip-path="url(#clip-Quality_Inspection)">
+    <rect width="351" height="185" fill="#fff"/>
+    <g id="Group_2412" data-name="Group 2412" transform="translate(87.12 18.56)">
+      <g id="Group_2" data-name="Group 2" transform="translate(-8)">
+        <g id="Group_20" data-name="Group 20" transform="translate(5)">
+          <g id="Group_4" data-name="Group 4">
+            <path id="Path_12" data-name="Path 12" d="M48,0,94,36,76.056,93.36h-57.7L0,37Z" transform="translate(32 28)" fill="#15918f"/>
+            <path id="Line_2" data-name="Line 2" d="M.74.5l36,28" transform="translate(78.76 38)" fill="none"/>
+            <path id="Line_3" data-name="Line 3" d="M16.32.95.96,46.57" transform="translate(99.36 64.8)" fill="none"/>
+            <path id="Line_6" data-name="Line 6" d="M16.32,46.57.96.95" transform="translate(40.32 64.8)" fill="none"/>
+            <path id="Line_7" data-name="Line 7" d="M.96,29.3,39.36.945" transform="translate(40.32 37.44)" fill="none"/>
+            <path id="Line_5" data-name="Line 5" d="M45.78,1.06.93,1.44" transform="translate(54.72 109.44)" fill="none"/>
+          </g>
+          <g id="Group_16" data-name="Group 16" transform="translate(3.88 1.44)">
+            <path id="Path_14" data-name="Path 14" d="M0,0V27.36L46.08,61.92l28.8-5.76Z" transform="translate(76.32)" fill="#00d1ce" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
+            <path id="Path_16" data-name="Path 16" d="M47.52,0,18.72,5.76,0,63.36,16.44,89.4Z" transform="translate(103.68 56.16)" fill="#00d1ce" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
+            <path id="Path_17" data-name="Path 17" d="M89.28,25.92H0L15.84,0h57.6Z" transform="translate(30.24 119.52)" fill="#00d1ce" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
+            <path id="Path_18" data-name="Path 18" d="M30.24,87.84,46.08,61.92,27.36,5.76,0,0Z" transform="translate(0 57.6)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
+            <path id="Path_19" data-name="Path 19" d="M76.2,0V25.92L27.24,63.36,0,57.56Z" transform="translate(0.12)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
+          </g>
         </g>
-        <g id="Group_16" data-name="Group 16" transform="translate(3.88 1.44)">
-          <path id="Path_14" data-name="Path 14" d="M0,0V27.36L46.08,61.92l28.8-5.76Z" transform="translate(76.32)" fill="#00d1ce" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
-          <path id="Path_16" data-name="Path 16" d="M47.52,0,18.72,5.76,0,63.36,16.44,89.4Z" transform="translate(103.68 56.16)" fill="#00d1ce" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
-          <path id="Path_17" data-name="Path 17" d="M89.28,25.92H0L15.84,0h57.6Z" transform="translate(30.24 119.52)" fill="#00cfcd" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
-          <path id="Path_18" data-name="Path 18" d="M30.24,87.84,46.08,61.92,27.36,5.76,0,0Z" transform="translate(0 57.6)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
-          <path id="Path_19" data-name="Path 19" d="M76.2,0V25.92L27.24,63.36,0,57.56Z" transform="translate(0.12)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
-        </g>
+        <text id="Waiting_for_approval" data-name="Waiting for approval" transform="translate(84 74)" fill="#fff" font-size="12" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-35.736" y="0">Waiting for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-26.79" y="14">approval</tspan></text>
       </g>
     </g>
-    <g id="Group_2396" data-name="Group 2396" transform="translate(2 2)">
-      <path id="Path_3409" data-name="Path 3409" d="M-13501.447,24.789h6.8s1.584-.174,1.626-1.393,0-6.788,0-6.788" transform="translate(13557 36)" fill="none" stroke="#fff" stroke-width="2"/>
-      <g id="Group_2395" data-name="Group 2395">
-        <g id="right" transform="translate(62.869 64.869)">
-          <g id="Group_2388" data-name="Group 2388" transform="translate(3.02 2.958)">
-            <path id="Path_3410" data-name="Path 3410" d="M1.233,2.319,2.908,3.93,5.19-.014" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
-            <path id="Path_3411" data-name="Path 3411" d="M32.462,16.486H26.4s-3.154,3.592-6.762,3.537-5.919-3.311-6.263-4.125a9.566,9.566,0,0,1-.492-1.487h7.088V10.446H12.887a6.731,6.731,0,0,1,6.279-5.226A7.225,7.225,0,0,1,26.4,8.829h6.059" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-          </g>
-          <path id="Path_3408" data-name="Path 3408" d="M21.706,7.866s-.022-17.6,0-19.038-1.753-1.856-1.753-1.856H.984l-9,9.076v32.1s.239,1.982,1.969,2.054,25.464,0,25.464,0,2.283-.326,2.286-2.054,0-5.277,0-5.277" fill="none" stroke="#fff" stroke-width="2"/>
-        </g>
-        <g id="Ellipse_166" data-name="Ellipse 166" transform="translate(62 63)" fill="none" stroke="#fff" stroke-width="2">
-          <circle cx="7" cy="7" r="7" stroke="none"/>
-          <circle cx="7" cy="7" r="6" fill="none"/>
-        </g>
+    <g id="Group_7" data-name="Group 7" transform="translate(-52)">
+      <g id="Group_6" data-name="Group 6">
+        <text id="Order_created" data-name="Order created" transform="translate(170 10)" fill="#00d1ce" font-size="14" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Order created</tspan></text>
+        <text id="Car_received" data-name="Car received" transform="translate(300 84)" fill="#00d1ce" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Car received</tspan></text>
+        <text id="Quality_Inspection" data-name="Quality Inspection" transform="translate(112.5 161)" fill="#00d1ce" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-33.592" y="0">Quality </tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-43.632" y="19">Inspection</tspan></text>
+        <text id="Ready_for_Delivery" data-name="Ready for Delivery" transform="translate(92 84)" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-40.144" y="0">Ready for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-34.464" y="19">Delivery</tspan></text>
+        <text id="Service_done-2" data-name="Service done" transform="translate(276 171)" fill="#00d1ce" font-size="16" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="0" y="0">Service done</tspan></text>
       </g>
     </g>
   </g>
 </svg>
+
