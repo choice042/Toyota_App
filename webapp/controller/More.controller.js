@@ -37,7 +37,7 @@ sap.ui.define([
 			var morebtn2 = true;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
-			this.carouselScroll();
+			// this.carouselScroll();
 		},
 		onHomePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");

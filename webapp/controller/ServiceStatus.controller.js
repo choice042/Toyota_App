@@ -167,8 +167,8 @@ sap.ui.define([
 		},
 		onClose: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			var homebtn1 = true;
-			var homebtn2 = false;
+			var homebtn1 = false;
+			var homebtn2 = true;
 			oDataGlobalModel.setProperty("/homebtn1", homebtn1);
 			oDataGlobalModel.setProperty("/homebtn2", homebtn2);
 			var mycarbtn1 = true;
@@ -179,8 +179,8 @@ sap.ui.define([
 			var productbtn2 = false;
 			oDataGlobalModel.setProperty("/productbtn1", productbtn1);
 			oDataGlobalModel.setProperty("/productbtn2", productbtn2);
-			var bookingbtn1 = false;
-			var bookingbtn2 = true;
+			var bookingbtn1 = true;
+			var bookingbtn2 = false;
 			oDataGlobalModel.setProperty("/bookingbtn1", bookingbtn1);
 			oDataGlobalModel.setProperty("/bookingbtn2", bookingbtn2);
 			var morebtn1 = true;

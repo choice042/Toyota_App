@@ -42,7 +42,7 @@ sap.ui.define([
 				oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 				oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 				// console.log(oDataGlobalModel);
-				this.carouselScroll();
+				// this.carouselScroll();
 				var visibility = oDataGlobalModel.getProperty("/logoutVisible");
 				if (visibility === false) {
 					this.getView().byId("vbox1logout").addStyleClass("selectVehicleVboxLogoutClass");

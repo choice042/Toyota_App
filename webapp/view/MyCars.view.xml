@@ -181,7 +181,7 @@
 											<Image src="{oDataGlobalModel>img2}"></Image>
 											<Label text="{oDataGlobalModel>price1}" design="Bold" class="labelclass2"></Label>
 											<Text text="{oDataGlobalModel>price2}" class="textclass"></Text>
-											<Button text="Book" class="productsbuttonclass"></Button>
+											<Button text="Book" class="productsbuttonclass" press="onBookservicePress"></Button>
 										</VBox>
 									</HBox>
 								</VBox>

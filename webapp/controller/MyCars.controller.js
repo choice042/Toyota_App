@@ -39,9 +39,9 @@ sap.ui.define([
 			var morebtn2 = false;
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
-			this.carouselScroll();
+			// this.carouselScroll();
 		},
-	onCarPress: function (oEvent) {
+		onCarPress: function (oEvent) {
 
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
@@ -191,95 +191,96 @@ sap.ui.define([
 		},
 
 		onNavBack: function () {
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				var oHistory = History.getInstance();
-				var sPreviousHash = oHistory.getPreviousHash();
-				if (sPreviousHash === "Homeview") {
-					oDataGlobalModel.setProperty("/homebtn1", false);
-					oDataGlobalModel.setProperty("/homebtn2", true);
-					oDataGlobalModel.setProperty("/mycarbtn1", true);
-					oDataGlobalModel.setProperty("/mycarbtn2", false);
-					oDataGlobalModel.setProperty("/productbtn1", true);
-					oDataGlobalModel.setProperty("/productbtn2", false);
-					oDataGlobalModel.setProperty("/bookingbtn1", true);
-					oDataGlobalModel.setProperty("/bookingbtn2", false);
-					oDataGlobalModel.setProperty("/morebtn1", true);
-					oDataGlobalModel.setProperty("/morebtn2", false);
-				} else if (sPreviousHash === "Productsview") {
-					oDataGlobalModel.setProperty("/homebtn1", true);
-					oDataGlobalModel.setProperty("/homebtn2", false);
-					oDataGlobalModel.setProperty("/mycarbtn1", true);
-					oDataGlobalModel.setProperty("/mycarbtn2", false);
-					oDataGlobalModel.setProperty("/productbtn1", false);
-					oDataGlobalModel.setProperty("/productbtn2", true);
-					oDataGlobalModel.setProperty("/bookingbtn1", true);
-					oDataGlobalModel.setProperty("/bookingbtn2", false);
-					oDataGlobalModel.setProperty("/morebtn1", true);
-					oDataGlobalModel.setProperty("/morebtn2", false);
-				} else if (sPreviousHash === "MyCars") {
-					oDataGlobalModel.setProperty("/homebtn1", true);
-					oDataGlobalModel.setProperty("/homebtn2", false);
-					oDataGlobalModel.setProperty("/mycarbtn1", false);
-					oDataGlobalModel.setProperty("/mycarbtn2", true);
-					oDataGlobalModel.setProperty("/productbtn1", true);
-					oDataGlobalModel.setProperty("/productbtn2", false);
-					oDataGlobalModel.setProperty("/bookingbtn1", true);
-					oDataGlobalModel.setProperty("/bookingbtn2", false);
-					oDataGlobalModel.setProperty("/morebtn1", true);
-					oDataGlobalModel.setProperty("/morebtn2", false);
-				} else if (sPreviousHash === "BookingScreen") {
-					oDataGlobalModel.setProperty("/homebtn1", true);
-					oDataGlobalModel.setProperty("/homebtn2", false);
-					oDataGlobalModel.setProperty("/mycarbtn1", true);
-					oDataGlobalModel.setProperty("/mycarbtn2", false);
-					oDataGlobalModel.setProperty("/productbtn1", true);
-					oDataGlobalModel.setProperty("/productbtn2", false);
-					oDataGlobalModel.setProperty("/bookingbtn1", false);
-					oDataGlobalModel.setProperty("/bookingbtn2", true);
-					oDataGlobalModel.setProperty("/morebtn1", true);
-					oDataGlobalModel.setProperty("/morebtn2", false);
-				} else if (sPreviousHash === "More") {
-					oDataGlobalModel.setProperty("/homebtn1", true);
-					oDataGlobalModel.setProperty("/homebtn2", false);
-					oDataGlobalModel.setProperty("/mycarbtn1", true);
-					oDataGlobalModel.setProperty("/mycarbtn2", false);
-					oDataGlobalModel.setProperty("/productbtn1", true);
-					oDataGlobalModel.setProperty("/productbtn2", false);
-					oDataGlobalModel.setProperty("/bookingbtn1", true);
-					oDataGlobalModel.setProperty("/bookingbtn2", false);
-					oDataGlobalModel.setProperty("/morebtn1", false);
-					oDataGlobalModel.setProperty("/morebtn2", true);
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === "Homeview") {
+				oDataGlobalModel.setProperty("/homebtn1", false);
+				oDataGlobalModel.setProperty("/homebtn2", true);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "Productsview") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", false);
+				oDataGlobalModel.setProperty("/productbtn2", true);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "MyCars") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", false);
+				oDataGlobalModel.setProperty("/mycarbtn2", true);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "BookingScreen") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", false);
+				oDataGlobalModel.setProperty("/bookingbtn2", true);
+				oDataGlobalModel.setProperty("/morebtn1", true);
+				oDataGlobalModel.setProperty("/morebtn2", false);
+			} else if (sPreviousHash === "More") {
+				oDataGlobalModel.setProperty("/homebtn1", true);
+				oDataGlobalModel.setProperty("/homebtn2", false);
+				oDataGlobalModel.setProperty("/mycarbtn1", true);
+				oDataGlobalModel.setProperty("/mycarbtn2", false);
+				oDataGlobalModel.setProperty("/productbtn1", true);
+				oDataGlobalModel.setProperty("/productbtn2", false);
+				oDataGlobalModel.setProperty("/bookingbtn1", true);
+				oDataGlobalModel.setProperty("/bookingbtn2", false);
+				oDataGlobalModel.setProperty("/morebtn1", false);
+				oDataGlobalModel.setProperty("/morebtn2", true);
+			}
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("overview", {}, true);
+			}
+		},
+		onVehicleChange: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var newOne = oDataGlobalModel.getProperty("/currentVehicle");
+			var carCategory = oDataGlobalModel.getProperty("/carCategory");
+			var i;
+			for (i = 0; i < carCategory.length; i++) {
+				if (carCategory[i].carName === newOne) {
+					oDataGlobalModel.setProperty("/currentStatusVehicle", oDataGlobalModel.getProperty("/carCategory/" + i +
+						"/serviceStatus/ongoing/status"));
 				}
-				if (sPreviousHash !== undefined) {
-					window.history.go(-1);
-				} else {
-					var oRouter = UIComponent.getRouterFor(this);
-					oRouter.navTo("overview", {}, true);
+			}
+			var j;
+			var currentStatusVehicle = oDataGlobalModel.getProperty("/currentStatusVehicle");
+			var serviceStatusBindings = oDataGlobalModel.getProperty("/serviceStatusBindings");
+			for (j = 0; j < serviceStatusBindings.length; j++) {
+				if (serviceStatusBindings[j].statusval === currentStatusVehicle) {
+					oDataGlobalModel.setProperty("/serviceStatusView", oDataGlobalModel.getProperty("/serviceStatusBindings/" + j));
 				}
-			},
-				onVehicleChange: function(){
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				var newOne =oDataGlobalModel.getProperty("/currentVehicle");
-				var carCategory=oDataGlobalModel.getProperty("/carCategory");
-				var i;
-				for(i=0;i<carCategory.length;i++){
-					if(carCategory[i].carName===newOne)
-					{
-						oDataGlobalModel.setProperty("/currentStatusVehicle",oDataGlobalModel.getProperty("/carCategory/"+i+"/serviceStatus/ongoing/status"));
-					}
-				}
-				var j;
-					var currentStatusVehicle=oDataGlobalModel.getProperty("/currentStatusVehicle");
-						var serviceStatusBindings=oDataGlobalModel.getProperty("/serviceStatusBindings");
-				for(j=0;j<serviceStatusBindings.length;j++){
-						if(serviceStatusBindings[j].statusval ===currentStatusVehicle){
-								oDataGlobalModel.setProperty("/serviceStatusView",oDataGlobalModel.getProperty("/serviceStatusBindings/"+j));
-						}
-				}
+			}
 		}
-			/*onPressHome: function () {
-				this.oRouter.navTo("Home");
-			}*/
+
+		/*onPressHome: function () {
+			this.oRouter.navTo("Home");
+		}*/
 
 	});
 

@@ -19,7 +19,7 @@ sap.ui.define([
 				"nationalId": "4567"
 			};
 			oDataGlobalModel.setProperty("/userData", userData);
-			this.carouselScroll();
+			// this.carouselScroll();
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
