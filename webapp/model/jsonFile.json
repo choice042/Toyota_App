@@ -31,7 +31,7 @@
 		"carName": "Supra 2020",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-		"isSelected": true,
+	
 		"serviceStatus": {
 			"past": [{
 				"date": "30 May 2020",

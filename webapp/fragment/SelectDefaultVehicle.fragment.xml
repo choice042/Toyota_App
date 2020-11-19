@@ -4,8 +4,8 @@
 		<wt:VBox press="onAfterSelectingVehicle">
 			<HBox class="SelectDefaultVboxClass">
 				<Image src="./Images/Group2.png"></Image>
-				<Label text="{oDataGlobalModel>carName}" design="Bold" class="sapUiSmallMarginBegin SelectDefaultLabelClass"></Label>
-				<HBox class="SelectDefaultHboxClass sapUiMediumMarginBegin" visible="{oDataGlobalModel>visible}">
+				<Label text="{oDataGlobalModel>carName}" design="Bold" class="sapUiSmallMarginBegin sapUiLargeMarginEnd  SelectDefaultLabelClass"></Label>
+				<HBox class="SelectDefaultHboxClass sapUiLargeMarginBegin" visible="{oDataGlobalModel>visible}">
 					<Label text="Primary" class="PrimaryLabelClass"></Label>
 				</HBox>
 			</HBox>

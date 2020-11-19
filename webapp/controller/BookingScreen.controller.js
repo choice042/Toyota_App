@@ -89,6 +89,7 @@ sap.ui.define([
 
 				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
 				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
+				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 			},
 			productArr: [],
 
@@ -139,6 +140,7 @@ sap.ui.define([
 
 				// oDataGlobalModel.setProperty(sPath + "/isSelected", true);
 				console.log(oDataGlobalModel);
+				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
 
 			},
 
@@ -281,9 +283,13 @@ sap.ui.define([
 					var oRouter = UIComponent.getRouterFor(this);
 					oRouter.navTo("overview", {}, true);
 				}
+				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
+				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 			},
 			onPressConfirm: function () {
 				this.oRouter.navTo("confirmAppointment");
+				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
+				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 			},
 			onBookWithoutVehicleBtnPress: function () {
 				this.getView().byId("btn1Logout").addStyleClass("bookWithoutVehicleRedBtn");
