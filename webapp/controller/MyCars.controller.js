@@ -57,7 +57,7 @@ sap.ui.define([
 			}
 
 			oDataGlobalModel.setProperty(sPath + "/isSelected", true);
-
+			this.onVehicleChange();
 		},
 		// onNavBack: function () {
 		// 	this.oRouter.navTo("Home");

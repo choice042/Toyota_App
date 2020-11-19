@@ -2,53 +2,25 @@
 	"serviceStatusBindings":[
 		{
 	     	"statusval":"orderCreated",
-	     	"fill1":"none",
-	     	"fill2":"none",
-	     	"fill3":"none",
-	     	"fill4":"none",
-	     	"fill5":"none"
+	     	"src":"./Images/OrderCreated.svg"
 	},{
 			"statusval":"carReceived",
-				"fill1":"#00d1ce",
-	     	"fill2":"none",
-	     	"fill3":"none",
-	     	"fill4":"none",
-	     	"fill5":"none"
+	     	"src":"./Images/carReceived.svg"
 	},{
 			"statusval":"serviceDone",
-				"fill1":"#00d1ce",
-	     	"fill2":"#00d1ce",
-	     	"fill3":"none",
-	     	"fill4":"none",
-	     	"fill5":"none"
+	     	"src":"./Images/Servicedone-1.svg"
 	},{
 			"statusval":"waitingForApproval",
-				"fill1":"#00d1ce",
-	     	"fill2":"#00d1ce",
-	     	"fill3":"none",
-	     	"fill4":"none",
-	     	"fill5":"none"
+	     	"src":"./Images/OrderCreated.svg"
 	},{
 			"statusval":"qualityInspection",
-				"fill1":"#00d1ce",
-	     	"fill2":"#00d1ce",
-	     	"fill3":"#ffffff",
-	     	"fill4":"none",
-	     	"fill5":"none"
+	     	"src":"./Images/qualityInspection.svg"
 	},{
 			"statusval":"ready",
-				"fill1":"#00d1ce",
-	     	"fill2":"#00d1ce",
-	     	"fill3":"#00d1ce",
-	     	"fill4":"#00d1ce",
-	     	"fill5":"none"
+	     	"src":"./Images/ready.svg"
 	},{
 		"statusval":"postReady",
-			"fill1":"#00d1ce",
-	     	"fill2":"#00d1ce",
-	     	"fill3":"#00d1ce",
-	     	"fill4":"#00d1ce",
-	     	"fill5":"#00d1ce"
+	     	"src":"./Images/OrderCreated.svg"
 	}],
 	"locationArabia":{
 		"lat":"",
