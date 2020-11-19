@@ -583,6 +583,8 @@
 	"serviceOngoing": "Ongoing",
 	"servicePast": "Past",
 	"serviceUpcoming": "Upcoming",
+	"myserviceImg":"Images/camryCar.png",
+	"myservicesDate":"30 May 2020, 09:00 AM - 10:00 AM",
 	
 	"regionDropdown":[{
 		"regionName": "Jedah"

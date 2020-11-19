@@ -90,6 +90,8 @@ sap.ui.define([
 				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
 				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
 				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
+			
+				this.onVehicleChange();
 			},
 			productArr: [],
 
@@ -327,7 +329,27 @@ sap.ui.define([
 				// this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
 				MessageToast.show("Book Without Product");
 				$(".sapMMessageToast").addClass("sapMMessageToastForBtn");
+			},
+				onVehicleChange: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var newOne = oDataGlobalModel.getProperty("/currentVehicle");
+			var carCategory = oDataGlobalModel.getProperty("/carCategory");
+			var i;
+			for (i = 0; i < carCategory.length; i++) {
+				if (carCategory[i].carName === newOne) {
+					oDataGlobalModel.setProperty("/currentStatusVehicle", oDataGlobalModel.getProperty("/carCategory/" + i +
+						"/serviceStatus/ongoing/status"));
+				}
 			}
+			var j;
+			var currentStatusVehicle = oDataGlobalModel.getProperty("/currentStatusVehicle");
+			var serviceStatusBindings = oDataGlobalModel.getProperty("/serviceStatusBindings");
+			for (j = 0; j < serviceStatusBindings.length; j++) {
+				if (serviceStatusBindings[j].statusval === currentStatusVehicle) {
+					oDataGlobalModel.setProperty("/serviceStatusView", oDataGlobalModel.getProperty("/serviceStatusBindings/" + j));
+				}
+			}
+		}
 
 		});
 	});
