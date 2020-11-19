@@ -12,6 +12,7 @@ sap.ui.define([
 			this.oRouter.getRoute("Home");
 			this.onHomePress();
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+				oDataGlobalModel.setProperty("/afterProductCatalog","General Job");
 			this.onLoadData();
 			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			var logoutVisible = false;

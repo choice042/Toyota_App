@@ -49,7 +49,7 @@
 					class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom carScroll">
 				
 					<VBox class="sapUiSmallMarginBottom">
-						<Label design="Bold" text="General Jobs" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
+						<Label design="Bold" text="{oDataGlobalModel>/afterProductCatalog}" class="sapUiSmallMarginBegin sapUiSmallMarginTop heading"></Label>
 						<HBox class="tilesClass sapUiSmallMarginBegin sapUiTinyMarginTop" items="{oDataGlobalModel>/HomeProducts}">
 							<VBox class="productsClass2 sapUiTinyMarginEnd">
 								<Label text="{oDataGlobalModel>serviceName}" design="Bold" class="labelclass"></Label>

@@ -10,9 +10,11 @@ sap.ui.define([
 		onInit: function () {
 			this.oRouter = this.getRouter();
 			this.oRouter.getRoute("Products");
+				
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			this.oDataGlobalModel = oDataGlobalModel;*/
+				oDataGlobalModel.setProperty("/afterProductCatalog","General Job");
 			this.onProductPress();
 			var homebtn1 = true;
 			var homebtn2 = false;
@@ -251,7 +253,8 @@ sap.ui.define([
 
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
-
+				oDataGlobalModel.setProperty("/afterProductCatalog",oDataGlobalModel.getProperty(sPath+"/catalog"));
+				
 				var carPath = sPath + "/carName";
 				var selectedcar = oDataGlobalModel.getProperty(carPath);
 				// MessageToast.show(selectedcar);
