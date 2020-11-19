@@ -1,37 +1,36 @@
 {
-	"serviceStatusBindings":[
-		{
-	     	"statusval":"orderCreated",
-	     	"src":"./Images/OrderCreated.svg"
-	},{
-			"statusval":"carReceived",
-	     	"src":"./Images/carReceived.svg"
-	},{
-			"statusval":"serviceDone",
-	     	"src":"./Images/Servicedone-1.svg"
-	},{
-			"statusval":"waitingForApproval",
-	     	"src":"./Images/OrderCreated.svg"
-	},{
-			"statusval":"qualityInspection",
-	     	"src":"./Images/qualityInspection.svg"
-	},{
-			"statusval":"ready",
-	     	"src":"./Images/ready.svg"
-	},{
-		"statusval":"postReady",
-	     	"src":"./Images/OrderCreated.svg"
+	"serviceStatusBindings": [{
+		"statusval": "orderCreated",
+		"src": "./Images/OrderCreated.svg"
+	}, {
+		"statusval": "carReceived",
+		"src": "./Images/carReceived.svg"
+	}, {
+		"statusval": "serviceDone",
+		"src": "./Images/Servicedone-1.svg"
+	}, {
+		"statusval": "waitingForApproval",
+		"src": "./Images/OrderCreated.svg"
+	}, {
+		"statusval": "qualityInspection",
+		"src": "./Images/qualityInspection.svg"
+	}, {
+		"statusval": "ready",
+		"src": "./Images/ready.svg"
+	}, {
+		"statusval": "postReady",
+		"src": "./Images/OrderCreated.svg"
 	}],
-	"locationArabia":{
-		"lat":"",
-		"lon":""
+	"locationArabia": {
+		"lat": "",
+		"lon": ""
 	},
-	"serviceStatusView":"",
+	"serviceStatusView": "",
 	"carCategory": [{
 		"carName": "Supra 2020",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-	
+		"isSelected": true,
 		"serviceStatus": {
 			"past": [{
 				"date": "30 May 2020",
@@ -49,7 +48,7 @@
 			"ongoing": {
 				"date": "1 June 2020",
 				"time": "9:00 AM - 10:00 AM",
-				"status":"serviceDone"
+				"status": "serviceDone"
 
 			}
 		}
@@ -58,7 +57,7 @@
 		"carName": "Camry 2019",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-	
+
 		"serviceStatus": {
 			"past": [{
 				"date": "10 May 2020",
@@ -74,14 +73,14 @@
 			"ongoing": {
 				"date": "1 June 2020",
 				"time": "9:00 AM - 10:00 AM",
-					"status":"qualityInspection"
+				"status": "qualityInspection"
 			}
 		}
 	}, {
 		"carName": "Supra 2019",
 		"src": "Images/supraCar.png",
 		"VIN": "LS5812S2176176",
-	
+
 		"serviceStatus": {
 			"past": [{
 				"date": "13 May 2020",
@@ -97,14 +96,14 @@
 			"ongoing": {
 				"date": "1 June 2020",
 				"time": "9:00 AM - 10:00 AM",
-					"status":"carReceived"
+				"status": "carReceived"
 			}
 		}
 	}, {
 		"carName": "Camry 2020",
 		"src": "Images/camryCar.png",
 		"VIN": "LS5812S2176176",
-	
+
 		"serviceStatus": {
 			"past": [{
 				"date": "30 May 2020",
@@ -120,7 +119,7 @@
 			"ongoing": {
 				"date": "1 June 2020",
 				"time": "9:00 AM - 10:00 AM",
-					"status":"ready"
+				"status": "ready"
 			}
 		}
 	}],
@@ -128,22 +127,22 @@
 	"productCategory": [{
 		"productName": "Brake Service",
 		"src": "Images/brakeService.png",
-		
+
 		"productPrice": "SAR 100"
 	}, {
 		"productName": "Battery",
 		"src": "Images/battery.png",
-	
+
 		"productPrice": "SAR 150"
 	}, {
 		"productName": "AC Service",
 		"src": "Images/acService.png",
-	
+
 		"productPrice": "SAR 200"
 	}, {
 		"productName": "Accelerator",
 		"src": "Images/brakeService.png",
-	
+
 		"productPrice": "SAR 100"
 	}],
 	"locationCategory": [{
@@ -557,25 +556,25 @@
 	"selectDefault": [{
 		"carName": "Camry 2019",
 		"carImage": "Images/camryCar.png",
-		"visible":false
+		"visible": false
 	}, {
 		"carName": "Supra 2019",
 		"carImage": "Images/supraCar.png",
-		"visible":false
+		"visible": false
 	}, {
 		"carName": "Fortuner 2018",
 		"carImage": "Images/supraCar.png",
-		"visible":false
+		"visible": false
 	}, {
 		"carName": "Supra 2020",
 		"carImage": "Images/supraCar.png",
-		"visible":true
+		"visible": true
 	}, {
 		"carName": "Camry 2020",
 		"carImage": "Images/camryCar.png",
-		"visible":false
+		"visible": false
 	}],
-	"logoutVisible":false,
+	"logoutVisible": false,
 
 	"selectDefaultVehiclecarName": "Supra 2020",
 	"selectDefaultVehiclecarimg": "Images/supraCar.png",
@@ -583,19 +582,18 @@
 	"serviceOngoing": "Ongoing",
 	"servicePast": "Past",
 	"serviceUpcoming": "Upcoming",
-	"myserviceImg":"Images/camryCar.png",
-	"myservicesDate":"30 May 2020, 09:00 AM - 10:00 AM",
-	
-	"regionDropdown":[{
+	"myserviceImg": "Images/camryCar.png",
+	"myservicesDate": "30 May 2020, 09:00 AM - 10:00 AM",
+
+	"regionDropdown": [{
 		"regionName": "Jedah"
-	
+
 	}, {
 		"regionName": "Riyadh"
-	
+
 	}, {
 		"regionName": "Madina"
-	
+
 	}]
-	
 
 }
