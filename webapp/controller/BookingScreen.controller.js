@@ -68,7 +68,12 @@ sap.ui.define([
 				oDataGlobalModel.setProperty("/viewidhbox2", viewidhbox2);
 				var viewidbtn2 = this.getView().byId("btn2Logout");
 				oDataGlobalModel.setProperty("/viewidbtn2", viewidbtn2);
-
+					var oHistory = History.getInstance();
+				var sPreviousHash = oHistory.getPreviousHash();
+				if(sPreviousHash=== undefined){
+					var oRouter = UIComponent.getRouterFor(this);
+						oRouter.navTo("Home");
+				}
 			},
 			onCarPress: function (oEvent) {
 
@@ -306,7 +311,7 @@ sap.ui.define([
 					window.history.go(-1);
 				} else {
 					var oRouter = UIComponent.getRouterFor(this);
-					oRouter.navTo("overview", {}, true);
+					oRouter.navTo("Home", {}, true);
 				}
 				this.getView().byId("btn2Logout").removeStyleClass("bookWithoutProductRedBtn");
 				this.getView().byId("btn1Logout").removeStyleClass("bookWithoutVehicleRedBtn");
