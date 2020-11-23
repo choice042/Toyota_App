@@ -38,6 +38,12 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			// this.carouselScroll();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		onHomePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -343,29 +349,27 @@ sap.ui.define([
 
 		},
 		addMarker: function (map) {
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-		var locationCurrent=oDataGlobalModel.getProperty("/locationCurrent");
-		if(locationCurrent==="jeddah"){
-			var locations = [{
-				"lat": 21.4858,
-				"lng": 39.1925,
-				"id": 67
-			}];
-		}
-		else 	if(locationCurrent==="Medina"){
-			var locations = [{
-				"lat": 24.5247,
-				"lng": 39.5692,
-				"id": 68
-			}];
-		}
-		else 	if(locationCurrent==="Airport"||locationCurrent==""||locationCurrent==undefined){
-			var locations = [{
-				"lat": 21.6677,
-				"lng": 39.1737,
-				"id": 69
-			}];
-		}
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var locationCurrent = oDataGlobalModel.getProperty("/locationCurrent");
+			if (locationCurrent === "jeddah") {
+				var locations = [{
+					"lat": 21.4858,
+					"lng": 39.1925,
+					"id": 67
+				}];
+			} else if (locationCurrent === "Medina") {
+				var locations = [{
+					"lat": 24.5247,
+					"lng": 39.5692,
+					"id": 68
+				}];
+			} else if (locationCurrent === "Airport" || locationCurrent == "" || locationCurrent == undefined) {
+				var locations = [{
+					"lat": 21.6677,
+					"lng": 39.1737,
+					"id": 69
+				}];
+			}
 			var location;
 			for (location in locations) {
 				this.addMarkers(this, locations[location], "", map);
@@ -446,24 +450,24 @@ sap.ui.define([
 
 			this.mapBox.close();
 		},
-			onRelocate: function(oEvent){
+		onRelocate: function (oEvent) {
 			console.log(oEvent);
-			var	value = oEvent.getSource().getValue();
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-			
-			if(value==="jeddah"){
-					oDataGlobalModel.setProperty("/locationCurrent",value);
-				
+			var value = oEvent.getSource().getValue();
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+
+			if (value === "jeddah") {
+				oDataGlobalModel.setProperty("/locationCurrent", value);
+
 			}
-			if(value==="Medina"){
-					oDataGlobalModel.setProperty("/locationCurrent",value);
+			if (value === "Medina") {
+				oDataGlobalModel.setProperty("/locationCurrent", value);
 			}
-			if(value==="Airport"){
-					oDataGlobalModel.setProperty("/locationCurrent",value);
+			if (value === "Airport") {
+				oDataGlobalModel.setProperty("/locationCurrent", value);
 			}
-		// 		"mecca":{"lat":"21.3891","long":"39.8579"},
-		// "medina":{"lat":"24.5247","long":"39.5692"},
-		// "airport":{"lat":24.5544,"long":"39.7146"}
+			// 		"mecca":{"lat":"21.3891","long":"39.8579"},
+			// "medina":{"lat":"24.5247","long":"39.5692"},
+			// "airport":{"lat":24.5544,"long":"39.7146"}
 			this.onMapClose();
 			this.onMapOpen();
 		}

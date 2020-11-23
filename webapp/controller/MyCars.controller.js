@@ -40,6 +40,12 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			// this.carouselScroll();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		onCarPress: function (oEvent) {
 
@@ -189,8 +195,6 @@ sap.ui.define([
 		onPressKnowMore: function () {
 			this.oRouter.navTo("ServiceStatus");
 		},
-		
-	
 
 		onNavBack: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");

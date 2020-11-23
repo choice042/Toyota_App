@@ -1,8 +1,10 @@
 sap.ui.define([
 	"inc/demo/Toyota/controller/BaseController",
 	"inc/demo/Toyota/util/formatter",
-	"sap/ui/core/Fragment"
-], function (BaseController, formatter, Fragment) {
+	"sap/ui/core/Fragment",
+	"sap/ui/core/routing/History",
+	"sap/ui/core/UIComponent"
+], function (BaseController, formatter, Fragment, History, UIComponent) {
 	"use strict";
 
 	return BaseController.extend("inc.demo.Toyota.controller.Home", {
@@ -12,7 +14,7 @@ sap.ui.define([
 			this.oRouter.getRoute("Home");
 			this.onHomePress();
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				oDataGlobalModel.setProperty("/afterProductCatalog","General Job");
+			oDataGlobalModel.setProperty("/afterProductCatalog", "General Job");
 			this.onLoadData();
 			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			var logoutVisible = false;
@@ -40,6 +42,12 @@ sap.ui.define([
 			console.log(oDataGlobalModel);
 			this.carouselScroll();
 			this.onVehicleChange();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		loginWarningFragmentOpen: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
@@ -263,7 +271,7 @@ sap.ui.define([
 		onContinue: function () {
 			this.oRouter.navTo("myProfile");
 		},
-			onVehicleChange: function () {
+		onVehicleChange: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var newOne = oDataGlobalModel.getProperty("/currentVehicle");
 			var carCategory = oDataGlobalModel.getProperty("/carCategory");

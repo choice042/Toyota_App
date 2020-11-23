@@ -10,11 +10,11 @@ sap.ui.define([
 		onInit: function () {
 			this.oRouter = this.getRouter();
 			this.oRouter.getRoute("Products");
-				
+
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);
 			this.oDataGlobalModel = oDataGlobalModel;*/
-				oDataGlobalModel.setProperty("/afterProductCatalog","General Job");
+			oDataGlobalModel.setProperty("/afterProductCatalog", "General Job");
 			this.onProductPress();
 			var homebtn1 = true;
 			var homebtn2 = false;
@@ -37,6 +37,12 @@ sap.ui.define([
 			oDataGlobalModel.setProperty("/morebtn1", morebtn1);
 			oDataGlobalModel.setProperty("/morebtn2", morebtn2);
 			this.carouselScroll();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
@@ -251,44 +257,44 @@ sap.ui.define([
 		// }, 
 		onCarPress: function (oEvent) {
 
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
-				oDataGlobalModel.setProperty("/afterProductCatalog",oDataGlobalModel.getProperty(sPath+"/catalog"));
-				
-				var carPath = sPath + "/carName";
-				var selectedcar = oDataGlobalModel.getProperty(carPath);
-				// MessageToast.show(selectedcar);
-				oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
-				var carArray = oDataGlobalModel.getProperty("/carCategory");
-				var len = carArray.length;
-				for (var i = 0; i < len; i++) {
-					oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
-				}
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+			oDataGlobalModel.setProperty("/afterProductCatalog", oDataGlobalModel.getProperty(sPath + "/catalog"));
 
-				oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+			var carPath = sPath + "/carName";
+			var selectedcar = oDataGlobalModel.getProperty(carPath);
+			// MessageToast.show(selectedcar);
+			oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
+			var carArray = oDataGlobalModel.getProperty("/carCategory");
+			var len = carArray.length;
+			for (var i = 0; i < len; i++) {
+				oDataGlobalModel.setProperty("/carCategory/" + i + "/isSelected", false);
+			}
 
-				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
-				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
-			},
-			onVehicleChange: function(){
-				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
-				var newOne =oDataGlobalModel.getProperty("/currentVehicle");
-				var carCategory=oDataGlobalModel.getProperty("/carCategory");
-				var i;
-				for(i=0;i<carCategory.length;i++){
-					if(carCategory[i].carName===newOne)
-					{
-						oDataGlobalModel.setProperty("/currentStatusVehicle",oDataGlobalModel.getProperty("/carCategory/"+i+"/serviceStatus/ongoing/status"));
-					}
+			oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+
+			/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
+			console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
+		},
+		onVehicleChange: function () {
+			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+			var newOne = oDataGlobalModel.getProperty("/currentVehicle");
+			var carCategory = oDataGlobalModel.getProperty("/carCategory");
+			var i;
+			for (i = 0; i < carCategory.length; i++) {
+				if (carCategory[i].carName === newOne) {
+					oDataGlobalModel.setProperty("/currentStatusVehicle", oDataGlobalModel.getProperty("/carCategory/" + i +
+						"/serviceStatus/ongoing/status"));
 				}
-				var j;
-					var currentStatusVehicle=oDataGlobalModel.getProperty("/currentStatusVehicle");
-						var serviceStatusBindings=oDataGlobalModel.getProperty("/serviceStatusBindings");
-				for(j=0;j<serviceStatusBindings.length;j++){
-						if(serviceStatusBindings[j].statusval ===currentStatusVehicle){
-								oDataGlobalModel.setProperty("/serviceStatusView",oDataGlobalModel.getProperty("/serviceStatusBindings/"+j));
-						}
+			}
+			var j;
+			var currentStatusVehicle = oDataGlobalModel.getProperty("/currentStatusVehicle");
+			var serviceStatusBindings = oDataGlobalModel.getProperty("/serviceStatusBindings");
+			for (j = 0; j < serviceStatusBindings.length; j++) {
+				if (serviceStatusBindings[j].statusval === currentStatusVehicle) {
+					oDataGlobalModel.setProperty("/serviceStatusView", oDataGlobalModel.getProperty("/serviceStatusBindings/" + j));
 				}
+			}
 		}
 
 	});

@@ -1,8 +1,9 @@
 sap.ui.define([
 	"inc/demo/Toyota/controller/BaseController",
 	"sap/ui/core/UIComponent",
-	"sap/m/MessageToast"
-], function (BaseController, UIComponent, MessageToast) {
+	"sap/m/MessageToast",
+	"sap/ui/core/routing/History"
+], function (BaseController, UIComponent, MessageToast, History) {
 	"use strict";
 
 	return BaseController.extend("inc.demo.Toyota.controller.myProfile", {
@@ -20,6 +21,12 @@ sap.ui.define([
 			};
 			oDataGlobalModel.setProperty("/userData", userData);
 			// this.carouselScroll();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);

@@ -1,7 +1,8 @@
 sap.ui.define([
 	"inc/demo/Toyota/controller/BaseController",
-	"sap/ui/core/UIComponent"
-], function (BaseController, UIComponent) {
+	"sap/ui/core/UIComponent",
+	"sap/ui/core/routing/History"
+], function (BaseController, UIComponent, History) {
 	"use strict";
 
 	return BaseController.extend("inc.demo.Toyota.controller.myservices", {
@@ -9,6 +10,12 @@ sap.ui.define([
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			this.onOngoingPress();
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			if (sPreviousHash === undefined) {
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.navTo("Home");
+			}
 		},
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
