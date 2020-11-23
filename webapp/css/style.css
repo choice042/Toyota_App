@@ -966,6 +966,9 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
     /* width: 28px; */
     /* height: 28px; */
 }
+.myprofileRadio2{
+	margin-right: 0.5rem;
+}
 
 .myProfileLogoutClass {
     padding-top: 18rem;

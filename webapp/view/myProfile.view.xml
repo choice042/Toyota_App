@@ -47,7 +47,7 @@
 				</HBox>
 				<HBox class="sapUiTinyMarginTop" justifyContent="SpaceBetween">
 					<Label text="English" class="sapUiTinyMarginTop"></Label>
-					<RadioButton selected="true" class="myProfileRadioBtn"></RadioButton>
+					<RadioButton selected="true" class="myProfileRadioBtn myprofileRadio2"></RadioButton>
 				</HBox>
 			</VBox>
 			<HBox class="myProfileLogoutClass">
