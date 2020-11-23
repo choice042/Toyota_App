@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="351" height="185" viewBox="0 0 351 185">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="185" viewBox="0 0 351 185">
   <defs>
     <clipPath id="clip-Service_done">
       <rect width="351" height="185"/>
     </clipPath>
   </defs>
   <g id="Service_done" data-name="Service done" clip-path="url(#clip-Ready_forDelivery)">
-    <rect width="351" height="185" fill="#fff"/>
+    <rect width="351" height="185" fill="#f7f7f7"/>
     <g id="Group_2412" data-name="Group 2412" transform="translate(87.12 18.56)">
       <g id="Group_2" data-name="Group 2" transform="translate(-8)">
         <g id="Group_20" data-name="Group 20" transform="translate(5)">
@@ -25,7 +25,18 @@
             <path id="Path_19" data-name="Path 19" d="M76.2,0V25.92L27.24,63.36,0,57.56Z" transform="translate(0.12)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
           </g>
         </g>
-        <!--<text id="Waiting_for_approval" data-name="Waiting for approval" transform="translate(84 74)" fill="#fff" font-size="12" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-35.736" y="0">Waiting for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-26.79" y="14">approval</tspan></text>-->
+       <g id="right" transform="translate(54 52)">
+      <g id="Group_2386" data-name="Group 2386" transform="translate(0 0)">
+        <g id="Group_2385" data-name="Group 2385" transform="translate(0 0)">
+          <path id="Path_3391" data-name="Path 3391" d="M37.3,6.4A21.848,21.848,0,0,0,6.4,37.3,21.848,21.848,0,1,0,37.3,6.4ZM21.848,41.135A19.288,19.288,0,1,1,41.135,21.848,19.309,19.309,0,0,1,21.848,41.135Z" transform="translate(0 0)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_2388" data-name="Group 2388" transform="translate(11.035 14.463)">
+        <g id="Group_2387" data-name="Group 2387">
+          <path id="Path_3392" data-name="Path 3392" d="M150.551,169.842a1.28,1.28,0,0,0-1.81,0l-11.3,11.3-5.951-5.951a1.28,1.28,0,1,0-1.81,1.81l6.856,6.856a1.28,1.28,0,0,0,1.81,0l12.21-12.21A1.28,1.28,0,0,0,150.551,169.842Z" transform="translate(-129.3 -169.467)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
       </g>
     </g>
     <g id="Group_7" data-name="Group 7" transform="translate(-52)">

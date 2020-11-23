@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="351" height="185" viewBox="0 0 351 185">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="185" viewBox="0 0 351 185">
   <defs>
     <clipPath id="clip-Service_done">
       <rect width="351" height="185"/>
     </clipPath>
   </defs>
   <g id="Service_done" data-name="Service done" clip-path="url(#clip-Ready_forDelivery)">
-    <rect width="351" height="185" fill="#fff"/>
+    <rect width="351" height="185" fill="#f7f7f7"/>
     <g id="Group_2412" data-name="Group 2412" transform="translate(87.12 18.56)">
       <g id="Group_2" data-name="Group 2" transform="translate(-8)">
         <g id="Group_20" data-name="Group 20" transform="translate(5)">
@@ -25,7 +25,12 @@
             <path id="Path_19" data-name="Path 19" d="M76.2,0V25.92L27.24,63.36,0,57.56Z" transform="translate(0.12)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1.44"/>
           </g>
         </g>
-        <!--<text id="Waiting_for_approval" data-name="Waiting for approval" transform="translate(84 74)" fill="#fff" font-size="12" font-family="Karbon-Semibold, Karbon" font-weight="600" letter-spacing="0.125em"><tspan x="-35.736" y="0">Waiting for</tspan><tspan y="0" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700"></tspan><tspan x="-26.79" y="14">approval</tspan></text>-->
+       <g id="interface_4_" data-name="interface (4)" transform="translate(247.08 49.385) rotate(90)">
+      <g id="Group_2383" data-name="Group 2383" transform="translate(0 132)">
+        <path id="Path_3382" data-name="Path 3382" d="M37.857,140.216h0l-7.817-7.779a1.5,1.5,0,0,0-2.111,2.121l5.248,5.223H1.5a1.5,1.5,0,0,0,0,2.992h31.68l-5.248,5.223a1.5,1.5,0,0,0,2.111,2.121l7.817-7.779h0A1.5,1.5,0,0,0,37.857,140.216Z" transform="translate(0 -102)" fill="#fff"/>
+        <path id="Path_3383" data-name="Path 3383" d="M16.4,46.532v9.563H47.409V22.322H16.4v9.989" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
       </g>
     </g>
     <g id="Group_7" data-name="Group 7" transform="translate(-52)">
