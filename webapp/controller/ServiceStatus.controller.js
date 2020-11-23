@@ -1,11 +1,12 @@
 sap.ui.define([
 	"inc/demo/Toyota/controller/BaseController",
-	"sap/ui/core/UIComponent"
-], function (BaseController, UIComponent) {
+	"sap/ui/core/UIComponent",
+	"inc/demo/Toyota/util/formatter"
+], function (BaseController, UIComponent,formatter) {
 	"use strict";
 
 	return BaseController.extend("inc.demo.Toyota.controller.ServiceStatus", {
-
+	formatter: formatter,
 		onInit: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			/*oDataGlobalModel.loadData("model/jsonFile.json", null, false);

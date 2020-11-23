@@ -34,13 +34,13 @@
 							<VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd">
 								<Text text="{oDataGlobalModel>/CarServiceStatus/carName}" class="aljHeadingText"></Text>
 							</VBox>
-							<Text text="IN" class="aljBoldText sapUiTinyMarginEnd"></Text>
-							<Switch class="aljSwitch" state="false" customTextOn=" " customTextOff=" ">
+							<Text text="OUT" class="aljBoldText sapUiTinyMarginEnd"></Text>
+							<Switch class="aljSwitch" state="{path:'oDataGlobalModel>/currentStatusVehicle', formatter:'inc.demo.Toyota.util.formatter.fnServiceStatusSwitch'}" customTextOn=" " customTextOff=" ">
 								<!--<layoutData>-->
 								<!--	<FlexItemData growFactor="1"/>-->
 								<!--</layoutData>-->
 							</Switch>
-							<Text text="OUT" class="aljBoldText sapUiTinyMarginBegin"></Text>
+							<Text text="IN" class="aljBoldText sapUiTinyMarginBegin"></Text>
 						</HBox>
 					</CustomListItem>
 					<CustomListItem class="aljListLi">
@@ -79,7 +79,7 @@
 					</CustomListItem>
 				</List>
 			</HBox>
-			<HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" justifyContent="Center" alignContent="Center">
+			<HBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" visible="{path:'oDataGlobalModel>/currentStatusVehicle', formatter:'inc.demo.Toyota.util.formatter.fnServiceStatusButtons'}" justifyContent="Center" alignContent="Center">
 				<VBox justifyContent="Center" alignContent="Center">
 					<Button class="aljRedButton aljGrayButtons" text="Copy to mobile calendar"></Button>
 					<Button class="aljRedButton aljGrayButtons" text="Reschedule" press="onReschedulePress"></Button>

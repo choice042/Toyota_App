@@ -8,5 +8,24 @@ fnCarSelected:  function (sValue) {
 			this.addStyleClass("selectedEvent");
 		}
 		return true;
+	},
+
+fnServiceStatusButtons: function(value){
+	if(value==="ready"){
+		return true;
 	}
+	else
+	{
+		return false;
+	}
+},
+fnServiceStatusSwitch: function(value){
+	if(value==="ready"){
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
 };
