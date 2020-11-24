@@ -122,6 +122,12 @@
 				"status": "ready"
 			}
 		}
+	}, {
+		"carName": "Toyota 2050",
+		"src": "Images/toyotaCar.jpg",
+		"VIN": "LS5812S2176176"
+
+		
 	}],
 	"currentVehicle": "Supra 2020",
 	"productCategory": [{
