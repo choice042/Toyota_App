@@ -55,6 +55,8 @@ sap.ui.define([
 
 				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+				
+				oDataGlobalModel.setProperty("/afterProductCatalog", oDataGlobalModel.getProperty(sPath + "/catalog"));
 
 				var catalogPath = sPath + "/catalog";
 				var selectedcatalog = oDataGlobalModel.getProperty(catalogPath);
@@ -287,7 +289,7 @@ sap.ui.define([
 
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
-			oDataGlobalModel.setProperty("/afterProductCatalog", oDataGlobalModel.getProperty(sPath + "/catalog"));
+			
 
 			var carPath = sPath + "/carName";
 			var selectedcar = oDataGlobalModel.getProperty(carPath);
