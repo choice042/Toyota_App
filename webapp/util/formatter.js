@@ -11,7 +11,7 @@ fnCarSelected:  function (sValue) {
 	},
 
 fnServiceStatusButtons: function(value){
-	if(value==="ready"){
+	if(value==="orderCreated"){
 		return true;
 	}
 	else
@@ -20,12 +20,21 @@ fnServiceStatusButtons: function(value){
 	}
 },
 fnServiceStatusSwitch: function(value){
-	if(value==="ready"){
+	if(value==="orderCreated"){
 		return false;
 	}
 	else
 	{
 		return true;
+	}
+},
+fnServiceStatusMessage: function(value){
+	if(value==="ready"){
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }
 };

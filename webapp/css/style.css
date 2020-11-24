@@ -167,8 +167,12 @@ html.sap-desktop .sapMBtn:focus>.sapMFocusable {
 
 
 /*  CUSTOM CLASSES   */
-
-
+/*serviceStatus*/
+.blackRoundBorder.sapMHBox {
+    border: 1px solid !important;
+    border-radius: 12px !important;
+    padding: 1rem;
+}
 /*AddVehicles*/
 
 .aljRedFillButton .sapMBtnInner {

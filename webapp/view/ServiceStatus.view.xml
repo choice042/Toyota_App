@@ -86,6 +86,12 @@
 					<Button class="aljRedButton aljGrayButtons" text="Cancel Appointment" press="onCancelAppointmentPress"></Button>
 				</VBox>
 			</HBox>
+			<VBox class="sapUiMediumMarginBegin sapUiMediumMarginBottom sapUiMediumMarginEnd"  visible="{path:'oDataGlobalModel>/currentStatusVehicle', formatter:'inc.demo.Toyota.util.formatter.fnServiceStatusMessage'}"  justifyContent="Center" alignContent="Center">
+				<Label  class="sapUiSmallMarginBottom sapUiSmallMarginTop aljBlackStar aljRedUnderline" text="Last Service Remark" ></Label>
+				<HBox class="blackRoundBorder">
+					<Text text="Excellent service left the car with them this morning, the condition of the car has greatly improved after the service. would look forward to the same service station for further servicing.The car is also upgraded as per the catalog" wrapping="true"></Text>
+				</HBox>
+			</VBox>
 		</content>
 		<HBox class="aljGrayHbox sapUiSmallMarginTop" justifyContent="Center" alignContent="Center">
 			<VBox class="sapUiSmallMarginTop sapUiMediumMarginBottom" width="85%">
