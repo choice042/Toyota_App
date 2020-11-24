@@ -1,12 +1,14 @@
 sap.ui.define([
 	"inc/demo/Toyota/controller/BaseController",
+	"inc/demo/Toyota/util/formatter",
 	"sap/ui/core/UIComponent",
-	"sap/ui/core/routing/History"
-], function (BaseController, UIComponent, History) {
+	"sap/ui/core/routing/History",
+	"sap/m/MessageToast"
+], function (BaseController,formatter, UIComponent, History, MessageToast) {
 	"use strict";
 
 	return BaseController.extend("inc.demo.Toyota.controller.Products", {
-
+        formatter: formatter,
 		onInit: function () {
 			this.oRouter = this.getRouter();
 			this.oRouter.getRoute("Products");
@@ -47,6 +49,32 @@ sap.ui.define([
 		getRouter: function () {
 			return UIComponent.getRouterFor(this);
 		},
+		
+		
+		onCatalogPress: function (oEvent) {
+
+				var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
+				var sPath = oEvent.getSource().getBindingContext("oDataGlobalModel").getPath();
+
+				var catalogPath = sPath + "/catalog";
+				var selectedcatalog = oDataGlobalModel.getProperty(catalogPath);
+				MessageToast.show(selectedcatalog);
+				// oDataGlobalModel.setProperty("/currentVehicle", selectedcar);
+				var catalogArray = oDataGlobalModel.getProperty("/productCatalog");
+				var len = catalogArray.length;
+				for (var i = 0; i < len; i++) {
+					oDataGlobalModel.setProperty("/productCatalog/" + i + "/isSelected", false);
+				}
+
+				oDataGlobalModel.setProperty(sPath + "/isSelected", true);
+
+				/*oDataGlobalModel.setProperty(sPath + "isSelected", true);
+				console.log(oDataGlobalModel); >>> >>> > refs / heads / master*/
+			
+			
+			
+			},
+		
 		onHomePress: function () {
 			var oDataGlobalModel = this.getOwnerComponent().getModel("oDataGlobalModel");
 			oDataGlobalModel.setProperty("/homebtn1", false);
