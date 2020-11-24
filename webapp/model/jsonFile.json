@@ -146,7 +146,6 @@
 			}
 		}
 
-		
 	}],
 	"currentVehicle": "Supra 2020",
 	"productCategory": [{
@@ -205,9 +204,11 @@
 		"pickUpFacility": "Pick Up and Deliver",
 		"pickUpTerms": "online payments only*"
 	}],
+	"afterProductCatalog": "General Job",
 	"productCatalog": [{
 		"src": "Images/dateIcon.png",
 		"catalog": "General Job",
+		"isSelected": true,
 		"subcategory": [{
 
 			"serviceName": "Brake Service",
