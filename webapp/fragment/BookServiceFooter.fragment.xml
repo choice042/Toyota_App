@@ -3,7 +3,7 @@
 		<VBox class="footerBox">
 			<HBox class="sapUiTinyMarginTop">
 				<Image src="Images/vehicleIconFooter.png" class="iconStyle"/>
-				<Label text="Camry 2018, 79000 kms" class="footerLabelStyle"/>
+				<Label text="{oDataGlobalModel>/currentVehicle}, 79000 kms" class="footerLabelStyle"/>
 			</HBox>
 			<HBox>
 				<Image src="Images/locationIconFooter.png" class="iconStyle"/>
